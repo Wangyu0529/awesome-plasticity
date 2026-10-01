@@ -41,7 +41,8 @@ A curated, structured bibliography on **plasticity** across artificial neural ne
     - [Research Commentary and Podcasts](#research-commentary-and-podcasts) (2)
     - [Author Explanations and Blog Posts](#author-explanations-and-blog-posts) (2)
   - [Community and Tools](#community-and-tools) (2)
-    - [Official Implementations](#official-implementations) (2)
+    - [Continual-Learning Implementations](#continual-learning-implementations) (1)
+    - [Test-Time Learning Implementations](#test-time-learning-implementations) (1)
 - [Research notes](docs/review.md): concepts, comparisons, limitations, and a suggested reading order.
 - [Structured catalog](data/catalog.csv): filterable metadata for all records.
 - [BibTeX](references/plasticity.bib): generated citation entries.
@@ -286,11 +287,16 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 
 2 unique records
 
-##### Official Implementations
+##### Continual-Learning Implementations
 
 | Paper or resource | Type | Year | Venue / source |
 |---|---|---:|---|
 | [Loss of Plasticity in Deep Continual Learning — official code](https://github.com/shibhansh/loss-of-plasticity) | Code | 2024 | GitHub / Nature 2024 companion code |
+
+##### Test-Time Learning Implementations
+
+| Paper or resource | Type | Year | Venue / source |
+|---|---|---:|---|
 | [TTT official PyTorch implementation](https://github.com/test-time-training/ttt-lm-pytorch) | Code | 2024 | GitHub / ICML 2025 companion code |
 
 <!-- END: GENERATED PAPER LISTS -->

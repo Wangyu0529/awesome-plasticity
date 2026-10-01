@@ -2288,11 +2288,11 @@
     "accessed": "2026-09-22",
     "entry_type": "代码",
     "major_category": "Community and Tools",
-    "minor_category": "Official Implementations",
+    "minor_category": "Continual-Learning Implementations",
     "classifications": [
       {
         "major": "Community and Tools",
-        "minor": "Official Implementations"
+        "minor": "Continual-Learning Implementations"
       }
     ]
   },
@@ -2329,11 +2329,11 @@
     "accessed": "2026-09-22",
     "entry_type": "代码",
     "major_category": "Community and Tools",
-    "minor_category": "Official Implementations",
+    "minor_category": "Test-Time Learning Implementations",
     "classifications": [
       {
         "major": "Community and Tools",
-        "minor": "Official Implementations"
+        "minor": "Test-Time Learning Implementations"
       }
     ]
   }

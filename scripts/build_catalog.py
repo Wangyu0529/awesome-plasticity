@@ -58,7 +58,8 @@ MINOR_ORDER = {
         "Author Explanations and Blog Posts",
     ],
     "Community and Tools": [
-        "Official Implementations",
+        "Continual-Learning Implementations",
+        "Test-Time Learning Implementations",
     ],
 }
 

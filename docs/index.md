@@ -234,9 +234,14 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 
 2 unique records
 
-##### Official Implementations
+##### Continual-Learning Implementations
 
 | Paper or resource | Type | Year | Venue / source |
 |---|---|---:|---|
 | [Loss of Plasticity in Deep Continual Learning — official code](https://github.com/shibhansh/loss-of-plasticity) | Code | 2024 | GitHub / Nature 2024 companion code |
+
+##### Test-Time Learning Implementations
+
+| Paper or resource | Type | Year | Venue / source |
+|---|---|---:|---|
 | [TTT official PyTorch implementation](https://github.com/test-time-training/ttt-lm-pytorch) | Code | 2024 | GitHub / ICML 2025 companion code |
