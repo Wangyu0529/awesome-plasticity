@@ -21,26 +21,91 @@ def venue_en(value):
             .replace("（论文集发表于2025）", " (proceedings published in 2025)")
             .replace("伴随代码", " companion code"))
 
+MAJOR_ORDER = [
+    "Continual Learning and Plasticity Loss",
+    "Neuroscience-Inspired Plasticity",
+    "Language Models, Memory, and Adaptation",
+    "Reviews, Commentary, and Code",
+]
+
+MINOR_ORDER = {
+    "Continual Learning and Plasticity Loss": [
+        "Problem Definition and Diagnostics",
+        "Resets, Regeneration, and Regularization",
+        "Dynamics, Spectral Structure, and Theory",
+    ],
+    "Neuroscience-Inspired Plasticity": [
+        "Hebbian, Predictive, and Synaptic Rules",
+        "Local Learning, Credit Assignment, and SNNs",
+    ],
+    "Language Models, Memory, and Adaptation": [
+        "Language-Model Plasticity and Post-Training",
+        "Test-Time Learning and Long-Term Memory",
+        "Functional Adaptation and Model Geometry",
+    ],
+    "Reviews, Commentary, and Code": [
+        "Commentary and Podcasts",
+        "Official Implementations",
+    ],
+}
+
+def entry_type_en(value):
+    return {
+        "期刊论文": "Journal paper",
+        "主会论文": "Conference paper",
+        "领域会议论文": "Workshop / field-conference paper",
+        "预印本": "Preprint",
+        "解读/播客": "Commentary / podcast",
+        "代码": "Code",
+    }.get(value, str(value or ""))
+
+def anchor(value):
+    return re.sub(r"[^a-z0-9 -]", "", value.lower()).replace(" ", "-")
+
 def paper_list_sections(records):
-    sections = [
-        ("Plasticity Loss and Recovery", [r for r in records if r.get("review_id", "").startswith("A")]),
-        ("Neuroscience-Inspired Plasticity, Local Learning, and SNNs", [r for r in records if r.get("review_id", "").startswith("B")]),
-        ("Language Models, Memory, and Adaptation", [r for r in records if r.get("review_id", "").startswith("C")]),
-        ("Extended Papers", [r for r in records if r.get("review_id", "").startswith("E")]),
-        ("Commentary and Code", [r for r in records if r.get("review_id", "").startswith(("RB", "RC"))]),
-    ]
+    groups = {}
+    for r in records:
+        groups.setdefault((r["major_category"], r["minor_category"]), []).append(r)
     lines = [
         "The lists below are generated from `data/records/*.json`.",
         "",
     ]
-    for heading, rows in sections:
-        if not rows:
+    for major in MAJOR_ORDER:
+        major_rows = [r for r in records if r.get("major_category") == major]
+        if not major_rows:
             continue
-        lines += [f"#### {heading}", "", "| ID | Paper or resource | Year | Venue / source |", "|---|---|---:|---|"]
-        for r in rows:
-            lines.append(f"| {r['review_id']} | [{r['title']}]({r['url']}) | {r['year']} | {venue_en(r.get('venue'))} |")
-        lines.append("")
+        lines += [f"#### {major}", "", f"{len(major_rows)} items", ""]
+        for minor in MINOR_ORDER[major]:
+            rows = groups.get((major, minor), [])
+            if not rows:
+                continue
+            lines += [f"##### {minor}", "", "| Paper or resource | Type | Year | Venue / source |", "|---|---|---:|---|"]
+            for r in rows:
+                lines.append(f"| [{r['title']}]({r['url']}) | {entry_type_en(r.get('entry_type'))} | {r['year']} | {venue_en(r.get('venue'))} |")
+            lines.append("")
     return "\n".join(lines).rstrip()
+
+def contents_block(records):
+    lines = [
+        f"- [Paper Lists](#paper-lists): {sum(r.get('entry_type') not in ('解读/播客', '代码') for r in records)} papers and {sum(r.get('entry_type') in ('解读/播客', '代码') for r in records)} related resources.",
+    ]
+    for major in MAJOR_ORDER:
+        major_rows = [r for r in records if r.get("major_category") == major]
+        if not major_rows:
+            continue
+        lines.append(f"  - [{major}](#{anchor(major)}) ({len(major_rows)})")
+        for minor in MINOR_ORDER[major]:
+            count = sum(1 for r in records if r.get("major_category") == major and r.get("minor_category") == minor)
+            if count:
+                lines.append(f"    - [{minor}](#{anchor(minor)}) ({count})")
+    lines += [
+        "- [Research notes](docs/review.md): concepts, comparisons, limitations, and a suggested reading order.",
+        "- [Structured catalog](data/catalog.csv): filterable metadata for all records.",
+        "- [BibTeX](references/plasticity.bib): generated citation entries.",
+        "- [One-record-per-paper data](data/records/): editable source records.",
+        "- [Maintenance guide](CONTRIBUTING.md): add, update, and remove entries.",
+    ]
+    return "\n".join(lines)
 
 def replace_generated_block(text, name, content):
     begin = f"<!-- BEGIN: GENERATED {name} -->"
@@ -114,24 +179,29 @@ def load():
         raise SystemExit("duplicate review_id")
     if len(titles) != len(set(titles)):
         raise SystemExit("duplicate title")
-    required = ("review_id", "title", "authors", "year", "venue", "url")
+    required = ("review_id", "title", "authors", "year", "venue", "url", "major_category", "minor_category")
     for r in records:
         missing = [key for key in required if not r.get(key)]
         if missing:
             raise SystemExit(f"{r.get('review_id', '?')}: missing {', '.join(missing)}")
+        if r["major_category"] not in MAJOR_ORDER:
+            raise SystemExit(f"{r['review_id']}: unknown major_category {r['major_category']}")
+        if r["minor_category"] not in MINOR_ORDER.get(r["major_category"], []):
+            raise SystemExit(f"{r['review_id']}: unknown minor_category {r['minor_category']}")
     return records
 
 def build(records):
     (OUT / "records.json").write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     columns = [
-        ("review_id", "编号"), ("priority", "优先级"), ("entry_type", "类型"),
+        ("review_id", "内部键"), ("major_category", "大类"), ("minor_category", "小类"),
+        ("priority", "优先级"), ("entry_type", "类型"),
         ("title", "标题"), ("authors", "作者"), ("year", "年份"),
         ("venue", "发表场所/来源"), ("status", "状态"), ("url", "原文链接"),
         ("doi", "DOI"), ("category", "主题"), ("key_findings", "核心发现"),
         ("tasks", "实验设置"), ("limitations", "阅读边界"), ("code_url", "代码"),
         ("accessed", "核验日期")]
     with (OUT / "catalog.csv").open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, lineterminator="\n")
         writer.writerow([label for _, label in columns])
         for r in records:
             row = []
@@ -144,14 +214,7 @@ def build(records):
                 row.append(value or "")
             writer.writerow(row)
     paper_lists = paper_list_sections(records)
-    contents = "\n".join([
-        f"- [Paper Lists](#paper-lists): {sum(r.get('entry_type') not in ('解读/播客', '代码') for r in records)} papers and {sum(r.get('entry_type') in ('解读/播客', '代码') for r in records)} related resources.",
-        "- [Research notes](docs/review.md): concepts, comparisons, limitations, and a suggested reading order.",
-        "- [Structured catalog](data/catalog.csv): filterable metadata for all records.",
-        "- [BibTeX](references/plasticity.bib): generated citation entries.",
-        "- [One-record-per-paper data](data/records/): editable source records.",
-        "- [Maintenance guide](CONTRIBUTING.md): add, update, and remove entries.",
-    ])
+    contents = contents_block(records)
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     readme = replace_generated_block(readme, "CONTENTS", contents)
     readme = replace_generated_block(readme, "PAPER LISTS", paper_lists)

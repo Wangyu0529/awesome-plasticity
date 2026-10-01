@@ -27,7 +27,9 @@
     "review_id": "A01",
     "priority": "重点",
     "review_group": "A",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "nikishin2023injection",
@@ -58,7 +60,9 @@
     "priority": "重点",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "lee2023plastic",
@@ -90,7 +94,9 @@
     "priority": "重点",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "lee2024hare",
@@ -121,7 +127,9 @@
     "priority": "重点",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "shin2024dash",
@@ -149,7 +157,9 @@
     "priority": "重点",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "juliani2024onpolicy",
@@ -175,7 +185,9 @@
     "priority": "重点",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "Farias2025SNR",
@@ -205,7 +217,9 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "preprint_doi": "10.48550/arXiv.2410.20098"
+    "preprint_doi": "10.48550/arXiv.2410.20098",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "Tang2025CCHAIN",
@@ -235,7 +249,9 @@
     "review_id": "A08",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "Joudaki2026Barriers",
@@ -271,7 +287,9 @@
     "review_id": "A09",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "Wu2026SWD",
@@ -304,7 +322,9 @@
     "review_id": "A10",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "Rosseau2026AdamO",
@@ -334,7 +354,9 @@
     "review_id": "A11",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "Prakash2026SpectralCollapse",
@@ -368,7 +390,9 @@
     "review_id": "A12",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "Cheng2026LocalRedundancy",
@@ -396,7 +420,9 @@
     "review_id": "A13",
     "review_group": "A",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "s41593-023-01460-y",
@@ -422,7 +448,9 @@
     "review_id": "B01",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "s42256-023-00747-w",
@@ -453,7 +481,9 @@
     "review_id": "B02",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "MeB86edZ1P",
@@ -482,7 +512,9 @@
     "review_id": "B03",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Local Learning, Credit Assignment, and SNNs"
   },
   {
     "id": "s42256-024-00845-3",
@@ -513,7 +545,9 @@
     "review_id": "B04",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Local Learning, Credit Assignment, and SNNs"
   },
   {
     "id": "x5txICnnjC",
@@ -543,7 +577,9 @@
     "review_id": "B05",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "fllsm01JWS",
@@ -573,7 +609,9 @@
     "review_id": "B06",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "hJBPMSUNUG",
@@ -602,7 +640,9 @@
     "review_id": "B07",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "s41467-026-70920-3",
@@ -629,7 +669,9 @@
     "review_id": "B08",
     "priority": "重点",
     "review_group": "B",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "chen2023language",
@@ -660,7 +702,9 @@
     "priority": "重点",
     "review_group": "C",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Language-Model Plasticity and Post-Training"
   },
   {
     "id": "Han2026WeightDecay",
@@ -694,7 +738,9 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "preprint_doi": "10.48550/arXiv.2602.11137"
+    "preprint_doi": "10.48550/arXiv.2602.11137",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Language-Model Plasticity and Post-Training"
   },
   {
     "id": "Qiang2026PCR",
@@ -729,7 +775,9 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "first_preprint_date": "2026-02-06"
+    "first_preprint_date": "2026-02-06",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Language-Model Plasticity and Post-Training"
   },
   {
     "id": "L1",
@@ -763,7 +811,9 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "first_preprint_date": "2024-07-05"
+    "first_preprint_date": "2024-07-05",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Test-Time Learning and Long-Term Memory"
   },
   {
     "id": "L2",
@@ -786,7 +836,9 @@
     "priority": "重点",
     "review_group": "C",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Test-Time Learning and Long-Term Memory"
   },
   {
     "id": "L3",
@@ -812,7 +864,9 @@
     "priority": "重点",
     "review_group": "C",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Test-Time Learning and Long-Term Memory"
   },
   {
     "id": "L4",
@@ -838,7 +892,9 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "first_preprint_date": "2025-04-17"
+    "first_preprint_date": "2025-04-17",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Test-Time Learning and Long-Term Memory"
   },
   {
     "id": "s42256-024-00902-x",
@@ -868,7 +924,9 @@
     "review_id": "C08",
     "priority": "重点",
     "review_group": "C",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Functional Adaptation and Model Geometry"
   },
   {
     "id": "rI80PHlnFm",
@@ -898,7 +956,9 @@
     "review_id": "E01",
     "priority": "扩展",
     "review_group": "扩展",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "nauman2024bitter",
@@ -928,7 +988,9 @@
     "priority": "扩展",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "ma2024revisiting",
@@ -961,7 +1023,9 @@
     "priority": "扩展",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "qin2024reborn",
@@ -993,7 +1057,9 @@
     "priority": "扩展",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "Park2025AID",
@@ -1021,7 +1087,9 @@
     "review_id": "E05",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "lyle2025disentangling",
@@ -1052,7 +1120,9 @@
     "priority": "扩展",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "领域会议论文"
+    "entry_type": "领域会议论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "wYJII5BRYU",
@@ -1079,7 +1149,9 @@
     "review_id": "E07",
     "priority": "扩展",
     "review_group": "扩展",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Local Learning, Credit Assignment, and SNNs"
   },
   {
     "id": "kumar2025l2init",
@@ -1106,7 +1178,9 @@
     "priority": "扩展",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "领域会议论文"
+    "entry_type": "领域会议论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "X2",
@@ -1132,7 +1206,9 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "first_preprint_date": "2024-05-10"
+    "first_preprint_date": "2024-05-10",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Test-Time Learning and Long-Term Memory"
   },
   {
     "id": "Abel2025Mirror",
@@ -1174,7 +1250,9 @@
     "review_id": "E10",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "YTbLri0siT",
@@ -1201,7 +1279,9 @@
     "review_id": "E11",
     "priority": "扩展",
     "review_group": "扩展",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "Zhou2025SBP",
@@ -1227,7 +1307,9 @@
     "review_id": "E12",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "Wang2025DualNature",
@@ -1260,7 +1342,9 @@
     "review_id": "E13",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Problem Definition and Diagnostics"
   },
   {
     "id": "X1",
@@ -1284,7 +1368,9 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "first_preprint_date": "2024-12-31"
+    "first_preprint_date": "2024-12-31",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Test-Time Learning and Long-Term Memory"
   },
   {
     "id": "Lillo2026Activation",
@@ -1313,7 +1399,9 @@
     "review_id": "E15",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "X3",
@@ -1336,7 +1424,9 @@
     "priority": "扩展",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "预印本"
+    "entry_type": "预印本",
+    "major_category": "Language Models, Memory, and Adaptation",
+    "minor_category": "Language-Model Plasticity and Post-Training"
   },
   {
     "id": "Koeppe2026InterpLayers",
@@ -1367,7 +1457,9 @@
     "review_id": "E17",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Resets, Regeneration, and Regularization"
   },
   {
     "id": "Zheng2026PAPO",
@@ -1401,7 +1493,9 @@
     "review_id": "E18",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "Luo2026SPHERE",
@@ -1432,7 +1526,9 @@
     "review_id": "E19",
     "review_group": "扩展",
     "accessed": "2026-09-22",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Continual Learning and Plasticity Loss",
+    "minor_category": "Dynamics, Spectral Structure, and Theory"
   },
   {
     "id": "s41467-026-74460-8",
@@ -1461,7 +1557,9 @@
     "review_id": "E20",
     "priority": "扩展",
     "review_group": "扩展",
-    "entry_type": "期刊论文"
+    "entry_type": "期刊论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Local Learning, Credit Assignment, and SNNs"
   },
   {
     "id": "fSRmJOzMA1",
@@ -1488,7 +1586,9 @@
     "review_id": "E21",
     "priority": "扩展",
     "review_group": "扩展",
-    "entry_type": "主会论文"
+    "entry_type": "主会论文",
+    "major_category": "Neuroscience-Inspired Plasticity",
+    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
   },
   {
     "id": "B1",
@@ -1511,7 +1611,9 @@
     "priority": "解读/代码",
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
-    "entry_type": "解读/播客"
+    "entry_type": "解读/播客",
+    "major_category": "Reviews, Commentary, and Code",
+    "minor_category": "Commentary and Podcasts"
   },
   {
     "id": "B2",
@@ -1534,7 +1636,9 @@
     "priority": "解读/代码",
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
-    "entry_type": "解读/播客"
+    "entry_type": "解读/播客",
+    "major_category": "Reviews, Commentary, and Code",
+    "minor_category": "Commentary and Podcasts"
   },
   {
     "id": "B3",
@@ -1557,7 +1661,9 @@
     "priority": "解读/代码",
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
-    "entry_type": "解读/播客"
+    "entry_type": "解读/播客",
+    "major_category": "Reviews, Commentary, and Code",
+    "minor_category": "Commentary and Podcasts"
   },
   {
     "id": "B4",
@@ -1584,7 +1690,9 @@
     "priority": "解读/代码",
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
-    "entry_type": "解读/播客"
+    "entry_type": "解读/播客",
+    "major_category": "Reviews, Commentary, and Code",
+    "minor_category": "Commentary and Podcasts"
   },
   {
     "id": "C1",
@@ -1610,7 +1718,9 @@
     "priority": "解读/代码",
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
-    "entry_type": "代码"
+    "entry_type": "代码",
+    "major_category": "Reviews, Commentary, and Code",
+    "minor_category": "Official Implementations"
   },
   {
     "id": "C2",
@@ -1643,6 +1753,8 @@
     "priority": "解读/代码",
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
-    "entry_type": "代码"
+    "entry_type": "代码",
+    "major_category": "Reviews, Commentary, and Code",
+    "minor_category": "Official Implementations"
   }
 ]

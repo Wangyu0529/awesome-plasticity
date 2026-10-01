@@ -26,5 +26,7 @@
   "review_id": "C08",
   "priority": "重点",
   "review_group": "C",
-  "entry_type": "期刊论文"
+  "entry_type": "期刊论文",
+  "major_category": "Language Models, Memory, and Adaptation",
+  "minor_category": "Functional Adaptation and Model Geometry"
 }

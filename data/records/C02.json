@@ -30,5 +30,7 @@
   "review_group": "C",
   "accessed": "2026-09-22",
   "entry_type": "主会论文",
-  "preprint_doi": "10.48550/arXiv.2602.11137"
+  "preprint_doi": "10.48550/arXiv.2602.11137",
+  "major_category": "Language Models, Memory, and Adaptation",
+  "minor_category": "Language-Model Plasticity and Post-Training"
 }

@@ -27,5 +27,7 @@
   "review_id": "B04",
   "priority": "重点",
   "review_group": "B",
-  "entry_type": "期刊论文"
+  "entry_type": "期刊论文",
+  "major_category": "Neuroscience-Inspired Plasticity",
+  "minor_category": "Local Learning, Credit Assignment, and SNNs"
 }

@@ -23,5 +23,7 @@
   "priority": "扩展",
   "review_group": "扩展",
   "accessed": "2026-09-22",
-  "entry_type": "领域会议论文"
+  "entry_type": "领域会议论文",
+  "major_category": "Continual Learning and Plasticity Loss",
+  "minor_category": "Resets, Regeneration, and Regularization"
 }

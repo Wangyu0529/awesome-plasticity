@@ -25,5 +25,7 @@
   "review_id": "B07",
   "priority": "重点",
   "review_group": "B",
-  "entry_type": "主会论文"
+  "entry_type": "主会论文",
+  "major_category": "Neuroscience-Inspired Plasticity",
+  "minor_category": "Hebbian, Predictive, and Synaptic Rules"
 }

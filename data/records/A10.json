@@ -29,5 +29,7 @@
   "review_id": "A10",
   "review_group": "A",
   "accessed": "2026-09-22",
-  "entry_type": "主会论文"
+  "entry_type": "主会论文",
+  "major_category": "Continual Learning and Plasticity Loss",
+  "minor_category": "Dynamics, Spectral Structure, and Theory"
 }

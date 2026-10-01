@@ -27,5 +27,7 @@
   "priority": "重点",
   "review_group": "C",
   "accessed": "2026-09-22",
-  "entry_type": "主会论文"
+  "entry_type": "主会论文",
+  "major_category": "Language Models, Memory, and Adaptation",
+  "minor_category": "Language-Model Plasticity and Post-Training"
 }

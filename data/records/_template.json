@@ -1,5 +1,5 @@
 {
-  "review_id": "E22",
+  "review_id": "P057",
   "priority": "扩展",
   "entry_type": "主会论文",
   "title": "Paper title",
@@ -11,6 +11,8 @@
   "status": "待核验",
   "url": "https://doi.org/...",
   "doi": "",
+  "major_category": "Continual Learning and Plasticity Loss",
+  "minor_category": "Problem Definition and Diagnostics",
   "category": "主题",
   "key_findings": "用自己的话记录主要贡献。",
   "tasks": "数据集、模型或实验设置。",

@@ -26,5 +26,7 @@
   "review_id": "A01",
   "priority": "重点",
   "review_group": "A",
-  "entry_type": "期刊论文"
+  "entry_type": "期刊论文",
+  "major_category": "Continual Learning and Plasticity Loss",
+  "minor_category": "Problem Definition and Diagnostics"
 }

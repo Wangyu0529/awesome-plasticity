@@ -4,8 +4,8 @@ The repository homepage is `README.md`. Its manually maintained `News` section a
 
 ## Add a paper or resource
 
-1. Copy `data/records/_template.json` to a new stable ID such as `E22`.
-2. Fill in the title, authors, year, venue, source URL, category, findings, experimental setting, and limitations.
+1. Copy `data/records/_template.json` to a new unique internal key such as `P057`.
+2. Assign one meaningful `major_category` and `minor_category` from the existing taxonomy, then fill in the title, authors, year, venue, source URL, findings, experimental setting, and limitations.
 3. Run:
 
        python scripts/build_catalog.py
@@ -21,7 +21,7 @@ Edit the corresponding `data/records/<ID>.json`, keep `review_id` unchanged, upd
 
 Delete the corresponding record and rebuild the catalog:
 
-       git rm data/records/E22.json
+       git rm data/records/P057.json
        python scripts/build_catalog.py
 
 If an item is temporarily less relevant, keep its record and explain the status or limitation instead of deleting its history.

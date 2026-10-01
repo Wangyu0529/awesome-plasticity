@@ -4,7 +4,10 @@
 
 本调研同时覆盖：（1）深度学习中的可塑性丧失与恢复；（2）生物启发的突触可塑性、Hebbian 学习和脉冲神经网络（SNN）；（3）与大模型持续学习、后训练和测试时记忆的联系。以 Nature、Nature Neuroscience、Nature Machine Intelligence 和 NeurIPS、ICML、ICLR 主会为重点，补充 Nature Communications、CoLLAs 及高质量作者解读。
 
-共收录 **50 篇时间窗内论文**：47 篇所选期刊/主会论文、2 篇 CoLLAs 论文、1 篇预印本；正文重点比较其中 **29 篇**，并附 4 项官方解读与 2 个单列代码资源。另列 2 篇时间窗外的奠基文献。这是有针对性的精选调研，不是穷尽式系统综述。会议论文按正式会议归属统计，不能把首次上传 arXiv 的年份当成会议年份；博客、预印本和时间窗外背景文献另列。核验主要使用期刊官网、会议官网、PMLR、NeurIPS 论文集及 OpenReview 的正式 venue 字段，搜索摘要仅用于发现线索。2026 年条目均以截至检索日可核验的状态为准。
+共收录 **50 篇时间窗内论文**：47 篇所选期刊/主会论文、2 篇 CoLLAs 论文、1 篇预印本；正文重点比较其中 **29 篇**，并附 4 项官方解读与 2 个单列代码资源。另列 2 篇时间窗外的奠基文献。这是有针对性的精选调研，不是穷尽式系统综述。
+> The repository homepage now groups entries by a two-level taxonomy: a major topic followed by a specific subtopic. The internal record keys used in the source data are omitted from this public reading guide.
+
+会议论文按正式会议归属统计，不能把首次上传 arXiv 的年份当成会议年份；博客、预印本和时间窗外背景文献另列。核验主要使用期刊官网、会议官网、PMLR、NeurIPS 论文集及 OpenReview 的正式 venue 字段，搜索摘要仅用于发现线索。2026 年条目均以截至检索日可核验的状态为准。
 
 ## 1. 首先明确：这里的“可塑性”有三个不同层次
 
@@ -31,75 +34,75 @@
 
 ### 3.1 可塑性丧失、机制诊断与恢复（13 篇）
 
-| 编号、论文与发表 | 核心贡献 | 实验范围与阅读边界 |
+| 主题标签、论文与发表 | 核心贡献 | 实验范围与阅读边界 |
 |---|---|---|
-| **A01** [Loss of plasticity in deep continual learning](https://www.nature.com/articles/s41586-024-07711-7)<br>Shibhansh Dohare 等；Nature，2024 | 系统展示长期可塑性丧失；CBP 持续重置少量低效用单元。 | ImageNet/CIFAR 与 PPO Ant；未在大语言模型上验证。 |
-| **A02** [Deep Reinforcement Learning with Plasticity Injection](https://proceedings.neurips.cc/paper_files/paper/2023/hash/75101364dc3aa7772d27528ea504472b-Abstract-Conference.html)<br>Evgenii Nikishin 等；NeurIPS 2023，2023 | 保持注入瞬间输出不变，加入可训练新分支，诊断并恢复学习能力。 | 57 个 Atari 游戏；额外内存/训练开销，收益依游戏而异。 |
-| **A03** [PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html)<br>Hojoon Lee 等；NeurIPS 2023，2023 | 区分输入与目标关系的可塑性；组合 SAM、LayerNorm、CReLU 和重置。 | CIFAR 控制实验、Atari-100k、DMC；组件交互尚未完全解释。 |
-| **A04** [Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks](https://proceedings.mlr.press/v235/lee24d.html)<br>Hojoon Lee 等；ICML 2024，2024 | 快网络学习、慢网络 EMA 积累，并周期用慢网络恢复快网络。 | 视觉 warm-start 与 Atari；明确区分可训练性和泛化能力。 |
-| **A05** [DASH: Warm-Starting Neural Network Training in Stationary Settings without Loss of Plasticity](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4c5ce1fc8895076f49935951a630be5c-Abstract-Conference.html)<br>Baekrok Shin 等；NeurIPS 2024，2024 | 在平稳增量数据中，用方向感知收缩减轻样本噪声记忆。 | CIFAR/SVHN/Tiny-ImageNet 等；不应直接外推到非平稳 RL。 |
-| **A06** [A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce7984e36d58659211a8dc7d5457cd6f-Abstract-Conference.html)<br>Arthur Juliani 等；NeurIPS 2024，2024 | 对 PPO 系统检查可塑性，发现 off-policy 有效的干预未必迁移。 | Gridworld、CoinRun、Montezuma；说明方法效果依赖设置。 |
-| **A07** [Self-Normalized Resets for Plasticity in Continual Learning](https://openreview.net/forum?id=G82uQztzxl)<br>Vivek Farias 等；ICLR 2025 Poster，2025 | 以自归一化统计检验触发神经元重置，减少对启发式重置周期的依赖。 | 最长 2400 个 Permuted MNIST 任务及小型 Transformer；最大约 5M 参数。 |
-| **A08** [Mitigating Plasticity Loss in Continual Reinforcement Learning by Reducing Churn](https://proceedings.mlr.press/v267/tang25g.html)<br>Hongyao Tang 等；ICML 2025，2025 | 将输出变化 churn、NTK 秩与可塑性联系，用 C-CHAIN 抑制不必要的输出变化。 | 多种持续 RL 基准；不等于所有分布漂移下输出变化越小越好。 |
-| **A09** [Barriers for Learning in an Evolving World:  Mathematical Understanding of Loss of Plasticity](https://openreview.net/forum?id=g6kof5fSba)<br>Amir Joudaki 等；ICLR 2026 Poster，2026 | 从冻结单元和克隆单元形成的不变子流形解释梯度动力学受困。 | 理论与数值实验；结论依赖所分析的动力学条件。 |
-| **A10** [The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning](https://openreview.net/forum?id=5DpzzTPnJZ)<br>Zihao Wu 等；ICLR 2026 Poster，2026 | 区分 NTK 秩坍缩与梯度衰减；Sample Weight Decay 针对经验回放中的后者。 | TD3/SAC、MuJoCo/DMC；不是普通的参数 weight decay。 |
-| **A11** [Preserving Plasticity in Continual Learning via Dynamical Isometry](https://openreview.net/forum?id=vJCOWSkMuq)<br>Andries Rosseau 等；ICML 2026，2026 | 以 Jacobian 奇异值接近 1 为目标，提出等距正则与 AdamO。 | 持续监督学习与 RL；尚不能当作任意大 Transformer 的保证。 |
-| **A12** [Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning](https://openreview.net/forum?id=O6rHSkpYJU)<br>Arjun Prakash 等；ICML 2026，2026 | 分析 Hessian 谱退化并提出 L2-ER：特征有效秩正则与 L2 结合。 | 理论含线性化 ReLU 假设；Hessian、NTK 和特征秩不可混同。 |
-| **A13** [Local Redundancy: An Information-Theoretic Measure of Plasticity from Synthetic Memorization](https://openreview.net/forum?id=ucbH88BgIk)<br>Jiaxuan Cheng；ICML 2026 Spotlight，2026 | 提出信息论可塑性量，用合成记忆任务上的梯度统计估计可计算下界。 | 图像持续学习、时序迁移与 checkpoint 选择；精确量不可直接计算。 |
+| **Loss of plasticity in deep continual learning** [Loss of plasticity in deep continual learning](https://www.nature.com/articles/s41586-024-07711-7)<br>Shibhansh Dohare 等；Nature，2024 | 系统展示长期可塑性丧失；CBP 持续重置少量低效用单元。 | ImageNet/CIFAR 与 PPO Ant；未在大语言模型上验证。 |
+| **Plasticity Injection** [Deep Reinforcement Learning with Plasticity Injection](https://proceedings.neurips.cc/paper_files/paper/2023/hash/75101364dc3aa7772d27528ea504472b-Abstract-Conference.html)<br>Evgenii Nikishin 等；NeurIPS 2023，2023 | 保持注入瞬间输出不变，加入可训练新分支，诊断并恢复学习能力。 | 57 个 Atari 游戏；额外内存/训练开销，收益依游戏而异。 |
+| **PLASTIC** [PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html)<br>Hojoon Lee 等；NeurIPS 2023，2023 | 区分输入与目标关系的可塑性；组合 SAM、LayerNorm、CReLU 和重置。 | CIFAR 控制实验、Atari-100k、DMC；组件交互尚未完全解释。 |
+| **Hare and Tortoise** [Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks](https://proceedings.mlr.press/v235/lee24d.html)<br>Hojoon Lee 等；ICML 2024，2024 | 快网络学习、慢网络 EMA 积累，并周期用慢网络恢复快网络。 | 视觉 warm-start 与 Atari；明确区分可训练性和泛化能力。 |
+| **DASH** [DASH: Warm-Starting Neural Network Training in Stationary Settings without Loss of Plasticity](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4c5ce1fc8895076f49935951a630be5c-Abstract-Conference.html)<br>Baekrok Shin 等；NeurIPS 2024，2024 | 在平稳增量数据中，用方向感知收缩减轻样本噪声记忆。 | CIFAR/SVHN/Tiny-ImageNet 等；不应直接外推到非平稳 RL。 |
+| **on-policy plasticity study** [A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce7984e36d58659211a8dc7d5457cd6f-Abstract-Conference.html)<br>Arthur Juliani 等；NeurIPS 2024，2024 | 对 PPO 系统检查可塑性，发现 off-policy 有效的干预未必迁移。 | Gridworld、CoinRun、Montezuma；说明方法效果依赖设置。 |
+| **Self-Normalized Resets** [Self-Normalized Resets for Plasticity in Continual Learning](https://openreview.net/forum?id=G82uQztzxl)<br>Vivek Farias 等；ICLR 2025 Poster，2025 | 以自归一化统计检验触发神经元重置，减少对启发式重置周期的依赖。 | 最长 2400 个 Permuted MNIST 任务及小型 Transformer；最大约 5M 参数。 |
+| **C-CHAIN** [Mitigating Plasticity Loss in Continual Reinforcement Learning by Reducing Churn](https://proceedings.mlr.press/v267/tang25g.html)<br>Hongyao Tang 等；ICML 2025，2025 | 将输出变化 churn、NTK 秩与可塑性联系，用 C-CHAIN 抑制不必要的输出变化。 | 多种持续 RL 基准；不等于所有分布漂移下输出变化越小越好。 |
+| **Barriers for Learning** [Barriers for Learning in an Evolving World:  Mathematical Understanding of Loss of Plasticity](https://openreview.net/forum?id=g6kof5fSba)<br>Amir Joudaki 等；ICLR 2026 Poster，2026 | 从冻结单元和克隆单元形成的不变子流形解释梯度动力学受困。 | 理论与数值实验；结论依赖所分析的动力学条件。 |
+| **Sample Weight Decay** [The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning](https://openreview.net/forum?id=5DpzzTPnJZ)<br>Zihao Wu 等；ICLR 2026 Poster，2026 | 区分 NTK 秩坍缩与梯度衰减；Sample Weight Decay 针对经验回放中的后者。 | TD3/SAC、MuJoCo/DMC；不是普通的参数 weight decay。 |
+| **Dynamical Isometry** [Preserving Plasticity in Continual Learning via Dynamical Isometry](https://openreview.net/forum?id=vJCOWSkMuq)<br>Andries Rosseau 等；ICML 2026，2026 | 以 Jacobian 奇异值接近 1 为目标，提出等距正则与 AdamO。 | 持续监督学习与 RL；尚不能当作任意大 Transformer 的保证。 |
+| **Spectral Collapse** [Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning](https://openreview.net/forum?id=O6rHSkpYJU)<br>Arjun Prakash 等；ICML 2026，2026 | 分析 Hessian 谱退化并提出 L2-ER：特征有效秩正则与 L2 结合。 | 理论含线性化 ReLU 假设；Hessian、NTK 和特征秩不可混同。 |
+| **Local Redundancy** [Local Redundancy: An Information-Theoretic Measure of Plasticity from Synthetic Memorization](https://openreview.net/forum?id=ucbH88BgIk)<br>Jiaxuan Cheng；ICML 2026 Spotlight，2026 | 提出信息论可塑性量，用合成记忆任务上的梯度统计估计可计算下界。 | 图像持续学习、时序迁移与 checkpoint 选择；精确量不可直接计算。 |
 
 ### 3.2 生物启发的突触可塑性、局部学习与 SNN（8 篇）
 
-| 编号、论文与发表 | 核心贡献 | 实验范围与阅读边界 |
+| 主题标签、论文与发表 | 核心贡献 | 实验范围与阅读边界 |
 |---|---|---|
-| **B01** [The combination of Hebbian and predictive plasticity learns invariant object representations in deep sensory networks](https://www.nature.com/articles/s41593-023-01460-y)<br>Manu Srinath Halvagal 等；Nature Neuroscience，2023 | LPL 将 Hebbian 与预测型可塑性结合，用局部规则学习不变表征，并扩展到 SNN。 | 深层感觉网络与灵长类视觉现象；不是直接的长期 LoP 修复实验。 |
-| **B02** [Incorporating neuro-inspired adaptability for continual learning in artificial intelligence](https://www.nature.com/articles/s42256-023-00747-w)<br>Liyuan Wang 等；Nature Machine Intelligence，2023 | 借鉴果蝇系统，主动弱化旧记忆约束并协调多个学习模块，提高适应性。 | 视觉持续学习和 Atari；重点包括任务增量，不能承诺无代价地保留所有记忆。 |
-| **B03** [Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://openreview.net/forum?id=MeB86edZ1P)<br>Mingqing Xiao 等；ICLR 2024 poster，2024 | HLOP 用 Hebbian/anti-Hebbian 侧向学习实现活动子空间投影，保护旧任务。 | SNN 持续学习；低遗忘与长期保持新任务学习能力应分别评价。 |
-| **B04** [Learning efficient backprojections across cortical hierarchies in real time](https://www.nature.com/articles/s42256-024-00845-3)<br>Kevin Max 等；Nature Machine Intelligence，2024 | PAL 用噪声携带信息，学习反馈权重，支持持续开启的局部学习。 | 皮层微回路、MNIST、CIFAR-10；主要解决信用分配与权重传输。 |
-| **B05** [Synaptic Weight Distributions Depend on the Geometry of Plasticity](https://openreview.net/forum?id=x5txICnnjC)<br>Roman Pogodin 等；ICLR 2024 spotlight，2024 | 借助镜像下降，说明可塑性几何影响突触权重分布。 | 理论与生物权重分布比较；不应默认生物学习采用欧氏梯度下降。 |
-| **B06** [Learning the Plasticity: Plasticity-Driven Learning Framework in Spiking Neural Networks](https://openreview.net/forum?id=fllsm01JWS)<br>Guobin Shen 等；NeurIPS 2025 poster，2025 | PDLF 学习可塑性规则本身，使突触连接在运行中随经验变化。 | SNN 工作记忆、多任务和适应；尚无大规模生成语言模型结论。 |
-| **B07** [Discovering heterogeneous synaptic plasticity rules via large-scale neural evolution](https://openreview.net/forum?id=hJBPMSUNUG)<br>Ziyuan Ye 等；ICLR 2026 Poster，2026 | 进化搜索结合脉冲、资格迹、调制信号，发现异质且生物合理的更新规则。 | 小鼠 V1 模型、跨域视觉和少样本任务；多个规则可产生相近行为。 |
-| **B08** [Intrinsic stabilization of synaptic plasticity improves learning and robustness in artificial neural networks](https://www.nature.com/articles/s41467-026-70920-3)<br>Artem Pilzak 等；Nature Communications，2026 | iTDS 以较慢时间尺度追踪输出，用内源反馈调节突触更新。 | 16 项任务、前馈/循环/储备池网络；学习稳定和抗噪不等于已解决长程 LoP。 |
+| **LPL** [The combination of Hebbian and predictive plasticity learns invariant object representations in deep sensory networks](https://www.nature.com/articles/s41593-023-01460-y)<br>Manu Srinath Halvagal 等；Nature Neuroscience，2023 | LPL 将 Hebbian 与预测型可塑性结合，用局部规则学习不变表征，并扩展到 SNN。 | 深层感觉网络与灵长类视觉现象；不是直接的长期 LoP 修复实验。 |
+| **neuro-inspired adaptability** [Incorporating neuro-inspired adaptability for continual learning in artificial intelligence](https://www.nature.com/articles/s42256-023-00747-w)<br>Liyuan Wang 等；Nature Machine Intelligence，2023 | 借鉴果蝇系统，主动弱化旧记忆约束并协调多个学习模块，提高适应性。 | 视觉持续学习和 Atari；重点包括任务增量，不能承诺无代价地保留所有记忆。 |
+| **HLOP** [Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://openreview.net/forum?id=MeB86edZ1P)<br>Mingqing Xiao 等；ICLR 2024 poster，2024 | HLOP 用 Hebbian/anti-Hebbian 侧向学习实现活动子空间投影，保护旧任务。 | SNN 持续学习；低遗忘与长期保持新任务学习能力应分别评价。 |
+| **PAL** [Learning efficient backprojections across cortical hierarchies in real time](https://www.nature.com/articles/s42256-024-00845-3)<br>Kevin Max 等；Nature Machine Intelligence，2024 | PAL 用噪声携带信息，学习反馈权重，支持持续开启的局部学习。 | 皮层微回路、MNIST、CIFAR-10；主要解决信用分配与权重传输。 |
+| **Geometry of Plasticity** [Synaptic Weight Distributions Depend on the Geometry of Plasticity](https://openreview.net/forum?id=x5txICnnjC)<br>Roman Pogodin 等；ICLR 2024 spotlight，2024 | 借助镜像下降，说明可塑性几何影响突触权重分布。 | 理论与生物权重分布比较；不应默认生物学习采用欧氏梯度下降。 |
+| **PDLF** [Learning the Plasticity: Plasticity-Driven Learning Framework in Spiking Neural Networks](https://openreview.net/forum?id=fllsm01JWS)<br>Guobin Shen 等；NeurIPS 2025 poster，2025 | PDLF 学习可塑性规则本身，使突触连接在运行中随经验变化。 | SNN 工作记忆、多任务和适应；尚无大规模生成语言模型结论。 |
+| **heterogeneous synaptic rules** [Discovering heterogeneous synaptic plasticity rules via large-scale neural evolution](https://openreview.net/forum?id=hJBPMSUNUG)<br>Ziyuan Ye 等；ICLR 2026 Poster，2026 | 进化搜索结合脉冲、资格迹、调制信号，发现异质且生物合理的更新规则。 | 小鼠 V1 模型、跨域视觉和少样本任务；多个规则可产生相近行为。 |
+| **iTDS** [Intrinsic stabilization of synaptic plasticity improves learning and robustness in artificial neural networks](https://www.nature.com/articles/s41467-026-70920-3)<br>Artem Pilzak 等；Nature Communications，2026 | iTDS 以较慢时间尺度追踪输出，用内源反馈调节突触更新。 | 16 项任务、前馈/循环/储备池网络；学习稳定和抗噪不等于已解决长程 LoP。 |
 
 ### 3.3 语言模型及大模型的直接证据与相邻方向（8 篇）
 
-| 编号、论文与发表 | 核心贡献 | 实验范围与阅读边界 |
+| 主题标签、论文与发表 | 核心贡献 | 实验范围与阅读边界 |
 |---|---|---|
-| **C01** [Improving Language Plasticity via Pretraining with Active Forgetting](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6450ea28ebbc8437bc38775157818172-Abstract-Conference.html)<br>Yihong Chen 等；NeurIPS 2023，2023 | 预训练时周期重置词嵌入，迫使主干保持接入新语言的能力。 | RoBERTa、跨语言适配；不是现代 decoder-only LLM 的验证。 |
-| **C02** [Weight Decay Improves Language Model Plasticity](https://openreview.net/forum?id=zMO9H4hLyR)<br>Tessa Han 等；ICML 2026，2026 | 预训练阶段更强的 weight decay 可改善后续 SFT；预训练 loss 最优未必下游最优。 | 0.5–4B 模型、20/140 tokens-per-parameter；有强度权衡，机制解释仍是相关性的。 |
-| **C03** [On the Plasticity and Stability for Post-Training Large Language Models](https://openreview.net/forum?id=lOR6zI5peb)<br>Wenwen Qiang 等；ICML 2026，2026 | PCR 以不确定性感知软投影缓解 GRPO 中新推理能力与一般能力的梯度冲突。 | 1.5B/7B 模型，数学/代码等；强调适应—保持权衡，非单独证明长程 LoP。 |
-| **C04** [Learning to (Learn at Test Time): RNNs with Expressive Hidden States](https://openreview.net/forum?id=wXfuOj9C7L)<br>Yu Sun 等；ICML 2025 Spotlight，2025 | TTT 将隐藏状态设为可训练小模型，把序列状态更新写为自监督梯度步骤。 | 125M–1.3B 语言模型；更新快状态，不等价于主干参数永久积累知识。 |
-| **C05** [Memory Mosaics at scale](https://openreview.net/forum?id=IfD2MKTmWv)<br>Jianyu Zhang 等；NeurIPS 2025 Oral，2025 | 把关联记忆架构扩展到 10B 参数、1T token，分别评估训练知识、新知识与上下文学习。 | 比小型模型更接近规模化验证；新任务成绩仍不等于终身训练不退化。 |
-| **C06** [Nested Learning: The Illusion of Deep Learning Architectures](https://openreview.net/forum?id=nbMeRvNb7A)<br>Ali Behrouz 等；NeurIPS 2025 Poster，2025 | Nested Learning 以嵌套、多频率优化统一模型、优化器和记忆；提出 Hope。 | 语言建模、长上下文和持续学习；框架不构成“永久无遗忘”的普遍证明。 |
-| **C07** [It's All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization](https://openreview.net/forum?id=gZyEJ2kMow)<br>Ali Behrouz 等；ICLR 2026 Poster，2026 | MIRAS 将记忆目标、保持正则与在线优化统一，解释遗忘门并构造新序列模型。 | 语言、推理、回忆及时间序列；主要是记忆机制与架构设计。 |
-| **C08** [Engineering flexible machine learning systems by traversing functionally invariant paths](https://www.nature.com/articles/s42256-024-00902-x)<br>Guruprasad Raghavan 等；Nature Machine Intelligence，2024 | FIP 沿近似保持已有功能的参数方向实现新目标，连接几何与适应。 | BERT、ViT/DeiT、CNN；BERT 证据不能直接代表现代生成式大模型。 |
+| **Active Forgetting** [Improving Language Plasticity via Pretraining with Active Forgetting](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6450ea28ebbc8437bc38775157818172-Abstract-Conference.html)<br>Yihong Chen 等；NeurIPS 2023，2023 | 预训练时周期重置词嵌入，迫使主干保持接入新语言的能力。 | RoBERTa、跨语言适配；不是现代 decoder-only LLM 的验证。 |
+| **language-model Weight Decay** [Weight Decay Improves Language Model Plasticity](https://openreview.net/forum?id=zMO9H4hLyR)<br>Tessa Han 等；ICML 2026，2026 | 预训练阶段更强的 weight decay 可改善后续 SFT；预训练 loss 最优未必下游最优。 | 0.5–4B 模型、20/140 tokens-per-parameter；有强度权衡，机制解释仍是相关性的。 |
+| **PCR** [On the Plasticity and Stability for Post-Training Large Language Models](https://openreview.net/forum?id=lOR6zI5peb)<br>Wenwen Qiang 等；ICML 2026，2026 | PCR 以不确定性感知软投影缓解 GRPO 中新推理能力与一般能力的梯度冲突。 | 1.5B/7B 模型，数学/代码等；强调适应—保持权衡，非单独证明长程 LoP。 |
+| **TTT** [Learning to (Learn at Test Time): RNNs with Expressive Hidden States](https://openreview.net/forum?id=wXfuOj9C7L)<br>Yu Sun 等；ICML 2025 Spotlight，2025 | TTT 将隐藏状态设为可训练小模型，把序列状态更新写为自监督梯度步骤。 | 125M–1.3B 语言模型；更新快状态，不等价于主干参数永久积累知识。 |
+| **Memory Mosaics at scale** [Memory Mosaics at scale](https://openreview.net/forum?id=IfD2MKTmWv)<br>Jianyu Zhang 等；NeurIPS 2025 Oral，2025 | 把关联记忆架构扩展到 10B 参数、1T token，分别评估训练知识、新知识与上下文学习。 | 比小型模型更接近规模化验证；新任务成绩仍不等于终身训练不退化。 |
+| **Nested Learning** [Nested Learning: The Illusion of Deep Learning Architectures](https://openreview.net/forum?id=nbMeRvNb7A)<br>Ali Behrouz 等；NeurIPS 2025 Poster，2025 | Nested Learning 以嵌套、多频率优化统一模型、优化器和记忆；提出 Hope。 | 语言建模、长上下文和持续学习；框架不构成“永久无遗忘”的普遍证明。 |
+| **MIRAS** [It's All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization](https://openreview.net/forum?id=gZyEJ2kMow)<br>Ali Behrouz 等；ICLR 2026 Poster，2026 | MIRAS 将记忆目标、保持正则与在线优化统一，解释遗忘门并构造新序列模型。 | 语言、推理、回忆及时间序列；主要是记忆机制与架构设计。 |
+| **Functionally Invariant Paths** [Engineering flexible machine learning systems by traversing functionally invariant paths](https://www.nature.com/articles/s42256-024-00902-x)<br>Guruprasad Raghavan 等；Nature Machine Intelligence，2024 | FIP 沿近似保持已有功能的参数方向实现新目标，连接几何与适应。 | BERT、ViT/DeiT、CNN；BERT 证据不能直接代表现代生成式大模型。 |
 
 ### 3.4 扩展论文索引（21 篇）
 
 以下用于补足机制、理论或应用分支；完整摘要式说明见 `data/catalog.csv`。CoLLAs 与预印本的状态在表中单独标出。
 
-| 编号、论文 | 出处/状态 | 扩展方向 |
+| 主题标签、论文 | 出处/状态 | 扩展方向 |
 |---|---|---|
-| **E01** [Model Based Inference of Synaptic Plasticity Rules](https://openreview.net/forum?id=rI80PHlnFm) | NeurIPS 2024 poster；主会论文 | 生物启发可塑性 |
-| **E02** [Overestimation, Overfitting, and Plasticity in Actor-Critic: the Bitter Lesson of Reinforcement Learning](https://proceedings.mlr.press/v235/nauman24a.html) | ICML 2024；主会论文 | 系统评估 / 强化学习指标混淆 |
-| **E03** [Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages](https://openreview.net/forum?id=0aR1s9YxoL) | ICLR 2024 poster；主会论文 | 模块与训练阶段机制 / 视觉强化学习 |
-| **E04** [The Dormant Neuron Phenomenon in Multi-Agent Reinforcement Learning Value Factorization](https://proceedings.neurips.cc/paper_files/paper/2024/hash/3eec5006051d9544e717067de3220198-Abstract-Conference.html) | NeurIPS 2024；主会论文 | 休眠神经元 / 多智能体强化学习 |
-| **E05** [Activation by Interval-wise Dropout: A Simple Way to Prevent Neural Networks from Plasticity Loss](https://proceedings.mlr.press/v267/park25b.html) | ICML 2025；主会论文 | 激活函数与结构 |
-| **E06** [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | CoLLAs 2024（论文集发表于2025）；领域会议论文 | 领域会议补充 / 多机制可塑性损失 |
-| **E07** [Learning Successor Features with Distributed Hebbian Temporal Memory](https://openreview.net/forum?id=wYJII5BRYU) | ICLR 2025 Poster；主会论文 | 生物启发可塑性 |
-| **E08** [Maintaining Plasticity in Continual Learning via Regenerative Regularization](https://proceedings.mlr.press/v274/kumar25a.html) | CoLLAs 2024（论文集发表于2025）；领域会议论文 | 领域会议补充 / 再生正则化 |
-| **E09** [Memory Mosaics](https://openreview.net/forum?id=IiagjrJNwF) | ICLR 2025 Poster；主会论文 | extension_llm_bridge |
-| **E10** [Plasticity as the Mirror of Empowerment](https://openreview.net/forum?id=eOZFqyE9Ok) | NeurIPS 2025 Spotlight；主会论文 | 可塑性测度/智能体理论 |
-| **E11** [Spike-timing-dependent Hebbian learning as noisy gradient descent](https://openreview.net/forum?id=YTbLri0siT) | NeurIPS 2025 poster；主会论文 | 生物启发可塑性 |
-| **E12** [Stay Hungry, Keep Learning: Sustainable Plasticity for Deep Reinforcement Learning](https://proceedings.mlr.press/v267/zhou25am.html) | ICML 2025；主会论文 | 重置与神经元再生 |
-| **E13** [The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation](https://openreview.net/forum?id=vvD0Bre3Dk) | NeurIPS 2025；主会论文 | 动力学与定义辨析 |
-| **E14** [Titans: Learning to Memorize at Test Time](https://openreview.net/forum?id=8GjSf9Rh7Z) | NeurIPS 2025 Poster；主会论文 | extension_llm_bridge |
-| **E15** [Activation Function Design Sustains Plasticity in Continual Learning](https://openreview.net/forum?id=XZf6wObHX4) | ICLR 2026 Poster；主会论文 | 激活函数与结构 |
-| **E16** [Can Scale Save Us From Plasticity Loss in Large Language Models?](https://arxiv.org/abs/2606.24752) | arXiv:2606.24752；预印本 | preprint_direct_lop |
-| **E17** [Mitigating Plasticity Loss through Architectural Design in Continual Learning](https://openreview.net/forum?id=pAhGjPOlwy) | ICML 2026；主会论文 | 激活函数与结构 |
-| **E18** [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY) | ICML 2026；主会论文 | 稳定性—可塑性/梯度谱 |
-| **E19** [SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning](https://openreview.net/forum?id=hXyv6xeHkO) | ICML 2026；主会论文 | MoE与谱可塑性 |
-| **E20** [Spike-based alignment learning solves the weight transport problem](https://www.nature.com/articles/s41467-026-74460-8) | Nature Communications；期刊论文 | 生物启发可塑性 |
-| **E21** [Ubiquity of Emergent Hebbian Dynamics in Regularized Learning](https://openreview.net/forum?id=fSRmJOzMA1) | ICML 2026 regular；主会论文 | 生物启发可塑性 |
+| **model-based synaptic-rule inference** [Model Based Inference of Synaptic Plasticity Rules](https://openreview.net/forum?id=rI80PHlnFm) | NeurIPS 2024 poster；主会论文 | 生物启发可塑性 |
+| **the Bitter Lesson of RL** [Overestimation, Overfitting, and Plasticity in Actor-Critic: the Bitter Lesson of Reinforcement Learning](https://proceedings.mlr.press/v235/nauman24a.html) | ICML 2024；主会论文 | 系统评估 / 强化学习指标混淆 |
+| **visual RL plasticity review** [Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages](https://openreview.net/forum?id=0aR1s9YxoL) | ICLR 2024 poster；主会论文 | 模块与训练阶段机制 / 视觉强化学习 |
+| **dormant neurons in multi-agent RL** [The Dormant Neuron Phenomenon in Multi-Agent Reinforcement Learning Value Factorization](https://proceedings.neurips.cc/paper_files/paper/2024/hash/3eec5006051d9544e717067de3220198-Abstract-Conference.html) | NeurIPS 2024；主会论文 | 休眠神经元 / 多智能体强化学习 |
+| **interval-wise dropout** [Activation by Interval-wise Dropout: A Simple Way to Prevent Neural Networks from Plasticity Loss](https://proceedings.mlr.press/v267/park25b.html) | ICML 2025；主会论文 | 激活函数与结构 |
+| **causes of plasticity loss** [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | CoLLAs 2024（论文集发表于2025）；领域会议论文 | 领域会议补充 / 多机制可塑性损失 |
+| **distributed Hebbian temporal memory** [Learning Successor Features with Distributed Hebbian Temporal Memory](https://openreview.net/forum?id=wYJII5BRYU) | ICLR 2025 Poster；主会论文 | 生物启发可塑性 |
+| **regenerative regularization** [Maintaining Plasticity in Continual Learning via Regenerative Regularization](https://proceedings.mlr.press/v274/kumar25a.html) | CoLLAs 2024（论文集发表于2025）；领域会议论文 | 领域会议补充 / 再生正则化 |
+| **Memory Mosaics** [Memory Mosaics](https://openreview.net/forum?id=IiagjrJNwF) | ICLR 2025 Poster；主会论文 | extension_llm_bridge |
+| **Plasticity as the Mirror of Empowerment** [Plasticity as the Mirror of Empowerment](https://openreview.net/forum?id=eOZFqyE9Ok) | NeurIPS 2025 Spotlight；主会论文 | 可塑性测度/智能体理论 |
+| **STDP as noisy gradient descent** [Spike-timing-dependent Hebbian learning as noisy gradient descent](https://openreview.net/forum?id=YTbLri0siT) | NeurIPS 2025 poster；主会论文 | 生物启发可塑性 |
+| **Sustainable Plasticity** [Stay Hungry, Keep Learning: Sustainable Plasticity for Deep Reinforcement Learning](https://proceedings.mlr.press/v267/zhou25am.html) | ICML 2025；主会论文 | 重置与神经元再生 |
+| **Dual Nature of Plasticity Loss** [The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation](https://openreview.net/forum?id=vvD0Bre3Dk) | NeurIPS 2025；主会论文 | 动力学与定义辨析 |
+| **Titans** [Titans: Learning to Memorize at Test Time](https://openreview.net/forum?id=8GjSf9Rh7Z) | NeurIPS 2025 Poster；主会论文 | extension_llm_bridge |
+| **activation-function design** [Activation Function Design Sustains Plasticity in Continual Learning](https://openreview.net/forum?id=XZf6wObHX4) | ICLR 2026 Poster；主会论文 | 激活函数与结构 |
+| **scale and LLM plasticity** [Can Scale Save Us From Plasticity Loss in Large Language Models?](https://arxiv.org/abs/2606.24752) | arXiv:2606.24752；预印本 | preprint_direct_lop |
+| **architectural plasticity mitigation** [Mitigating Plasticity Loss through Architectural Design in Continual Learning](https://openreview.net/forum?id=pAhGjPOlwy) | ICML 2026；主会论文 | 激活函数与结构 |
+| **Polar Operator** [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY) | ICML 2026；主会论文 | 稳定性—可塑性/梯度谱 |
+| **SPHERE** [SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning](https://openreview.net/forum?id=hXyv6xeHkO) | ICML 2026；主会论文 | MoE与谱可塑性 |
+| **Spike-based alignment learning** [Spike-based alignment learning solves the weight transport problem](https://www.nature.com/articles/s41467-026-74460-8) | Nature Communications；期刊论文 | 生物启发可塑性 |
+| **emergent Hebbian dynamics** [Ubiquity of Emergent Hebbian Dynamics in Regularized Learning](https://openreview.net/forum?id=fSRmJOzMA1) | ICML 2026 regular；主会论文 | 生物启发可塑性 |
 
 ## 4. 跨方向比较：哪些思路可以相互借鉴
 
@@ -133,21 +136,21 @@
 
 ### 5.3 几组值得精读对照的结论
 
-**A01（Nature 2024）与 A07（SNR）：从发现问题到决定何时重置。** 前者通过长任务序列明确展示丧失学习能力，并以低效用单元的持续更新维持表征多样性；后者将重置触发条件改为统计检验。这一演进有助于提出可复现实验：能否在相同重置预算下，更精确地区分暂时低激活与已经失去作用的单元？需要注意，Nature 文章未实验验证大模型，SNR 的最大模型也约为 5M 参数。
+**Loss of plasticity in deep continual learning（Nature 2024）与 Self-Normalized Resets（SNR）：从发现问题到决定何时重置。** 前者通过长任务序列明确展示丧失学习能力，并以低效用单元的持续更新维持表征多样性；后者将重置触发条件改为统计检验。这一演进有助于提出可复现实验：能否在相同重置预算下，更精确地区分暂时低激活与已经失去作用的单元？需要注意，Nature 文章未实验验证大模型，SNR 的最大模型也约为 5M 参数。
 
-**A04（Hare & Tortoise）、B08（iTDS）与 C06（Nested Learning）：不同的慢变量，可能服务于不同目标。** Hare & Tortoise 的慢变量是权重的移动平均；iTDS 的慢变量追踪网络输出；Nested Learning 则组织多个不同更新频率的优化过程。它们都使用多个时间尺度，但不能据此认定机制等价。比较时应说明慢变量储存什么、何时更新、如何影响快变量。
+**Hare & Tortoise、iTDS 与 Nested Learning：不同的慢变量，可能服务于不同目标。** Hare & Tortoise 的慢变量是权重的移动平均；iTDS 的慢变量追踪网络输出；Nested Learning 则组织多个不同更新频率的优化过程。它们都使用多个时间尺度，但不能据此认定机制等价。比较时应说明慢变量储存什么、何时更新、如何影响快变量。
 
-**B01（LPL）与 B03（HLOP）：局部可塑性既能形成表征，也能保护已有表征。** LPL 关注如何在深层感觉网络中形成不变表征；HLOP 用 Hebbian/anti-Hebbian 侧向学习实现投影，减少新任务干扰旧任务。它们适合作为生物机制连接工程算法的两篇入口，但应分别评价表征质量、新任务适应和旧任务保持。
+**LPL 与 HLOP：局部可塑性既能形成表征，也能保护已有表征。** LPL 关注如何在深层感觉网络中形成不变表征；HLOP 用 Hebbian/anti-Hebbian 侧向学习实现投影，减少新任务干扰旧任务。它们适合作为生物机制连接工程算法的两篇入口，但应分别评价表征质量、新任务适应和旧任务保持。
 
-**C02（语言模型 weight decay）应作为大模型方向的优先读物。** 论文控制预训练 weight decay，并测量后续 SFT 表现，因而比只报告基础模型 loss 更直接回答“能否继续学习”。实验包括 Llama-2 风格 0.5B/1B/4B 和 OLMo-2 1.5B 模型；后者在文中用“1B”命名。20/140 tokens-per-parameter 的设置覆盖数学/推理、理解常识与安全 SFT。更强衰减并非越大越好；作者也明确表示表示线性可分性、attention 秩等机制解释是相关性分析，尚未建立各中介机制的因果链。[全文及局限](https://arxiv.org/html/2602.11137v2)
+**language-model Weight Decay（语言模型 weight decay）应作为大模型方向的优先读物。** 论文控制预训练 weight decay，并测量后续 SFT 表现，因而比只报告基础模型 loss 更直接回答“能否继续学习”。实验包括 Llama-2 风格 0.5B/1B/4B 和 OLMo-2 1.5B 模型；后者在文中用“1B”命名。20/140 tokens-per-parameter 的设置覆盖数学/推理、理解常识与安全 SFT。更强衰减并非越大越好；作者也明确表示表示线性可分性、attention 秩等机制解释是相关性分析，尚未建立各中介机制的因果链。[全文及局限](https://arxiv.org/html/2602.11137v2)
 
-**C04–C07 提供多时间尺度记忆的工程路径，但证据目标不同。** TTT 更新序列内的模型状态；Memory Mosaics at scale 将关联记忆推进到 10B 规模；Nested Learning 与 MIRAS 将更新规则和记忆保持纳入架构描述。这些结果值得与长期可塑性联系，但只有再增加跨任务、跨时间的适应实验，才能判断它们是否减轻主干参数的可塑性衰退。
+**TTT–MIRAS 提供多时间尺度记忆的工程路径，但证据目标不同。** TTT 更新序列内的模型状态；Memory Mosaics at scale 将关联记忆推进到 10B 规模；Nested Learning 与 MIRAS 将更新规则和记忆保持纳入架构描述。这些结果值得与长期可塑性联系，但只有再增加跨任务、跨时间的适应实验，才能判断它们是否减轻主干参数的可塑性衰退。
 
 ### 5.4 两类容易产生误读的“矛盾”
 
 **归一化到底有没有帮助？** Nature 2024 在其部分设置中报告某些常见归一化方法未能改善、甚至加剧损失；PLASTIC、PPO 研究及 CoLLAs 的机制分析则显示 LayerNorm 在相应设置中有效。归一化种类、优化器、网络位置和任务流都不同，不能概括成“归一化总有害”或“LayerNorm 已解决可塑性”。应比较具体实验条件。
 
-**低秩到底有害还是有益？** A08/A09/A11/A12 涉及 NTK、冗余表征、Jacobian 或 Hessian 等不同对象；C02 中更好的微调表现却可伴随 attention 矩阵秩降低。不同矩阵的秩、静态任务压缩和新任务学习需求并不等价。阅读时应先写明“哪一个矩阵、在哪个输入分布、用什么秩定义”，再讨论因果关系。
+**低秩到底有害还是有益？** C-CHAIN/Barriers for Learning/Dynamical Isometry/Spectral Collapse 涉及 NTK、冗余表征、Jacobian 或 Hessian 等不同对象；language-model Weight Decay 中更好的微调表现却可伴随 attention 矩阵秩降低。不同矩阵的秩、静态任务压缩和新任务学习需求并不等价。阅读时应先写明“哪一个矩阵、在哪个输入分布、用什么秩定义”，再讨论因果关系。
 
 
 ## 6. 博客、评论与其他阅读材料
@@ -191,16 +194,16 @@ G_t(K)=L_t\big(U_t^K(\theta_t)\big)-L_t\big(U_t^K(\theta_{\mathrm{ref}})\big).
 
 建议先读以下 8 篇，再按研究问题展开：
 
-1. **A01，Nature 2024**：建立可塑性丧失的定义、实验设计和 CBP 基线。
-2. **A03，PLASTIC**：理解输入变化与目标变化，以及组合干预。
-3. **A04，Hare & Tortoise**：把可训练性与泛化分开，理解快慢网络。
-4. **B01，LPL / Nature Neuroscience 2023**：进入局部 Hebbian + 预测型可塑性。
-5. **B03，HLOP / ICLR 2024**：理解局部学习如何实现保护旧知识的投影。
-6. **C02，Weight Decay / ICML 2026**：看直接的语言模型后续适应证据。
-7. **C04，TTT / ICML 2025**：理解测试时可学习状态与基础参数的区别。
-8. **C06，Nested Learning / NeurIPS 2025**：比较多时间尺度学习与持续记忆设计。
+1. **Loss of plasticity in deep continual learning (Nature 2024)**：建立可塑性丧失的定义、实验设计和 CBP 基线。
+2. **PLASTIC (NeurIPS 2023)**：理解输入变化与目标变化，以及组合干预。
+3. **Slow and Steady Wins the Race (ICML 2024)**：把可训练性与泛化分开，理解快慢网络。
+4. **The combination of Hebbian and predictive plasticity (Nature Neuroscience 2023)**：进入局部 Hebbian + 预测型可塑性。
+5. **Hebbian Learning based Orthogonal Projection (ICLR 2024)**：理解局部学习如何实现保护旧知识的投影。
+6. **Weight Decay Improves Language Model Plasticity (ICML 2026)**：看直接的语言模型后续适应证据。
+7. **Learning to (Learn at Test Time) (ICML 2025)**：理解测试时可学习状态与基础参数的区别。
+8. **Nested Learning (NeurIPS 2025)**：比较多时间尺度学习与持续记忆设计。
 
-若偏理论，随后读 **A09、A11、A12、A13、B05**；若偏生物规则发现，读 **B06、B07** 及扩展条目 *Model Based Inference of Synaptic Plasticity Rules*；若准备做大模型实验，优先补 **C03、C05、C07**，并将它们与直接研究长期衰退的预印本对照。
+若偏理论，随后读 **Barriers for Learning、Dynamical Isometry、Spectral Collapse、Local Redundancy、Geometry of Plasticity**；若偏生物规则发现，读 **PDLF、heterogeneous synaptic rules** 及扩展条目 *Model Based Inference of Synaptic Plasticity Rules*；若准备做大模型实验，优先补 **PCR、Memory Mosaics at scale、MIRAS**，并将它们与直接研究长期衰退的预印本对照。
 
 
 ## 9. 时间窗外的奠基工作与发表状态提醒

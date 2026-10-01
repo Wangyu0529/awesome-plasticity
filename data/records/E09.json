@@ -22,5 +22,7 @@
   "review_group": "扩展",
   "accessed": "2026-09-22",
   "entry_type": "主会论文",
-  "first_preprint_date": "2024-05-10"
+  "first_preprint_date": "2024-05-10",
+  "major_category": "Language Models, Memory, and Adaptation",
+  "minor_category": "Test-Time Learning and Long-Term Memory"
 }
