@@ -22,29 +22,42 @@ def venue_en(value):
             .replace("伴随代码", " companion code"))
 
 MAJOR_ORDER = [
-    "Continual Learning and Plasticity Loss",
-    "Neuroscience-Inspired Plasticity",
-    "Language Models, Memory, and Adaptation",
-    "Reviews, Commentary, and Code",
+    "Problem Definition",
+    "Research Methods",
+    "Application Scenarios",
+    "Reviews",
+    "Community and Tools",
 ]
 
 MINOR_ORDER = {
-    "Continual Learning and Plasticity Loss": [
-        "Problem Definition and Diagnostics",
-        "Resets, Regeneration, and Regularization",
-        "Dynamics, Spectral Structure, and Theory",
+    "Problem Definition": [
+        "Definitions and Distinctions",
+        "Metrics and Evaluation",
+        "Mechanistic and Mathematical Accounts",
+        "Biological Concepts of Plasticity",
+        "Stability, Forgetting, and Memory",
     ],
-    "Neuroscience-Inspired Plasticity": [
-        "Hebbian, Predictive, and Synaptic Rules",
-        "Local Learning, Credit Assignment, and SNNs",
+    "Research Methods": [
+        "Resets, Regeneration, and Active Forgetting",
+        "Regularization and Optimization",
+        "Local Learning and Credit Assignment",
+        "Synaptic Rule Discovery",
+        "Memory Architectures and Test-Time Learning",
+        "Functional Geometry and Stabilization",
     ],
-    "Language Models, Memory, and Adaptation": [
-        "Language-Model Plasticity and Post-Training",
-        "Test-Time Learning and Long-Term Memory",
-        "Functional Adaptation and Model Geometry",
+    "Application Scenarios": [
+        "Continual Reinforcement Learning",
+        "Continual Vision and Supervised Learning",
+        "Spiking and Biological Systems",
+        "Language Models and Post-Training",
+        "Long-Context and Sequence Memory",
+        "Multi-Agent and Embodied Learning",
     ],
-    "Reviews, Commentary, and Code": [
-        "Commentary and Podcasts",
+    "Reviews": [
+        "Research Commentary and Podcasts",
+        "Author Explanations and Blog Posts",
+    ],
+    "Community and Tools": [
         "Official Implementations",
     ],
 }
@@ -65,22 +78,24 @@ def anchor(value):
 def paper_list_sections(records):
     groups = {}
     for r in records:
-        groups.setdefault((r["major_category"], r["minor_category"]), []).append(r)
+        for classification in r["classifications"]:
+            key = (classification["major"], classification["minor"])
+            groups.setdefault(key, []).append(r)
     lines = [
-        "The lists below are generated from `data/records/*.json`.",
+        "The lists below are generated from `data/records/*.json`. Cross-indexed papers may appear in more than one section.",
         "",
     ]
     for major in MAJOR_ORDER:
-        major_rows = [r for r in records if r.get("major_category") == major]
+        major_rows = {r["review_id"]: r for r in records if any(c["major"] == major for c in r["classifications"])}
         if not major_rows:
             continue
-        lines += [f"#### {major}", "", f"{len(major_rows)} items", ""]
+        lines += [f"#### {major}", "", f"{len(major_rows)} unique records", ""]
         for minor in MINOR_ORDER[major]:
             rows = groups.get((major, minor), [])
             if not rows:
                 continue
             lines += [f"##### {minor}", "", "| Paper or resource | Type | Year | Venue / source |", "|---|---|---:|---|"]
-            for r in rows:
+            for r in sorted(rows, key=sort_key):
                 lines.append(f"| [{r['title']}]({r['url']}) | {entry_type_en(r.get('entry_type'))} | {r['year']} | {venue_en(r.get('venue'))} |")
             lines.append("")
     return "\n".join(lines).rstrip()
@@ -90,12 +105,12 @@ def contents_block(records):
         f"- [Paper Lists](#paper-lists): {sum(r.get('entry_type') not in ('解读/播客', '代码') for r in records)} papers and {sum(r.get('entry_type') in ('解读/播客', '代码') for r in records)} related resources.",
     ]
     for major in MAJOR_ORDER:
-        major_rows = [r for r in records if r.get("major_category") == major]
+        major_rows = {r["review_id"] for r in records if any(c["major"] == major for c in r["classifications"])}
         if not major_rows:
             continue
         lines.append(f"  - [{major}](#{anchor(major)}) ({len(major_rows)})")
         for minor in MINOR_ORDER[major]:
-            count = sum(1 for r in records if r.get("major_category") == major and r.get("minor_category") == minor)
+            count = sum(1 for r in records if any(c["major"] == major and c["minor"] == minor for c in r["classifications"]))
             if count:
                 lines.append(f"    - [{minor}](#{anchor(minor)}) ({count})")
     lines += [
@@ -179,7 +194,7 @@ def load():
         raise SystemExit("duplicate review_id")
     if len(titles) != len(set(titles)):
         raise SystemExit("duplicate title")
-    required = ("review_id", "title", "authors", "year", "venue", "url", "major_category", "minor_category")
+    required = ("review_id", "title", "authors", "year", "venue", "url", "major_category", "minor_category", "classifications")
     for r in records:
         missing = [key for key in required if not r.get(key)]
         if missing:
@@ -188,12 +203,20 @@ def load():
             raise SystemExit(f"{r['review_id']}: unknown major_category {r['major_category']}")
         if r["minor_category"] not in MINOR_ORDER.get(r["major_category"], []):
             raise SystemExit(f"{r['review_id']}: unknown minor_category {r['minor_category']}")
+        if not r["classifications"]:
+            raise SystemExit(f"{r['review_id']}: classifications cannot be empty")
+        for classification in r["classifications"]:
+            major = classification.get("major")
+            minor = classification.get("minor")
+            if major not in MAJOR_ORDER or minor not in MINOR_ORDER.get(major, []):
+                raise SystemExit(f"{r['review_id']}: unknown classification {major} / {minor}")
     return records
 
 def build(records):
     (OUT / "records.json").write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     columns = [
-        ("review_id", "内部键"), ("major_category", "大类"), ("minor_category", "小类"),
+        ("review_id", "内部键"), ("major_category", "主大类"), ("minor_category", "主小类"),
+        ("classifications", "全部分类（大类 > 小类）"),
         ("priority", "优先级"), ("entry_type", "类型"),
         ("title", "标题"), ("authors", "作者"), ("year", "年份"),
         ("venue", "发表场所/来源"), ("status", "状态"), ("url", "原文链接"),
@@ -209,6 +232,8 @@ def build(records):
                 value = r.get(key, "")
                 if key == "authors":
                     value = "; ".join(value)
+                if key == "classifications":
+                    value = "; ".join(f"{c['major']} > {c['minor']}" for c in value)
                 if key == "code_url" and not value:
                     value = r.get("code", "")
                 row.append(value or "")

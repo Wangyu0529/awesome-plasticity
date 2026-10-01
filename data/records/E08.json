@@ -24,6 +24,16 @@
   "review_group": "扩展",
   "accessed": "2026-09-22",
   "entry_type": "领域会议论文",
-  "major_category": "Continual Learning and Plasticity Loss",
-  "minor_category": "Resets, Regeneration, and Regularization"
+  "major_category": "Research Methods",
+  "minor_category": "Resets, Regeneration, and Active Forgetting",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Resets, Regeneration, and Active Forgetting"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Vision and Supervised Learning"
+    }
+  ]
 }

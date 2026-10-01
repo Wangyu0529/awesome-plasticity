@@ -23,6 +23,16 @@
   "accessed": "2026-09-22",
   "entry_type": "主会论文",
   "first_preprint_date": "2024-05-10",
-  "major_category": "Language Models, Memory, and Adaptation",
-  "minor_category": "Test-Time Learning and Long-Term Memory"
+  "major_category": "Research Methods",
+  "minor_category": "Memory Architectures and Test-Time Learning",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Memory Architectures and Test-Time Learning"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Long-Context and Sequence Memory"
+    }
+  ]
 }

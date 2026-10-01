@@ -28,6 +28,16 @@
   "review_group": "C",
   "accessed": "2026-09-22",
   "entry_type": "主会论文",
-  "major_category": "Language Models, Memory, and Adaptation",
-  "minor_category": "Language-Model Plasticity and Post-Training"
+  "major_category": "Research Methods",
+  "minor_category": "Resets, Regeneration, and Active Forgetting",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Resets, Regeneration, and Active Forgetting"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Language Models and Post-Training"
+    }
+  ]
 }

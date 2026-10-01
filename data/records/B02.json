@@ -28,6 +28,20 @@
   "priority": "重点",
   "review_group": "B",
   "entry_type": "期刊论文",
-  "major_category": "Neuroscience-Inspired Plasticity",
-  "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+  "major_category": "Research Methods",
+  "minor_category": "Resets, Regeneration, and Active Forgetting",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Resets, Regeneration, and Active Forgetting"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Vision and Supervised Learning"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Spiking and Biological Systems"
+    }
+  ]
 }

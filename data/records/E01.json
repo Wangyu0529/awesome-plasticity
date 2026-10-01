@@ -27,6 +27,16 @@
   "priority": "扩展",
   "review_group": "扩展",
   "entry_type": "主会论文",
-  "major_category": "Neuroscience-Inspired Plasticity",
-  "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+  "major_category": "Research Methods",
+  "minor_category": "Synaptic Rule Discovery",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Synaptic Rule Discovery"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Spiking and Biological Systems"
+    }
+  ]
 }

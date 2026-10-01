@@ -27,6 +27,16 @@
   "priority": "重点",
   "review_group": "A",
   "entry_type": "期刊论文",
-  "major_category": "Continual Learning and Plasticity Loss",
-  "minor_category": "Problem Definition and Diagnostics"
+  "major_category": "Problem Definition",
+  "minor_category": "Definitions and Distinctions",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Definitions and Distinctions"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Vision and Supervised Learning"
+    }
+  ]
 }

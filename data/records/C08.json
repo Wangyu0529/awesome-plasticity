@@ -27,6 +27,16 @@
   "priority": "重点",
   "review_group": "C",
   "entry_type": "期刊论文",
-  "major_category": "Language Models, Memory, and Adaptation",
-  "minor_category": "Functional Adaptation and Model Geometry"
+  "major_category": "Research Methods",
+  "minor_category": "Functional Geometry and Stabilization",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Functional Geometry and Stabilization"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Language Models and Post-Training"
+    }
+  ]
 }

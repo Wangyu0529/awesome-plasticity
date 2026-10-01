@@ -31,6 +31,16 @@
   "accessed": "2026-09-22",
   "entry_type": "主会论文",
   "preprint_doi": "10.48550/arXiv.2602.11137",
-  "major_category": "Language Models, Memory, and Adaptation",
-  "minor_category": "Language-Model Plasticity and Post-Training"
+  "major_category": "Problem Definition",
+  "minor_category": "Stability, Forgetting, and Memory",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Stability, Forgetting, and Memory"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Language Models and Post-Training"
+    }
+  ]
 }

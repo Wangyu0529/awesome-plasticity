@@ -20,6 +20,12 @@
   "review_group": "阅读资源",
   "accessed": "2026-09-22",
   "entry_type": "解读/播客",
-  "major_category": "Reviews, Commentary, and Code",
-  "minor_category": "Commentary and Podcasts"
+  "major_category": "Reviews",
+  "minor_category": "Research Commentary and Podcasts",
+  "classifications": [
+    {
+      "major": "Reviews",
+      "minor": "Research Commentary and Podcasts"
+    }
+  ]
 }

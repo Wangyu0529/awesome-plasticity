@@ -5,7 +5,7 @@ The repository homepage is `README.md`. Its manually maintained `News` section a
 ## Add a paper or resource
 
 1. Copy `data/records/_template.json` to a new unique internal key such as `P057`.
-2. Assign one meaningful `major_category` and `minor_category` from the existing taxonomy, then fill in the title, authors, year, venue, source URL, findings, experimental setting, and limitations.
+2. Add one or more entries to `classifications`, each with a meaningful `major` and `minor` from the existing taxonomy. Set the first pair as `major_category` and `minor_category`, then fill in the title, authors, year, venue, source URL, findings, experimental setting, and limitations.
 3. Run:
 
        python scripts/build_catalog.py
@@ -15,7 +15,7 @@ The repository homepage is `README.md`. Its manually maintained `News` section a
 
 ## Update an entry
 
-Edit the corresponding `data/records/<ID>.json`, keep `review_id` unchanged, update `accessed`, and run the build command. The Paper Lists section in `README.md` will update automatically.
+Edit the corresponding `data/records/<ID>.json`, keep `review_id` unchanged, update `classifications` and `accessed` when needed, and run the build command. The Paper Lists section in `README.md` will update automatically. A paper may appear in more than one angle when that makes the index more useful.
 
 ## Remove an entry
 

@@ -24,6 +24,20 @@
   "priority": "扩展",
   "review_group": "扩展",
   "entry_type": "主会论文",
-  "major_category": "Neuroscience-Inspired Plasticity",
-  "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+  "major_category": "Problem Definition",
+  "minor_category": "Biological Concepts of Plasticity",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Biological Concepts of Plasticity"
+    },
+    {
+      "major": "Research Methods",
+      "minor": "Local Learning and Credit Assignment"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Spiking and Biological Systems"
+    }
+  ]
 }

@@ -28,8 +28,18 @@
     "priority": "重点",
     "review_group": "A",
     "entry_type": "期刊论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "nikishin2023injection",
@@ -61,8 +71,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "lee2023plastic",
@@ -95,8 +115,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Regularization and Optimization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "lee2024hare",
@@ -128,8 +158,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Regularization and Optimization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "shin2024dash",
@@ -158,8 +198,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Regularization and Optimization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "juliani2024onpolicy",
@@ -186,8 +236,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "Farias2025SNR",
@@ -218,8 +278,18 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "preprint_doi": "10.48550/arXiv.2410.20098",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "Tang2025CCHAIN",
@@ -250,8 +320,22 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Problem Definition",
+    "minor_category": "Metrics and Evaluation",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Metrics and Evaluation"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "Joudaki2026Barriers",
@@ -288,8 +372,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "Wu2026SWD",
@@ -323,8 +417,22 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "Rosseau2026AdamO",
@@ -355,8 +463,22 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "Prakash2026SpectralCollapse",
@@ -391,8 +513,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "Cheng2026LocalRedundancy",
@@ -421,8 +553,18 @@
     "review_group": "A",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Metrics and Evaluation",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Metrics and Evaluation"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "s41593-023-01460-y",
@@ -449,8 +591,22 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "期刊论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Problem Definition",
+    "minor_category": "Biological Concepts of Plasticity",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Biological Concepts of Plasticity"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Local Learning and Credit Assignment"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "s42256-023-00747-w",
@@ -482,8 +638,22 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "期刊论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "MeB86edZ1P",
@@ -513,8 +683,18 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Local Learning, Credit Assignment, and SNNs"
+    "major_category": "Research Methods",
+    "minor_category": "Local Learning and Credit Assignment",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Local Learning and Credit Assignment"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "s42256-024-00845-3",
@@ -546,8 +726,18 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "期刊论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Local Learning, Credit Assignment, and SNNs"
+    "major_category": "Research Methods",
+    "minor_category": "Local Learning and Credit Assignment",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Local Learning and Credit Assignment"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "x5txICnnjC",
@@ -578,8 +768,22 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Problem Definition",
+    "minor_category": "Biological Concepts of Plasticity",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Biological Concepts of Plasticity"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "fllsm01JWS",
@@ -610,8 +814,18 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Research Methods",
+    "minor_category": "Synaptic Rule Discovery",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Synaptic Rule Discovery"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "hJBPMSUNUG",
@@ -641,8 +855,18 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Research Methods",
+    "minor_category": "Synaptic Rule Discovery",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Synaptic Rule Discovery"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "s41467-026-70920-3",
@@ -670,8 +894,18 @@
     "priority": "重点",
     "review_group": "B",
     "entry_type": "期刊论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Research Methods",
+    "minor_category": "Functional Geometry and Stabilization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "chen2023language",
@@ -703,8 +937,18 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Language-Model Plasticity and Post-Training"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Language Models and Post-Training"
+      }
+    ]
   },
   {
     "id": "Han2026WeightDecay",
@@ -739,8 +983,18 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "preprint_doi": "10.48550/arXiv.2602.11137",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Language-Model Plasticity and Post-Training"
+    "major_category": "Problem Definition",
+    "minor_category": "Stability, Forgetting, and Memory",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Stability, Forgetting, and Memory"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Language Models and Post-Training"
+      }
+    ]
   },
   {
     "id": "Qiang2026PCR",
@@ -776,8 +1030,22 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "first_preprint_date": "2026-02-06",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Language-Model Plasticity and Post-Training"
+    "major_category": "Problem Definition",
+    "minor_category": "Stability, Forgetting, and Memory",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Stability, Forgetting, and Memory"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Language Models and Post-Training"
+      }
+    ]
   },
   {
     "id": "L1",
@@ -812,8 +1080,18 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "first_preprint_date": "2024-07-05",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Test-Time Learning and Long-Term Memory"
+    "major_category": "Research Methods",
+    "minor_category": "Memory Architectures and Test-Time Learning",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Memory Architectures and Test-Time Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Long-Context and Sequence Memory"
+      }
+    ]
   },
   {
     "id": "L2",
@@ -837,8 +1115,18 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Test-Time Learning and Long-Term Memory"
+    "major_category": "Research Methods",
+    "minor_category": "Memory Architectures and Test-Time Learning",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Memory Architectures and Test-Time Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Long-Context and Sequence Memory"
+      }
+    ]
   },
   {
     "id": "L3",
@@ -865,8 +1153,18 @@
     "review_group": "C",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Test-Time Learning and Long-Term Memory"
+    "major_category": "Research Methods",
+    "minor_category": "Memory Architectures and Test-Time Learning",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Memory Architectures and Test-Time Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Long-Context and Sequence Memory"
+      }
+    ]
   },
   {
     "id": "L4",
@@ -893,8 +1191,18 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "first_preprint_date": "2025-04-17",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Test-Time Learning and Long-Term Memory"
+    "major_category": "Research Methods",
+    "minor_category": "Memory Architectures and Test-Time Learning",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Memory Architectures and Test-Time Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Long-Context and Sequence Memory"
+      }
+    ]
   },
   {
     "id": "s42256-024-00902-x",
@@ -925,8 +1233,18 @@
     "priority": "重点",
     "review_group": "C",
     "entry_type": "期刊论文",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Functional Adaptation and Model Geometry"
+    "major_category": "Research Methods",
+    "minor_category": "Functional Geometry and Stabilization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Language Models and Post-Training"
+      }
+    ]
   },
   {
     "id": "rI80PHlnFm",
@@ -957,8 +1275,18 @@
     "priority": "扩展",
     "review_group": "扩展",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Research Methods",
+    "minor_category": "Synaptic Rule Discovery",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Synaptic Rule Discovery"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "nauman2024bitter",
@@ -989,8 +1317,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Metrics and Evaluation",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Metrics and Evaluation"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "ma2024revisiting",
@@ -1024,8 +1362,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Metrics and Evaluation",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Metrics and Evaluation"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "qin2024reborn",
@@ -1058,8 +1406,22 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Metrics and Evaluation",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Metrics and Evaluation"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Multi-Agent and Embodied Learning"
+      }
+    ]
   },
   {
     "id": "Park2025AID",
@@ -1088,8 +1450,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "lyle2025disentangling",
@@ -1121,8 +1493,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "领域会议论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "wYJII5BRYU",
@@ -1150,8 +1532,18 @@
     "priority": "扩展",
     "review_group": "扩展",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Local Learning, Credit Assignment, and SNNs"
+    "major_category": "Research Methods",
+    "minor_category": "Local Learning and Credit Assignment",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Local Learning and Credit Assignment"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "kumar2025l2init",
@@ -1179,8 +1571,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "领域会议论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "X2",
@@ -1207,8 +1609,18 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "first_preprint_date": "2024-05-10",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Test-Time Learning and Long-Term Memory"
+    "major_category": "Research Methods",
+    "minor_category": "Memory Architectures and Test-Time Learning",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Memory Architectures and Test-Time Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Long-Context and Sequence Memory"
+      }
+    ]
   },
   {
     "id": "Abel2025Mirror",
@@ -1251,8 +1663,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Multi-Agent and Embodied Learning"
+      }
+    ]
   },
   {
     "id": "YTbLri0siT",
@@ -1280,8 +1702,22 @@
     "priority": "扩展",
     "review_group": "扩展",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Problem Definition",
+    "minor_category": "Biological Concepts of Plasticity",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Biological Concepts of Plasticity"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Local Learning and Credit Assignment"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "Zhou2025SBP",
@@ -1308,8 +1744,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Resets, Regeneration, and Active Forgetting",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Resets, Regeneration, and Active Forgetting"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "Wang2025DualNature",
@@ -1343,8 +1789,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Problem Definition and Diagnostics"
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "X1",
@@ -1369,8 +1825,18 @@
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
     "first_preprint_date": "2024-12-31",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Test-Time Learning and Long-Term Memory"
+    "major_category": "Research Methods",
+    "minor_category": "Memory Architectures and Test-Time Learning",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Memory Architectures and Test-Time Learning"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Long-Context and Sequence Memory"
+      }
+    ]
   },
   {
     "id": "Lillo2026Activation",
@@ -1400,8 +1866,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Regularization and Optimization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ]
   },
   {
     "id": "X3",
@@ -1425,8 +1901,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "预印本",
-    "major_category": "Language Models, Memory, and Adaptation",
-    "minor_category": "Language-Model Plasticity and Post-Training"
+    "major_category": "Problem Definition",
+    "minor_category": "Stability, Forgetting, and Memory",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Stability, Forgetting, and Memory"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Language Models and Post-Training"
+      }
+    ]
   },
   {
     "id": "Koeppe2026InterpLayers",
@@ -1458,8 +1944,18 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Resets, Regeneration, and Regularization"
+    "major_category": "Research Methods",
+    "minor_category": "Regularization and Optimization",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "Zheng2026PAPO",
@@ -1494,8 +1990,22 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "Luo2026SPHERE",
@@ -1527,8 +2037,22 @@
     "review_group": "扩展",
     "accessed": "2026-09-22",
     "entry_type": "主会论文",
-    "major_category": "Continual Learning and Plasticity Loss",
-    "minor_category": "Dynamics, Spectral Structure, and Theory"
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ]
   },
   {
     "id": "s41467-026-74460-8",
@@ -1558,8 +2082,18 @@
     "priority": "扩展",
     "review_group": "扩展",
     "entry_type": "期刊论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Local Learning, Credit Assignment, and SNNs"
+    "major_category": "Research Methods",
+    "minor_category": "Local Learning and Credit Assignment",
+    "classifications": [
+      {
+        "major": "Research Methods",
+        "minor": "Local Learning and Credit Assignment"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "fSRmJOzMA1",
@@ -1587,8 +2121,18 @@
     "priority": "扩展",
     "review_group": "扩展",
     "entry_type": "主会论文",
-    "major_category": "Neuroscience-Inspired Plasticity",
-    "minor_category": "Hebbian, Predictive, and Synaptic Rules"
+    "major_category": "Problem Definition",
+    "minor_category": "Biological Concepts of Plasticity",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Biological Concepts of Plasticity"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Spiking and Biological Systems"
+      }
+    ]
   },
   {
     "id": "B1",
@@ -1612,8 +2156,14 @@
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
     "entry_type": "解读/播客",
-    "major_category": "Reviews, Commentary, and Code",
-    "minor_category": "Commentary and Podcasts"
+    "major_category": "Reviews",
+    "minor_category": "Research Commentary and Podcasts",
+    "classifications": [
+      {
+        "major": "Reviews",
+        "minor": "Research Commentary and Podcasts"
+      }
+    ]
   },
   {
     "id": "B2",
@@ -1637,8 +2187,14 @@
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
     "entry_type": "解读/播客",
-    "major_category": "Reviews, Commentary, and Code",
-    "minor_category": "Commentary and Podcasts"
+    "major_category": "Reviews",
+    "minor_category": "Research Commentary and Podcasts",
+    "classifications": [
+      {
+        "major": "Reviews",
+        "minor": "Research Commentary and Podcasts"
+      }
+    ]
   },
   {
     "id": "B3",
@@ -1662,8 +2218,14 @@
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
     "entry_type": "解读/播客",
-    "major_category": "Reviews, Commentary, and Code",
-    "minor_category": "Commentary and Podcasts"
+    "major_category": "Reviews",
+    "minor_category": "Author Explanations and Blog Posts",
+    "classifications": [
+      {
+        "major": "Reviews",
+        "minor": "Author Explanations and Blog Posts"
+      }
+    ]
   },
   {
     "id": "B4",
@@ -1691,8 +2253,14 @@
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
     "entry_type": "解读/播客",
-    "major_category": "Reviews, Commentary, and Code",
-    "minor_category": "Commentary and Podcasts"
+    "major_category": "Reviews",
+    "minor_category": "Author Explanations and Blog Posts",
+    "classifications": [
+      {
+        "major": "Reviews",
+        "minor": "Author Explanations and Blog Posts"
+      }
+    ]
   },
   {
     "id": "C1",
@@ -1719,8 +2287,14 @@
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
     "entry_type": "代码",
-    "major_category": "Reviews, Commentary, and Code",
-    "minor_category": "Official Implementations"
+    "major_category": "Community and Tools",
+    "minor_category": "Official Implementations",
+    "classifications": [
+      {
+        "major": "Community and Tools",
+        "minor": "Official Implementations"
+      }
+    ]
   },
   {
     "id": "C2",
@@ -1754,7 +2328,13 @@
     "review_group": "阅读资源",
     "accessed": "2026-09-22",
     "entry_type": "代码",
-    "major_category": "Reviews, Commentary, and Code",
-    "minor_category": "Official Implementations"
+    "major_category": "Community and Tools",
+    "minor_category": "Official Implementations",
+    "classifications": [
+      {
+        "major": "Community and Tools",
+        "minor": "Official Implementations"
+      }
+    ]
   }
 ]

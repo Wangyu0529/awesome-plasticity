@@ -5,7 +5,7 @@
 本调研同时覆盖：（1）深度学习中的可塑性丧失与恢复；（2）生物启发的突触可塑性、Hebbian 学习和脉冲神经网络（SNN）；（3）与大模型持续学习、后训练和测试时记忆的联系。以 Nature、Nature Neuroscience、Nature Machine Intelligence 和 NeurIPS、ICML、ICLR 主会为重点，补充 Nature Communications、CoLLAs 及高质量作者解读。
 
 共收录 **50 篇时间窗内论文**：47 篇所选期刊/主会论文、2 篇 CoLLAs 论文、1 篇预印本；正文重点比较其中 **29 篇**，并附 4 项官方解读与 2 个单列代码资源。另列 2 篇时间窗外的奠基文献。这是有针对性的精选调研，不是穷尽式系统综述。
-> The repository homepage now groups entries by a two-level taxonomy: a major topic followed by a specific subtopic. The internal record keys used in the source data are omitted from this public reading guide.
+> The repository homepage now uses a two-level, multi-angle taxonomy: a major perspective followed by a specific subtopic. A paper can be indexed under more than one perspective. The internal record keys used in the source data are omitted from this public reading guide.
 
 会议论文按正式会议归属统计，不能把首次上传 arXiv 的年份当成会议年份；博客、预印本和时间窗外背景文献另列。核验主要使用期刊官网、会议官网、PMLR、NeurIPS 论文集及 OpenReview 的正式 venue 字段，搜索摘要仅用于发现线索。2026 年条目均以截至检索日可核验的状态为准。
 

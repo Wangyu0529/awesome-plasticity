@@ -23,6 +23,12 @@
   "review_group": "阅读资源",
   "accessed": "2026-09-22",
   "entry_type": "代码",
-  "major_category": "Reviews, Commentary, and Code",
-  "minor_category": "Official Implementations"
+  "major_category": "Community and Tools",
+  "minor_category": "Official Implementations",
+  "classifications": [
+    {
+      "major": "Community and Tools",
+      "minor": "Official Implementations"
+    }
+  ]
 }

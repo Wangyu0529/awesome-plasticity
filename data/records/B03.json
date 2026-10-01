@@ -26,6 +26,16 @@
   "priority": "重点",
   "review_group": "B",
   "entry_type": "主会论文",
-  "major_category": "Neuroscience-Inspired Plasticity",
-  "minor_category": "Local Learning, Credit Assignment, and SNNs"
+  "major_category": "Research Methods",
+  "minor_category": "Local Learning and Credit Assignment",
+  "classifications": [
+    {
+      "major": "Research Methods",
+      "minor": "Local Learning and Credit Assignment"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Spiking and Biological Systems"
+    }
+  ]
 }
