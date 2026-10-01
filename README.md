@@ -1,31 +1,136 @@
 # awesome-plasticity
 
+[English](#english) · [中文说明](#中文说明)
+
+## English
+
+A curated, structured bibliography on **plasticity** across artificial neural networks, neuroscience, continual learning, and large language models. The collection currently includes **50 papers**, **4 commentary resources**, and **2 code resources**.
+
+### News
+
+- **2026-10-01** — Public release of `awesome-plasticity`.
+- **2026-10-01** — Initial collection organized into plasticity loss and recovery, neuroscience-inspired learning, language-model plasticity, and related resources.
+
+### Contents
+
+<!-- BEGIN: GENERATED CONTENTS -->
+
+- [Paper Lists](#paper-lists): 50 papers and 6 related resources.
+- [Research notes](docs/review.md): concepts, comparisons, limitations, and a suggested reading order.
+- [Structured catalog](data/catalog.csv): filterable metadata for all records.
+- [BibTeX](references/plasticity.bib): generated citation entries.
+- [One-record-per-paper data](data/records/): editable source records.
+- [Maintenance guide](CONTRIBUTING.md): add, update, and remove entries.
+
+<!-- END: GENERATED CONTENTS -->
+
+### Paper Lists
+
+<!-- BEGIN: GENERATED PAPER LISTS -->
+
+The lists below are generated from `data/records/*.json`.
+
+#### Plasticity Loss and Recovery
+
+| ID | Paper or resource | Year | Venue / source |
+|---|---|---:|---|
+| A01 | [Loss of plasticity in deep continual learning](https://www.nature.com/articles/s41586-024-07711-7) | 2024 | Nature |
+| A02 | [Deep Reinforcement Learning with Plasticity Injection](https://proceedings.neurips.cc/paper_files/paper/2023/hash/75101364dc3aa7772d27528ea504472b-Abstract-Conference.html) | 2023 | NeurIPS 2023 |
+| A03 | [PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html) | 2023 | NeurIPS 2023 |
+| A04 | [Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks](https://proceedings.mlr.press/v235/lee24d.html) | 2024 | ICML 2024 |
+| A05 | [DASH: Warm-Starting Neural Network Training in Stationary Settings without Loss of Plasticity](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4c5ce1fc8895076f49935951a630be5c-Abstract-Conference.html) | 2024 | NeurIPS 2024 |
+| A06 | [A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce7984e36d58659211a8dc7d5457cd6f-Abstract-Conference.html) | 2024 | NeurIPS 2024 |
+| A07 | [Self-Normalized Resets for Plasticity in Continual Learning](https://openreview.net/forum?id=G82uQztzxl) | 2025 | ICLR 2025 Poster |
+| A08 | [Mitigating Plasticity Loss in Continual Reinforcement Learning by Reducing Churn](https://proceedings.mlr.press/v267/tang25g.html) | 2025 | ICML 2025 |
+| A09 | [Barriers for Learning in an Evolving World:  Mathematical Understanding of Loss of Plasticity](https://openreview.net/forum?id=g6kof5fSba) | 2026 | ICLR 2026 Poster |
+| A10 | [The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning](https://openreview.net/forum?id=5DpzzTPnJZ) | 2026 | ICLR 2026 Poster |
+| A11 | [Preserving Plasticity in Continual Learning via Dynamical Isometry](https://openreview.net/forum?id=vJCOWSkMuq) | 2026 | ICML 2026 |
+| A12 | [Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning](https://openreview.net/forum?id=O6rHSkpYJU) | 2026 | ICML 2026 |
+| A13 | [Local Redundancy: An Information-Theoretic Measure of Plasticity from Synthetic Memorization](https://openreview.net/forum?id=ucbH88BgIk) | 2026 | ICML 2026 Spotlight |
+
+#### Neuroscience-Inspired Plasticity, Local Learning, and SNNs
+
+| ID | Paper or resource | Year | Venue / source |
+|---|---|---:|---|
+| B01 | [The combination of Hebbian and predictive plasticity learns invariant object representations in deep sensory networks](https://www.nature.com/articles/s41593-023-01460-y) | 2023 | Nature Neuroscience |
+| B02 | [Incorporating neuro-inspired adaptability for continual learning in artificial intelligence](https://www.nature.com/articles/s42256-023-00747-w) | 2023 | Nature Machine Intelligence |
+| B03 | [Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://openreview.net/forum?id=MeB86edZ1P) | 2024 | ICLR 2024 poster |
+| B04 | [Learning efficient backprojections across cortical hierarchies in real time](https://www.nature.com/articles/s42256-024-00845-3) | 2024 | Nature Machine Intelligence |
+| B05 | [Synaptic Weight Distributions Depend on the Geometry of Plasticity](https://openreview.net/forum?id=x5txICnnjC) | 2024 | ICLR 2024 spotlight |
+| B06 | [Learning the Plasticity: Plasticity-Driven Learning Framework in Spiking Neural Networks](https://openreview.net/forum?id=fllsm01JWS) | 2025 | NeurIPS 2025 poster |
+| B07 | [Discovering heterogeneous synaptic plasticity rules via large-scale neural evolution](https://openreview.net/forum?id=hJBPMSUNUG) | 2026 | ICLR 2026 Poster |
+| B08 | [Intrinsic stabilization of synaptic plasticity improves learning and robustness in artificial neural networks](https://www.nature.com/articles/s41467-026-70920-3) | 2026 | Nature Communications |
+
+#### Language Models, Memory, and Adaptation
+
+| ID | Paper or resource | Year | Venue / source |
+|---|---|---:|---|
+| C01 | [Improving Language Plasticity via Pretraining with Active Forgetting](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6450ea28ebbc8437bc38775157818172-Abstract-Conference.html) | 2023 | NeurIPS 2023 |
+| C02 | [Weight Decay Improves Language Model Plasticity](https://openreview.net/forum?id=zMO9H4hLyR) | 2026 | ICML 2026 |
+| C03 | [On the Plasticity and Stability for Post-Training Large Language Models](https://openreview.net/forum?id=lOR6zI5peb) | 2026 | ICML 2026 |
+| C04 | [Learning to (Learn at Test Time): RNNs with Expressive Hidden States](https://openreview.net/forum?id=wXfuOj9C7L) | 2025 | ICML 2025 Spotlight |
+| C05 | [Memory Mosaics at scale](https://openreview.net/forum?id=IfD2MKTmWv) | 2025 | NeurIPS 2025 Oral |
+| C06 | [Nested Learning: The Illusion of Deep Learning Architectures](https://openreview.net/forum?id=nbMeRvNb7A) | 2025 | NeurIPS 2025 Poster |
+| C07 | [It's All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization](https://openreview.net/forum?id=gZyEJ2kMow) | 2026 | ICLR 2026 Poster |
+| C08 | [Engineering flexible machine learning systems by traversing functionally invariant paths](https://www.nature.com/articles/s42256-024-00902-x) | 2024 | Nature Machine Intelligence |
+
+#### Extended Papers
+
+| ID | Paper or resource | Year | Venue / source |
+|---|---|---:|---|
+| E01 | [Model Based Inference of Synaptic Plasticity Rules](https://openreview.net/forum?id=rI80PHlnFm) | 2024 | NeurIPS 2024 poster |
+| E02 | [Overestimation, Overfitting, and Plasticity in Actor-Critic: the Bitter Lesson of Reinforcement Learning](https://proceedings.mlr.press/v235/nauman24a.html) | 2024 | ICML 2024 |
+| E03 | [Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages](https://openreview.net/forum?id=0aR1s9YxoL) | 2024 | ICLR 2024 poster |
+| E04 | [The Dormant Neuron Phenomenon in Multi-Agent Reinforcement Learning Value Factorization](https://proceedings.neurips.cc/paper_files/paper/2024/hash/3eec5006051d9544e717067de3220198-Abstract-Conference.html) | 2024 | NeurIPS 2024 |
+| E05 | [Activation by Interval-wise Dropout: A Simple Way to Prevent Neural Networks from Plasticity Loss](https://proceedings.mlr.press/v267/park25b.html) | 2025 | ICML 2025 |
+| E06 | [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | 2025 | CoLLAs 2024 (proceedings published in 2025) |
+| E07 | [Learning Successor Features with Distributed Hebbian Temporal Memory](https://openreview.net/forum?id=wYJII5BRYU) | 2025 | ICLR 2025 Poster |
+| E08 | [Maintaining Plasticity in Continual Learning via Regenerative Regularization](https://proceedings.mlr.press/v274/kumar25a.html) | 2025 | CoLLAs 2024 (proceedings published in 2025) |
+| E09 | [Memory Mosaics](https://openreview.net/forum?id=IiagjrJNwF) | 2025 | ICLR 2025 Poster |
+| E10 | [Plasticity as the Mirror of Empowerment](https://openreview.net/forum?id=eOZFqyE9Ok) | 2025 | NeurIPS 2025 Spotlight |
+| E11 | [Spike-timing-dependent Hebbian learning as noisy gradient descent](https://openreview.net/forum?id=YTbLri0siT) | 2025 | NeurIPS 2025 poster |
+| E12 | [Stay Hungry, Keep Learning: Sustainable Plasticity for Deep Reinforcement Learning](https://proceedings.mlr.press/v267/zhou25am.html) | 2025 | ICML 2025 |
+| E13 | [The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation](https://openreview.net/forum?id=vvD0Bre3Dk) | 2025 | NeurIPS 2025 |
+| E14 | [Titans: Learning to Memorize at Test Time](https://openreview.net/forum?id=8GjSf9Rh7Z) | 2025 | NeurIPS 2025 Poster |
+| E15 | [Activation Function Design Sustains Plasticity in Continual Learning](https://openreview.net/forum?id=XZf6wObHX4) | 2026 | ICLR 2026 Poster |
+| E16 | [Can Scale Save Us From Plasticity Loss in Large Language Models?](https://arxiv.org/abs/2606.24752) | 2026 | arXiv:2606.24752 |
+| E17 | [Mitigating Plasticity Loss through Architectural Design in Continual Learning](https://openreview.net/forum?id=pAhGjPOlwy) | 2026 | ICML 2026 |
+| E18 | [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY) | 2026 | ICML 2026 |
+| E19 | [SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning](https://openreview.net/forum?id=hXyv6xeHkO) | 2026 | ICML 2026 |
+| E20 | [Spike-based alignment learning solves the weight transport problem](https://www.nature.com/articles/s41467-026-74460-8) | 2026 | Nature Communications |
+| E21 | [Ubiquity of Emergent Hebbian Dynamics in Regularized Learning](https://openreview.net/forum?id=fSRmJOzMA1) | 2026 | ICML 2026 regular |
+
+#### Commentary and Code
+
+| ID | Paper or resource | Year | Venue / source |
+|---|---|---:|---|
+| RB1 | [Switching between tasks can cause AI to lose the ability to learn](https://www.nature.com/articles/d41586-024-02525-z) | 2024 | Nature News & Views 632, 745–747 |
+| RB2 | [AI can’t learn new things forever — an algorithm can fix that](https://www.nature.com/articles/d41586-024-02756-0) | 2024 | Nature Podcast |
+| RB3 | [Introducing Nested Learning: A new ML paradigm for continual learning](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/) | 2025 | Google Research Blog |
+| RB4 | [Titans + MIRAS: Helping AI have long-term memory](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/) | 2025 | Google Research Blog |
+| RC1 | [Loss of Plasticity in Deep Continual Learning — official code](https://github.com/shibhansh/loss-of-plasticity) | 2024 | GitHub / Nature 2024 companion code |
+| RC2 | [TTT official PyTorch implementation](https://github.com/test-time-training/ttt-lm-pytorch) | 2024 | GitHub / ICML 2025 companion code |
+
+<!-- END: GENERATED PAPER LISTS -->
+
+### Research notes and data
+
+- [Chinese research review](docs/review.md): concepts, comparisons, limitations, and a suggested reading order.
+- [Structured catalog](data/catalog.csv): filterable CSV containing metadata, findings, experimental settings, and limitations.
+- [BibTeX](references/plasticity.bib): generated citation entries.
+- [One-record-per-paper data](data/records/): the editable source for each paper or resource.
+- [Maintenance guide](CONTRIBUTING.md): how to add, update, or remove entries.
+
+The catalog distinguishes formal publication year from preprint-first-posting dates. Each record links to the publisher, conference, OpenReview, arXiv, or official code page when available. The collection is selective rather than an exhaustive systematic review.
+
+## 中文说明
+
 整理与可塑性（plasticity）相关的论文、预印本、解读和代码资源，重点覆盖：
 
-- 持续学习中的可塑性丧失、诊断与恢复
-- Hebbian / STDP、局部学习和脉冲神经网络
-- 语言模型的持续适应、测试时记忆和多时间尺度学习
+- 神经网络中的可塑性
+- 神经科学中的可塑性
+- 大模型中的可塑性
 
-这是一个精选型文献库，不是穷尽式系统综述。每条记录都尽量保留正式发表状态、原文链接、核心发现、实验范围与阅读边界；“可塑性丧失”和“灾难性遗忘”按不同问题记录。
+文献年份按正式发表场所记录；arXiv 首发日期单独保留。论文结论、发表状态和代码链接应以每条记录中的来源链接为准。欢迎通过 Issue 或 Pull Request 提交补充和勘误。
 
-## 从哪里开始
-
-- 文献目录：docs/index.md
-- 中文调研：docs/review.md
-- 结构化数据：data/catalog.csv
-- BibTeX：references/plasticity.bib
-- 单篇记录：data/records/
-- 维护说明：CONTRIBUTING.md
-
-## 本地构建
-
-仓库只依赖 Python 标准库：
-
-    python scripts/build_catalog.py
-    git diff --check
-
-构建脚本会从 data/records/*.json 重新生成总 JSON、CSV、目录和 BibTeX。生成后的文件也纳入版本控制，便于直接在 GitHub 网页浏览和检索。
-
-## 说明
-
-文献年份按正式发表场所记录；arXiv 首发日期单独保留。论文结论、发表状态和代码链接应以记录中的来源链接为准。欢迎通过 Issue 或 Pull Request 提交补充和勘误。
+中文调研全文见 [docs/review.md](docs/review.md)，结构化数据见 [data/catalog.csv](data/catalog.csv)。

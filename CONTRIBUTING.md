@@ -1,24 +1,42 @@
-# 贡献与维护
+# Contribution and maintenance
 
-## 新增文章
+The repository homepage is `README.md`. Its manually maintained `News` section and Chinese/English introduction can be edited directly. The `Contents` and `Paper Lists` blocks are generated from the records so that the homepage, `docs/index.md`, CSV catalog, and BibTeX stay synchronized.
 
-1. 复制 data/records/_template.json（或参考现有记录），使用新的稳定编号。
-2. 填写标题、作者、年份、来源、原文链接、主题、核心发现、实验设置和阅读边界。
-3. 运行 python scripts/build_catalog.py。
-4. 检查 data/catalog.csv 和 docs/index.md，再提交改动。
+## Add a paper or resource
 
-## 更新文章
+1. Copy `data/records/_template.json` to a new stable ID such as `E22`.
+2. Fill in the title, authors, year, venue, source URL, category, findings, experimental setting, and limitations.
+3. Run:
 
-直接编辑对应的 data/records/<编号>.json，保留 review_id 不变；更新 accessed 日期，并重新运行构建脚本。
+       python scripts/build_catalog.py
 
-## 删除文章
+4. Review the updated `README.md`, `docs/index.md`, `data/catalog.csv`, and `references/plasticity.bib`.
+5. Commit and push the generated changes.
 
-删除对应的 JSON 文件，重新运行构建脚本。若只是暂时不推荐阅读，可以保留记录并在 status 或 limitations 中说明，而不是删除历史。
+## Update an entry
 
-## 提交前检查
+Edit the corresponding `data/records/<ID>.json`, keep `review_id` unchanged, update `accessed`, and run the build command. The Paper Lists section in `README.md` will update automatically.
 
-    python scripts/build_catalog.py
-    git diff --check
-    git status
+## Remove an entry
 
-提交信息建议使用 add: ...、update: ...、remove: ... 等前缀。
+Delete the corresponding record and rebuild the catalog:
+
+       git rm data/records/E22.json
+       python scripts/build_catalog.py
+
+If an item is temporarily less relevant, keep its record and explain the status or limitation instead of deleting its history.
+
+## Update the homepage
+
+- Add the newest short announcements at the top of `README.md` under `News`.
+- Edit the English or Chinese introduction directly when the scope changes.
+- Do not hand-edit the content between `BEGIN: GENERATED ...` and `END: GENERATED ...`; rebuild it from `data/records/`.
+- To change the grouping or table columns, edit `scripts/build_catalog.py`, run it, and commit the generated output.
+
+## Before pushing
+
+       python scripts/build_catalog.py
+       git diff --check
+       git status
+
+Use commit prefixes such as `add:`, `update:`, `remove:`, or `docs:`.
