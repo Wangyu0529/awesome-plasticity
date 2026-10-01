@@ -1,0 +1,33 @@
+{
+  "id": "Wang2025DualNature",
+  "title": "The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation",
+  "authors": [
+    "Haoyu Wang",
+    "Wei Dai",
+    "Jiawei Zhang",
+    "Jialun Ma",
+    "Mingyi Huang",
+    "Yuguo Yu"
+  ],
+  "year": 2025,
+  "venue": "NeurIPS 2025",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=vvD0Bre3Dk",
+  "openreview_url": "https://openreview.net/forum?id=vvD0Bre3Dk",
+  "doi": null,
+  "key_findings": "结合neural collapse与有限时间Lyapunov指数（FTLE）把LoP分成两类：负FTLE过强使表征坍缩、学不动；正FTLE过强使训练仍能拟合但动态混沌、测试表现下降。提出Generalized Mixup放松表征空间。",
+  "tasks": "深度持续学习；官方摘要未细列数据集，本调研不补造。",
+  "limitations": "调研判断：作者type-2含泛化下降，和狭义“新任务训练优化速度下降”并不完全同义；报告指标应同时包含训练与测试表现。",
+  "category": "动力学与定义辨析",
+  "abstract": null,
+  "priority": "扩展",
+  "source_urls": [
+    "https://neurips.cc/virtual/2025/poster/115378"
+  ],
+  "date": "2025（NeurIPS主会）",
+  "evidence_quote": "type-2 LoP ... the network can train well but the growingly chaotic behaviors reduce its test accuracy",
+  "review_id": "E13",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

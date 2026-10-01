@@ -1,0 +1,20 @@
+{
+  "review_id": "E22",
+  "priority": "扩展",
+  "entry_type": "主会论文",
+  "title": "Paper title",
+  "authors": [
+    "Author One"
+  ],
+  "year": 2026,
+  "venue": "Conference or journal",
+  "status": "待核验",
+  "url": "https://doi.org/...",
+  "doi": "",
+  "category": "主题",
+  "key_findings": "用自己的话记录主要贡献。",
+  "tasks": "数据集、模型或实验设置。",
+  "limitations": "记录适用范围和阅读边界。",
+  "code_url": "",
+  "accessed": "2026-10-01"
+}

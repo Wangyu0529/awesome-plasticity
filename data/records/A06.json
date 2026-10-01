@@ -1,0 +1,26 @@
+{
+  "id": "juliani2024onpolicy",
+  "title": "A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning",
+  "authors": [
+    "Arthur Juliani",
+    "Jordan T. Ash"
+  ],
+  "year": 2024,
+  "venue": "NeurIPS 2024",
+  "status": "正式发表",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce7984e36d58659211a8dc7d5457cd6f-Abstract-Conference.html",
+  "doi": "10.52202/079017-3616",
+  "abstract": "Continual learning with deep neural networks presents challenges distinct from both the fixed-dataset and convex continual learning regimes. One such challenge is plasticity loss, wherein a neural network trained in an online fashion displays a degraded ability to fit new tasks. This problem has been extensively studied in both supervised learning and off-policy reinforcement learning (RL), where a number of remedies have been proposed. Still, plasticity loss has received less attention in the on-policy deep RL setting. Here we perform an extensive set of experiments examining plasticity loss and a variety of mitigation methods in on-policy deep RL. We demonstrate that plasticity loss is pervasive under domain shift in this regime, and that a number of methods developed to resolve it in other settings fail, sometimes even performing worse than applying no intervention at all. In contrast, we find that a class of ``regenerative'' methods are able to consistently mitigate plasticity loss in a variety of contexts, including in gridworld tasks and more challenging environments like Montezuma's Revenge and ProcGen.",
+  "key_findings": "PPO在域变化下也有可塑性损失；off-policy有效的plasticity injection/CReLU不能稳定迁移。再生类正则化、soft shrink+perturb与LayerNorm在此实验更稳健；说明不存在跨设置必胜的单一干预。",
+  "tasks": "PPO；2D gridworld多种域变化、ProcGen CoinRun和Montezuma’s Revenge；MLP及卷积编码器。",
+  "limitations": "实证以PPO和有限游戏/域变换为主；作者把iid相关性改变提出为解释假说，而非已证因果机制。讨论中的权重范数/死神经元与曲率关系仍待研究。",
+  "category": "方法迁移边界 / on-policy强化学习",
+  "evidence_quote": "Methods introduced in the off-policy setting such as plasticity injection and CReLU appear to be not as consistently effective in the on-policy setting. [PDF §5]",
+  "publication_date": "2024-12-16",
+  "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ce7984e36d58659211a8dc7d5457cd6f-Paper-Conference.pdf",
+  "review_id": "A06",
+  "priority": "重点",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

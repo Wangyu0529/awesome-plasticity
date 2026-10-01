@@ -1,0 +1,36 @@
+{
+  "id": "Joudaki2026Barriers",
+  "title": "Barriers for Learning in an Evolving World:  Mathematical Understanding of Loss of Plasticity",
+  "authors": [
+    "Amir Joudaki",
+    "Giulia Lanzillotta",
+    "Mohammad Samragh",
+    "Seyed Iman Mirzadeh",
+    "Keivan Alizadeh",
+    "Thomas Hofmann",
+    "Mehrdad Farajtabar",
+    "Fartash Faghri"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026 Poster",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=g6kof5fSba",
+  "openreview_url": "https://openreview.net/forum?id=g6kof5fSba",
+  "doi": null,
+  "key_findings": "从动力系统出发将LoP定义为梯度动力学困在参数空间的不变子流形中；饱和激活产生frozen units，表征冗余产生cloned-unit manifolds；静态任务利于泛化的低秩压缩可能促进这些陷阱。架构干预可破坏其稳定性。",
+  "tasks": "理论分析与数值仿真；主办方摘要确认架构干预验证。",
+  "limitations": "调研判断：在所刻画的动力学/流形条件下建立机制解释，不能据此断言所有低秩表征都会使所有任务失去可塑性。",
+  "category": "动力学与机制理论",
+  "abstract": "Deep learning models excel in stationary settings but suffer from loss of plasticity (LoP) in non-stationary environments. While prior literature characterizes LoP through symptoms like rank collapse of representations, it often lacks a mechanistic explanation for why gradient descent fails to recover from these states. This work presents a first-principles investigation grounded in dynamical systems theory, formally defining LoP not merely as a statistical degradation, but as an entrapment of gradient dynamics within invariant sub-manifolds of the parameter space. We identify two primary mechanisms that create these traps: frozen units from activation saturation and cloned-unit manifolds from representational redundancy. Crucially, our framework uncovers a fundamental tension: the very mechanisms that promote generalization in static settings, such as low-rank compression, actively steer the network into these LoP manifolds. We validate our theoretical analysis with numerical simulations and demonstrate how architectural interventions can destabilize these manifolds to restore plasticity.",
+  "priority": "重点",
+  "source_urls": [
+    "https://iclr.cc/virtual/2026/poster/10008176"
+  ],
+  "date": "2026-04-25（主会海报）",
+  "code": "https://github.com/ajoudaki/loss-of-plasticity",
+  "evidence_quote": "entrapment of gradient dynamics within invariant sub-manifolds of the parameter space",
+  "review_id": "A09",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

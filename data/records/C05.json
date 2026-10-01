@@ -1,0 +1,23 @@
+{
+  "id": "L2",
+  "title": "Memory Mosaics at scale",
+  "authors": [
+    "Jianyu Zhang",
+    "Leon Bottou"
+  ],
+  "year": 2025,
+  "date": null,
+  "venue": "NeurIPS 2025 Oral",
+  "status": "正式录用；OpenReview venue和作者主页交叉核验",
+  "url": "https://openreview.net/forum?id=IfD2MKTmWv",
+  "key_findings": "将关联记忆网络扩展到10B参数、1T训练token；区分训练知识存储、新知识存储、上下文学习三类能力，在测试时新任务方面优于对照Transformer。",
+  "tasks": "10B语言模型；真实语料；训练知识/新知识/ICL三维评估",
+  "limitations": "关联记忆与上下文适应是广义可塑性；并未直接证明主权重终身训练不退化。文中1T对8T训练的结论只适用于其报告的新任务测试。",
+  "category": "llm_bridge",
+  "evidence": "https://bottou.org/papers",
+  "review_id": "C05",
+  "priority": "重点",
+  "review_group": "C",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

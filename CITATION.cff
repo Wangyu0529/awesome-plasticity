@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "awesome-plasticity"
+message: "If you use this curated bibliography, please cite the repository and the individual papers."
+type: dataset
+date-released: 2026-10-01
+license: MIT
+repository-code: "https://github.com/Wangyu0529/awesome-plasticity"

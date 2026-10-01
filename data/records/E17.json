@@ -1,0 +1,31 @@
+{
+  "id": "Koeppe2026InterpLayers",
+  "title": "Mitigating Plasticity Loss through Architectural Design in Continual Learning",
+  "authors": [
+    "Niklas Koeppe",
+    "Luiz Felipe Vecchietti",
+    "Dongqi Han",
+    "Dongsheng Li",
+    "Sang Wan Lee"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=pAhGjPOlwy",
+  "openreview_url": "https://openreview.net/forum?id=pAhGjPOlwy",
+  "doi": null,
+  "key_findings": "InterpLayers用依赖输入的插值组合固定无参数参考支路与可学习投影支路；分析其对输出变动/churn的界与NTK秩的持续贡献，可与正则/重置互补。",
+  "tasks": "持续RL，多种permutation/windowing/expansion shift。",
+  "limitations": "调研判断：固定支路和插值结构的保证依赖其假设；结果覆盖特定shift构造，非任意新任务万能。",
+  "category": "激活函数与结构",
+  "abstract": "Neural networks for continual reinforcement learning (CRL) often suffer from plasticity loss, i.e., a progressive decline in their ability to learn new tasks arising from increased representational drift (churn) and Neural Tangent Kernel (NTK) rank collapse. Current methods mitigating this problem involve algorithmic interventions such as regularization, resets, and optimization schedules. Here, we propose InterpLayers, a lightweight architectural solution that combines a fixed, parameter-free reference pathway with a learnable projection pathway using input-dependent interpolation weights. This structure makes InterpLayers orthogonal to existing algorithmic solutions. We show through theoretical analysis that InterpLayers upper-bound the output variability, bound churn, and prevent a collapse of the NTK rank through continual non-zero rank contribution from the interpolation mechanism. Across different distributional shifts, including permutation, windowing, and expansion, InterpLayers outperform similar gated architectures and achieve similar performance as current state-of-the-art methods without the need for optimization-level intervention or the introduction of sensitive hyperparameters. Ablation studies highlight that these improvements are sustained when InterpLayers are combined with existing algorithmic methods for preventing plasticity loss. These results position InterpLayers as a simple, complementary solution for maintaining plasticity in CRL.",
+  "priority": "扩展",
+  "source_urls": [
+    "https://icml.cc/virtual/2026/poster/61534"
+  ],
+  "date": "2026（ICML主会）",
+  "review_id": "E17",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

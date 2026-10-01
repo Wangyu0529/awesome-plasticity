@@ -1,0 +1,28 @@
+{
+  "id": "Park2025AID",
+  "title": "Activation by Interval-wise Dropout: A Simple Way to Prevent Neural Networks from Plasticity Loss",
+  "authors": [
+    "Sangyeon Park",
+    "Isaac Han",
+    "Seungwon Oh",
+    "KyungJoong Kim"
+  ],
+  "year": 2025,
+  "venue": "ICML 2025",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://proceedings.mlr.press/v267/park25b.html",
+  "openreview_url": "https://openreview.net/forum?id=Y0hjl4L1ve",
+  "doi": null,
+  "key_findings": "AID按preactivation区间采用不同dropout概率，使子网络产生有利于保持可塑性的正则效果；理论解释与深线性网络行为联系。普通Dropout不能自动带来同样效果。",
+  "tasks": "CIFAR-10、CIFAR-100、TinyImageNet上的持续图像分类；Arcade Learning Environment强化学习。",
+  "limitations": "基准结果不等于任意任务/模型上都能防止可塑性损失；不能把关于特定深线性网络设置的解释无条件推广到所有深网。",
+  "category": "激活函数与结构",
+  "abstract": "Plasticity loss, a critical challenge in neural network training, limits a model's ability to adapt to new tasks or shifts in data distribution. While widely used techniques like L2 regularization and Layer Normalization have proven effective in mitigating this issue, Dropout remains notably ineffective. This paper introduces AID (Activation by Interval-wise Dropout), a novel method inspired by Dropout, designed to address plasticity loss. Unlike Dropout, AID generates subnetworks by applying Dropout with different probabilities on each preactivation interval. Theoretical analysis reveals that AID regularizes the network, promoting behavior analogous to that of deep linear networks, which do not suffer from plasticity loss. We validate the effectiveness of AID in maintaining plasticity across various benchmarks, including continual learning tasks on standard image classification datasets such as CIFAR10, CIFAR100, and TinyImageNet. Furthermore, we show that AID enhances reinforcement learning performance in the Arcade Learning Environment benchmark.",
+  "priority": "扩展",
+  "date": "2025-07-13至19（会议）；PMLR卷267于2025-10-06发布",
+  "evidence_quote": "applying Dropout with different probabilities on each preactivation interval",
+  "review_id": "E05",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

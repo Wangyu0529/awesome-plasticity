@@ -1,0 +1,27 @@
+{
+  "id": "B4",
+  "title": "Titans + MIRAS: Helping AI have long-term memory",
+  "authors": [
+    "Ali Behrouz",
+    "Meisam Razaviyayn",
+    "Vahab Mirrokni"
+  ],
+  "year": 2025,
+  "date": "2025-12-04",
+  "venue": "Google Research Blog",
+  "status": "研究团队官方博客",
+  "url": "https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/",
+  "key_findings": "介绍测试时神经记忆更新、梯度作为surprise、动量与遗忘门，并将MIRAS分为记忆架构、内部目标、保持正则和更新算法四个设计因素。",
+  "tasks": "语言建模、长上下文、推理与关联记忆",
+  "limitations": "“长期记忆”需按实验协议解释，不等价于跨会话永久写入整个基础模型；不直接证明终身不丧失可塑性。",
+  "category": "author_blog",
+  "related_papers": [
+    "https://openreview.net/forum?id=8GjSf9Rh7Z",
+    "https://openreview.net/forum?id=gZyEJ2kMow"
+  ],
+  "review_id": "RB4",
+  "priority": "解读/代码",
+  "review_group": "阅读资源",
+  "accessed": "2026-09-22",
+  "entry_type": "解读/播客"
+}

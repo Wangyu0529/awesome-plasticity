@@ -1,0 +1,28 @@
+{
+  "id": "Cheng2026LocalRedundancy",
+  "title": "Local Redundancy: An Information-Theoretic Measure of Plasticity from Synthetic Memorization",
+  "authors": [
+    "Jiaxuan Cheng"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026 Spotlight",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=ucbH88BgIk",
+  "openreview_url": "https://openreview.net/forum?id=ucbH88BgIk",
+  "doi": null,
+  "key_findings": "从通用压缩理论定义沿梯度方向局部参数族的worst-case redundancy，用作可塑性测度；synthetic memorization上的期望梯度平方范数给出可计算下界，较effective rank/dead neurons/weight norm更能预测所测任务的下游表现。",
+  "tasks": "持续图像分类、时间序列迁移学习；验证loss已平台期时用于预训练checkpoint选择。",
+  "limitations": "作者摘要明确精确local redundancy不可计算，只估计下界；调研判断：预测指标有效性仍需在更多模型/shift/LLM中验证。",
+  "category": "可塑性测度",
+  "abstract": "Plasticity—a neural network's ability to adapt to new tasks—is critical for continual and transfer learning. Existing measures, such as effective rank, dead neuron fraction, and weight norm, lack theoretical grounding and correlate poorly with performance on new tasks. We introduce *local redundancy*, an information-theoretic measure derived from universal compression theory. We define local redundancy as the worst-case redundancy of a local model family—parameters in an infinitesimal neighborhood along gradient directions—and show this is a principled measure of plasticity. Although local redundancy is intractable to compute exactly, we prove that the expected squared gradient norm on a synthetic memorization task provides an efficiently computable lower bound. Experiments on continual image classification and time series transfer learning demonstrate that local redundancy predicts downstream performance better than existing measures and enables pretraining checkpoint selection where validation loss plateaus.",
+  "priority": "重点",
+  "source_urls": [
+    "https://icml.cc/virtual/2026/poster/61007"
+  ],
+  "date": "2026-07-08（主会海报）",
+  "evidence_quote": "the expected squared gradient norm on a synthetic memorization task provides an efficiently computable lower bound",
+  "review_id": "A13",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

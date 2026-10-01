@@ -1,0 +1,31 @@
+{
+  "id": "Luo2026SPHERE",
+  "title": "SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning",
+  "authors": [
+    "Lirui Luo",
+    "Guoxi Zhang",
+    "Hongming Xu",
+    "Cong Fang",
+    "Qing Li"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=hXyv6xeHkO",
+  "openreview_url": "https://openreview.net/forum?id=hXyv6xeHkO",
+  "doi": null,
+  "key_findings": "从NTK形式化MoE策略的spectral plasticity，推导各expert feature matrix可计算代理，加入Parseval penalty（SPHERE）；摘要报告相对无正则MoE成功率改善133%/50%。",
+  "tasks": "持续RL：MetaWorld、HumanoidBench。",
+  "limitations": "调研判断：数字是相对无正则MoE baseline的相对改善，不能写作百分点；结论并非LLM MoE验证。",
+  "category": "MoE与谱可塑性",
+  "abstract": "In DRL, an agent is trained from a stream of experience. In a continual learning setting, such agents can suffer from \\emph{plasticity loss}: their ability to learn new skills from new experiences diminishes over training. Recently, Mixture-of-Experts (MoE) networks have been reported to enable scaling laws and facilitate the learning of diverse skills. However, in continual reinforcement learning settings, their performance can degenerate as learning proceeds, indicating a loss of plasticity. To address this, building on Neural Tangent Kernel (NTK) theory, we formalize the plasticity loss in MoE policies as a loss of \\emph{spectral plasticity}. We then derive a tractable proxy for spectral plasticity, one expressible in terms of individual expert feature matrices. Leveraging this proxy, we introduce \\emph{SPHERE}, a practical Parseval penalty tailored for MoE-based policies that alleviates the loss of spectral plasticity. On MetaWorld and HumanoidBench, SPHERE improves average success under continual RL by 133\\% and 50\\% over an unregularized MoE baseline, while maintaining higher spectral plasticity throughout training.",
+  "priority": "扩展",
+  "source_urls": [
+    "https://icml.cc/virtual/2026/poster/62337"
+  ],
+  "date": "2026（ICML主会）",
+  "review_id": "E19",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

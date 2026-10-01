@@ -1,0 +1,31 @@
+{
+  "id": "s42256-023-00747-w",
+  "title": "Incorporating neuro-inspired adaptability for continual learning in artificial intelligence",
+  "authors": [
+    "Liyuan Wang",
+    "Xingxing Zhang",
+    "Qian Li",
+    "Mingtian Zhang",
+    "Hang Su",
+    "Jun Zhu",
+    "Yi Zhong"
+  ],
+  "year": 2023,
+  "date": "2023-11-16",
+  "venue": "Nature Machine Intelligence",
+  "volume": "5",
+  "pages": "1356–1368",
+  "doi": "10.1038/s42256-023-00747-w",
+  "url": "https://www.nature.com/articles/s42256-023-00747-w",
+  "status": "正式期刊论文",
+  "category": "生物启发可塑性",
+  "key_findings": "借鉴果蝇学习系统，通过主动遗忘适度削弱旧记忆约束，并协调多个学习模块，提高适应性。",
+  "tasks": "CIFAR、Omniglot、CUB、Tiny-ImageNet、CORe50 与 Atari 等。",
+  "limitations": "任务增量设置是重点；主动遗忘与保持所有旧能力存在目标权衡。官网全文有访问限制，核验基于公开摘要、图注和数据说明。",
+  "code_url": "https://doi.org/10.5281/zenodo.8293564",
+  "accessed": "2026-09-22",
+  "review_id": "B02",
+  "priority": "重点",
+  "review_group": "B",
+  "entry_type": "期刊论文"
+}

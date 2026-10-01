@@ -1,0 +1,33 @@
+{
+  "id": "Wu2026SWD",
+  "title": "The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning",
+  "authors": [
+    "Zihao Wu",
+    "Hongyao Tang",
+    "Yi Ma",
+    "Jiashun Liu",
+    "YAN ZHENG",
+    "Jianye HAO"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026 Poster",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=5DpzzTPnJZ",
+  "openreview_url": "https://openreview.net/forum?id=5DpzzTPnJZ",
+  "doi": null,
+  "key_findings": "理论上区分数据分布非平稳与bootstrapping目标非平稳，指出NTK Gram rank collapse与梯度幅值Θ(1/k)衰减两种机制；Sample Weight Decay专门对付梯度衰减，与重置/噪声等可互补。",
+  "tasks": "使用经验回放的TD3、SAC，含SimBa架构；MuJoCo、DeepMind Control Suite，多个UTD配置和DMC Humanoid。",
+  "limitations": "调研判断：方法针对experience replay；摘要给出的速率来自理论条件，不能作为任意RL训练的普适精确规律；名称SWD不是普通参数weight decay。",
+  "category": "NTK/谱结构与优化",
+  "abstract": "Deep reinforcement learning (RL) suffers from plasticity loss severely due to the nature of non-stationarity, which impairs the ability to adapt to new data and learn continually. Unfortunately, our understanding of how plasticity loss arises, dissipates, and can be dissolved remains limited to empirical findings, leaving the theoretical end underexplored. To address this gap, we study the plasticity loss problem from the theoretical perspective of network optimization. By formally characterizing the two culprit factors in online RL process: the non-stationarity of data distributions and the non-stationarity of targets induced by bootstrapping, our theory attributes the loss of plasticity to two mechanisms: the rank collapse of the Neural Tangent Kernel (NTK) Gram matrix and the Θ(1/k) decay of gradient magnitude. The first mechanism echoes prior empirical findings from the theoretical perspective and sheds light on the effects of existing methods, e.g., network reset, neuron recycle, and noise injection. Against this backdrop, we focus primarily on the second mechanism and aim to alleviate plasticity loss by addressing the gradient attenuation issue, which is orthogonal to existing methods. We propose Sample Weight Decay (SWD) --- a lightweight method to restore gradient magnitude, as a general remedy to plasticity loss for deep RL methods based on experience replay. In experiments, we evaluate the efficacy of SWD upon TD3, SAC with SimBa architecture in MuJoCo and DeepMind Control Suite tasks. The results demonstrate that SWD effectively alleviates plasticity loss and consistently improves learning performance across various configurations of deep RL algorithms, UTD, network architectures, and environments, achieving SOTA performance on challenging DMC Humanoid tasks.",
+  "priority": "重点",
+  "source_urls": [
+    "https://iclr.cc/virtual/2026/poster/10011488"
+  ],
+  "date": "2026-04-24（主会海报）",
+  "evidence_quote": "the rank collapse of the Neural Tangent Kernel (NTK) Gram matrix and the Θ(1/k) decay of gradient magnitude",
+  "review_id": "A10",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

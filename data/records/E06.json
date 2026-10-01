@@ -1,0 +1,31 @@
+{
+  "id": "lyle2025disentangling",
+  "title": "Disentangling the Causes of Plasticity Loss in Neural Networks",
+  "authors": [
+    "Clare Lyle",
+    "Zeyu Zheng",
+    "Khimya Khetarpal",
+    "Hado van Hasselt",
+    "Razvan Pascanu",
+    "James Martens",
+    "Will Dabney"
+  ],
+  "year": 2025,
+  "venue": "CoLLAs 2024（论文集发表于2025）",
+  "status": "正式发表",
+  "url": "https://proceedings.mlr.press/v274/lyle25a.html",
+  "doi": null,
+  "abstract": "Underpinning the past decades of work on the design, initialization, and optimization of neural networks is a seemingly innocuous assumption: that the network is trained on a stationary data distribution. In settings where this assumption is violated, e.g. deep reinforcement learning, learning algorithms become unstable and brittle with respect to hyperparameters and even random seeds. One factor driving this instability is the loss of plasticity, meaning that updating the network’s predictions in response to new information becomes more difficult as training progresses. While many recent works provide analyses and partial solutions to this phenomenon, a fundamental question remains unanswered: to what extent do known mechanisms of plasticity loss overlap, and how can mitigation strategies be combined to best maintain the trainability of a network? This paper addresses these questions, showing that loss of plasticity can be decomposed into multiple independent mechanisms and that, while intervening on any single mechanism is insufficient to avoid the loss of plasticity in all cases, intervening on multiple mechanisms in conjunction results in highly robust learning algorithms. We show that a combination of layer normalization and weight decay is highly effective at maintaining plasticity in a variety of synthetic nonstationary learning tasks, and further demonstrate its effectiveness on naturally arising nonstationarities, including reinforcement learning in the Arcade Learning Environment.",
+  "key_findings": "可塑性损失可分解为多个独立机制，针对任一单独机制的干预都不足以覆盖所有情形；LayerNorm+weight decay在多种非平稳任务和Atari中稳健有效。",
+  "tasks": "合成非平稳学习任务及Arcade Learning Environment（此子任务核实官方摘要）。",
+  "limitations": "不是ICML2024；联合方法的实证稳健性不能理解为保证所有架构/数据流永久可塑。",
+  "category": "领域会议补充 / 多机制可塑性损失",
+  "evidence_quote": "Loss of plasticity can be decomposed into multiple independent mechanisms ... intervening on any single mechanism is insufficient ... [official abstract]",
+  "publication_date": "2025/02/17",
+  "pdf_url": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/lyle25a/lyle25a.pdf",
+  "review_id": "E06",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "领域会议论文"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "shin2024dash",
+  "title": "DASH: Warm-Starting Neural Network Training in Stationary Settings without Loss of Plasticity",
+  "authors": [
+    "Baekrok Shin",
+    "Junsoo Oh",
+    "Hanseul Cho",
+    "Chulhee Yun"
+  ],
+  "year": 2024,
+  "venue": "NeurIPS 2024",
+  "status": "正式发表",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/4c5ce1fc8895076f49935951a630be5c-Abstract-Conference.html",
+  "doi": "10.52202/079017-1372",
+  "abstract": "Warm-starting neural network training by initializing networks with previously learned weights is appealing, as practical neural networks are often deployed under a continuous influx of new data. However, it often leads to loss of plasticity , where the network loses its ability to learn new information, resulting in worse generalization than training from scratch. This occurs even under stationary data distributions, and its underlying mechanism is poorly understood. We develop a framework emulating real-world neural network training and identify noise memorization as the primary cause of plasticity loss when warm-starting on stationary data. Motivated by this, we propose Direction-Aware SHrinking (DASH) , a method aiming to mitigate plasticity loss by selectively forgetting memorized noise while preserving learned features. We validate our approach on vision tasks, demonstrating improvements in test accuracy and training efficiency.",
+  "key_findings": "指出数据分布平稳时，warm-start也会损失泛化能力；理论/实验将其与训练样本噪声记忆联系起来。DASH按权重与负梯度的方向一致性进行差异化收缩，尽量忘掉样本特定噪声、保留可复用特征。",
+  "tasks": "CIFAR-10、CIFAR-100、SVHN、Tiny-ImageNet；MLP、VGG-16、ResNet-18；附录含ImageNet-1k等拓展。",
+  "limitations": "其核心结论针对平稳分布、逐批增加数据的warm-start场景；噪声记忆机制不能未经验证推广到所有非平稳RL。收缩阈值和梯度平均系数需选择。",
+  "category": "平稳增量数据 / 泛化可塑性",
+  "evidence_quote": "We ... identify noise memorization as the primary cause of plasticity loss when warm-starting on stationary data. [official abstract]",
+  "publication_date": "2024-12-16",
+  "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/4c5ce1fc8895076f49935951a630be5c-Paper-Conference.pdf",
+  "review_id": "A05",
+  "priority": "重点",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

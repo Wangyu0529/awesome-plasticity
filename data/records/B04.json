@@ -1,0 +1,31 @@
+{
+  "id": "s42256-024-00845-3",
+  "title": "Learning efficient backprojections across cortical hierarchies in real time",
+  "authors": [
+    "Kevin Max",
+    "Laura Kriener",
+    "Garibaldi Pineda García",
+    "Thomas Nowotny",
+    "Ismael Jaras",
+    "Walter Senn",
+    "Mihai A. Petrovici"
+  ],
+  "year": 2024,
+  "date": "2024-06-06",
+  "venue": "Nature Machine Intelligence",
+  "doi": "10.1038/s42256-024-00845-3",
+  "url": "https://www.nature.com/articles/s42256-024-00845-3",
+  "status": "正式期刊论文",
+  "volume": "6",
+  "pages": "619-630",
+  "category": "生物启发可塑性",
+  "key_findings": "Phaseless Alignment Learning（PAL）利用内源噪声学习反馈权重，实现持续开启、局部、无需分阶段的可塑性。",
+  "tasks": "皮层微回路模型、Yin-Yang、MNIST、CIFAR-10。",
+  "limitations": "解决信用分配和权重传输问题，不直接证明持续学习中的遗忘和可塑性丧失均已解决。官网全文有访问限制。",
+  "code_url": "https://zenodo.org/records/10405083",
+  "accessed": "2026-09-22",
+  "review_id": "B04",
+  "priority": "重点",
+  "review_group": "B",
+  "entry_type": "期刊论文"
+}

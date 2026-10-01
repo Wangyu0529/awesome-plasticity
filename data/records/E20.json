@@ -1,0 +1,29 @@
+{
+  "id": "s41467-026-74460-8",
+  "title": "Spike-based alignment learning solves the weight transport problem",
+  "authors": [
+    "Timo Gierlich",
+    "Andreas Baumbach",
+    "Akos F. Kungl",
+    "Kevin Max",
+    "Mihai A. Petrovici"
+  ],
+  "year": 2026,
+  "date": "2026-07-07",
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-026-74460-8",
+  "url": "https://www.nature.com/articles/s41467-026-74460-8",
+  "status": "正式期刊论文",
+  "volume": "17",
+  "pages": null,
+  "category": "生物启发可塑性",
+  "key_findings": "Spike-based Alignment Learning（SAL）用局部噪声学习对齐反馈权重，可与功能学习规则同步运行。",
+  "tasks": "脉冲 Bayesian 推断、生物合理反向传播及深度视觉任务。",
+  "limitations": "主要解决权重传输和器件/神经元差异；与持续学习可塑性的联系仍需额外实验。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "E20",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "entry_type": "期刊论文"
+}

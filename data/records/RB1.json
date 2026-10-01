@@ -1,0 +1,23 @@
+{
+  "id": "B1",
+  "title": "Switching between tasks can cause AI to lose the ability to learn",
+  "authors": [
+    "Clare Lyle",
+    "Razvan Pascanu"
+  ],
+  "year": 2024,
+  "date": "2024-08-21",
+  "venue": "Nature News & Views 632, 745–747",
+  "status": "已发表研究评论；页面元数据和导语核验，全文有订阅限制",
+  "url": "https://www.nature.com/articles/d41586-024-02525-z",
+  "key_findings": "以Dohare等Nature论文为中心，解释顺序学习下人工网络为何可能失去学习新技能的能力，并提醒生物/人工网络类比并不精确。",
+  "tasks": "loss of plasticity、持续学习入门",
+  "limitations": "非独立实验论文；本次只读取公开导语与参考文献，不将付费全文视为已读。",
+  "category": "commentary",
+  "related_paper": "https://www.nature.com/articles/s41586-024-07711-7",
+  "review_id": "RB1",
+  "priority": "解读/代码",
+  "review_group": "阅读资源",
+  "accessed": "2026-09-22",
+  "entry_type": "解读/播客"
+}

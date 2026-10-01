@@ -1,0 +1,30 @@
+{
+  "id": "x5txICnnjC",
+  "title": "Synaptic Weight Distributions Depend on the Geometry of Plasticity",
+  "authors": [
+    "Roman Pogodin",
+    "Jonathan Cornford",
+    "Arna Ghosh",
+    "Gauthier Gidel",
+    "Guillaume Lajoie",
+    "Blake Aaron Richards"
+  ],
+  "year": 2024,
+  "venue": "ICLR 2024 spotlight",
+  "status": "正式主会论文",
+  "url": "https://openreview.net/forum?id=x5txICnnjC",
+  "abstract": "A growing literature in computational neuroscience leverages gradient descent and learning algorithms that approximate it to study synaptic plasticity in the brain. However, the vast majority of this work ignores a critical underlying assumption: the choice of distance for synaptic changes - i.e. the geometry of synaptic plasticity. Gradient descent assumes that the distance is Euclidean, but many other distances are possible, and there is no reason that biology necessarily uses Euclidean geometry. Here, using the theoretical tools provided by mirror descent, we show that the distribution of synaptic weights will depend on the geometry of synaptic plasticity. We use these results to show that experimentally-observed log-normal weight distributions found in several brain areas are not consistent with standard gradient descent (i.e. a Euclidean geometry), but rather with non-Euclidean distances. Finally, we show that it should be possible to experimentally test for different synaptic geometries by comparing synaptic weight distributions before and after learning. Overall, our work shows that the current paradigm in theoretical work on synaptic plasticity that assumes Euclidean synaptic geometry may be misguided and that it should be possible to experimentally determine the true geometry of synaptic plasticity in the brain.",
+  "bibtex": "@inproceedings{\npogodin2024synaptic,\ntitle={Synaptic Weight Distributions Depend on the Geometry of Plasticity},\nauthor={Roman Pogodin and Jonathan Cornford and Arna Ghosh and Gauthier Gidel and Guillaume Lajoie and Blake Aaron Richards},\nbooktitle={The Twelfth International Conference on Learning Representations},\nyear={2024},\nurl={https://openreview.net/forum?id=x5txICnnjC}\n}",
+  "doi": "",
+  "source_url": "https://api2.openreview.net/notes/search?term=synaptic+plasticity&limit=100",
+  "category": "生物启发可塑性",
+  "key_findings": "用镜像下降分析可塑性的几何；突触权重分布依赖所选距离，提醒不能默认生物学习等于欧氏梯度下降。",
+  "tasks": "理论分析、权重分布与生物观察的比较。",
+  "limitations": "权重分布的一致性不是生物实现某种优化器的唯一证据。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "B05",
+  "priority": "重点",
+  "review_group": "B",
+  "entry_type": "主会论文"
+}

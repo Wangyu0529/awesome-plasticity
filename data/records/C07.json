@@ -1,0 +1,26 @@
+{
+  "id": "L4",
+  "title": "It's All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization",
+  "authors": [
+    "Ali Behrouz",
+    "Meisam Razaviyayn",
+    "Peilin Zhong",
+    "Vahab Mirrokni"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026 Poster",
+  "status": "正式录用；OpenReview venue已核验；日期为arXiv首发",
+  "url": "https://openreview.net/forum?id=gZyEJ2kMow",
+  "key_findings": "MIRAS将序列模型写为带内部目标的关联记忆，重新解释遗忘门为保持正则；探索L2之外的目标及Moneta、Yaad、Memora。",
+  "tasks": "语言建模、常识推理、强回忆需求与时间序列",
+  "limitations": "主要讨论记忆写入/保留与序列架构设计；不是经典dead neurons/conditioning造成学习能力衰退的直接机制论文。",
+  "category": "llm_bridge",
+  "arxiv": "https://arxiv.org/abs/2504.13173",
+  "author_page": "https://abehrouz.github.io/",
+  "review_id": "C07",
+  "priority": "重点",
+  "review_group": "C",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文",
+  "first_preprint_date": "2025-04-17"
+}

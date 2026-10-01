@@ -1,0 +1,34 @@
+{
+  "id": "Prakash2026SpectralCollapse",
+  "title": "Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning",
+  "authors": [
+    "Arjun Prakash",
+    "Naicheng He",
+    "Kaicheng Guo",
+    "Saket Tiwari",
+    "Tyrone Serapio",
+    "Ruo Yu Tao",
+    "Amy Greenwald",
+    "George Konidaris"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=O6rHSkpYJU",
+  "openreview_url": "https://openreview.net/forum?id=O6rHSkpYJU",
+  "doi": null,
+  "key_findings": "指出新任务初始化时Hessian谱坍缩先于学不动；线性化ReLU下给出ε-rank条件，并将loss-weighted Gram与generalized Gauss-Newton谱联系起来。提出有效特征秩正则+L2的L2-ER。",
+  "tasks": "持续监督与强化学习任务。",
+  "limitations": "理论分析在线性化ReLU设定，因果结论应保留适用条件；Hessian、NTK、feature rank不能混为同一矩阵。",
+  "category": "NTK/谱结构与优化",
+  "abstract": "We investigate why deep neural networks suffer from loss of plasticity in continual learning, and thus fail to learn new tasks without reinitializing parameters. We show that this failure is preceded by Hessian spectral collapse at new-task initialization, where meaningful curvature directions vanish and gradient descent becomes ineffective. Analyzing a linearized ReLU network, we derive explicit $\\epsilon$-rank conditions for successful training and prove that the loss-weighted Gram matrix is spectrally equivalent to the Generalized Gauss-Newton approximation, thereby relating NTK dynamics to Hessian curvature. Targeting spectral collapse directly, we then discuss the Kronecker factored approximation of the Hessian, which motivates two regularization enhancements: maintaining high effective feature rank and applying L2 penalties. Experiments on continual supervised and reinforcement learning tasks confirm that combining these two regularizers effectively preserves plasticity.",
+  "priority": "重点",
+  "source_urls": [
+    "https://icml.cc/virtual/2026/poster/64388"
+  ],
+  "date": "2026-07-07（主会海报）",
+  "review_id": "A12",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

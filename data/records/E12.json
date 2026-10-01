@@ -1,0 +1,26 @@
+{
+  "id": "Zhou2025SBP",
+  "title": "Stay Hungry, Keep Learning: Sustainable Plasticity for Deep Reinforcement Learning",
+  "authors": [
+    "Huaicheng Zhou",
+    "Zifeng Zhuang",
+    "Donglin Wang"
+  ],
+  "year": 2025,
+  "venue": "ICML 2025",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://proceedings.mlr.press/v267/zhou25am.html",
+  "openreview_url": "https://openreview.net/forum?id=hTrSxX3kiV",
+  "doi": null,
+  "key_findings": "Sustainable Backup Propagation（SBP）将cycle reset和inner distillation结合，通过神经元再生同时恢复可塑性并回收原知识；集成PPO形成Plastic PPO（P3O）。",
+  "tasks": "深度强化学习中的PPO actor网络；摘要未列具体benchmark。",
+  "limitations": "调研判断：蒸馏恢复与重置调度有额外设计/成本，主体展示PPO actor，不能据此自动推广所有RL/LLM。",
+  "category": "重置与神经元再生",
+  "abstract": "The integration of Deep Neural Networks in Reinforcement Learning (RL) systems has led to remarkable progress in solving complex tasks but also introduced challenges like primacy bias and dead neurons. Primacy bias skews learning towards early experiences, while dead neurons diminish the network's capacity to acquire new knowledge. Traditional reset mechanisms aimed at addressing these issues often involve maintaining large replay buffers to train new networks or selectively resetting subsets of neurons. However, these approaches either incur prohibitive computational costs or reset network parameters without ensuring stability through recovery mechanisms, ultimately impairing learning efficiency. In this work, we introduce the novel concept of neuron regeneration, which combines reset mechanisms with knowledge recovery techniques. We also propose a new framework called Sustainable Backup Propagation(SBP) that effectively maintains plasticity in neural networks through this neuron regeneration process. The SBP framework achieves whole network neuron regeneration through two key procedures: cycle reset and inner distillation. Cycle reset involves a scheduled renewal of neurons, while inner distillation functions as a knowledge recovery mechanism at the neuron level. To validate our framework, we integrate SBP with Proximal Policy Optimization (PPO) and propose a novel distillation function for inner distillation. This integration results in Plastic PPO (P3O), a new algorithm that enables efficient cyclic regeneration of all neurons in the actor network. Extensive experiments demonstrate the approach effectively maintains policy plasticity and improves sample efficiency in reinforcement learning.",
+  "priority": "扩展",
+  "date": "2025-07-13至19（会议）",
+  "review_id": "E12",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

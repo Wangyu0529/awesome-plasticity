@@ -1,0 +1,23 @@
+{
+  "id": "B3",
+  "title": "Introducing Nested Learning: A new ML paradigm for continual learning",
+  "authors": [
+    "Ali Behrouz",
+    "Vahab Mirrokni"
+  ],
+  "year": 2025,
+  "date": "2025-11-07",
+  "venue": "Google Research Blog",
+  "status": "研究团队官方博客",
+  "url": "https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/",
+  "key_findings": "用多层嵌套优化与不同更新频率的记忆，解释架构、优化器、上下文学习与持续学习的联系；介绍Hope。",
+  "tasks": "大模型的多时间尺度记忆、持续学习与自修改",
+  "limitations": "属于作者解读；其“完全避免遗忘”等宣传性描述不能当作跨任务普遍保证；并非传统loss-of-plasticity直接诊断。",
+  "category": "author_blog",
+  "related_paper": "https://openreview.net/forum?id=nbMeRvNb7A",
+  "review_id": "RB3",
+  "priority": "解读/代码",
+  "review_group": "阅读资源",
+  "accessed": "2026-09-22",
+  "entry_type": "解读/播客"
+}

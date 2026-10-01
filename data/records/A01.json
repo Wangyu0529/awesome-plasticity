@@ -1,0 +1,30 @@
+{
+  "id": "s41586-024-07711-7",
+  "title": "Loss of plasticity in deep continual learning",
+  "authors": [
+    "Shibhansh Dohare",
+    "J. Fernando Hernandez-Garcia",
+    "Qingfeng Lan",
+    "Parash Rahman",
+    "A. Rupam Mahmood",
+    "Richard S. Sutton"
+  ],
+  "year": 2024,
+  "date": "2024-08-21",
+  "venue": "Nature",
+  "doi": "10.1038/s41586-024-07711-7",
+  "url": "https://www.nature.com/articles/s41586-024-07711-7",
+  "status": "正式期刊论文",
+  "volume": "632",
+  "pages": "768-774",
+  "category": "可塑性丧失与恢复",
+  "key_findings": "通过长任务序列系统展示可塑性丧失；Continual Backprop（CBP）持续重置少量低效用单元，维持特征多样性。",
+  "tasks": "Continual ImageNet、累积类别 CIFAR-100、PPO Ant（变化/固定摩擦）。",
+  "limitations": "未实验验证现代大语言模型；所谓长期保持是实验时间范围内的结论，不是任意网络的无限期保证。",
+  "code_url": "https://github.com/shibhansh/loss-of-plasticity",
+  "accessed": "2026-09-22",
+  "review_id": "A01",
+  "priority": "重点",
+  "review_group": "A",
+  "entry_type": "期刊论文"
+}

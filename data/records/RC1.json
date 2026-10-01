@@ -1,0 +1,26 @@
+{
+  "id": "C1",
+  "title": "Loss of Plasticity in Deep Continual Learning — official code",
+  "authors": [
+    "Shibhansh Dohare",
+    "J. Fernando Hernandez-Garcia",
+    "Qingfeng Lan",
+    "Parash Rahman",
+    "A. Rupam Mahmood",
+    "Richard S. Sutton"
+  ],
+  "year": 2024,
+  "date": null,
+  "venue": "GitHub / Nature 2024伴随代码",
+  "status": "Nature论文Code availability直接链接；已核验README",
+  "url": "https://github.com/shibhansh/loss-of-plasticity",
+  "key_findings": "包含continual backpropagation、ImageNet、CIFAR、慢变回归、PPO实验。",
+  "tasks": "直接复现loss of plasticity与重置干预",
+  "limitations": "仓库创建于2022-10-13，不应把创建时间写成2024；此处作为2024论文伴随实现纳入。",
+  "category": "code",
+  "review_id": "RC1",
+  "priority": "解读/代码",
+  "review_group": "阅读资源",
+  "accessed": "2026-09-22",
+  "entry_type": "代码"
+}

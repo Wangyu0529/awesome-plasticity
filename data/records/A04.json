@@ -1,0 +1,31 @@
+{
+  "id": "lee2024hare",
+  "title": "Slow and Steady Wins the Race: Maintaining Plasticity with Hare and Tortoise Networks",
+  "authors": [
+    "Hojoon Lee",
+    "Hyeonseo Cho",
+    "Hyunseung Kim",
+    "Donghu Kim",
+    "Dugki Min",
+    "Jaegul Choo",
+    "Clare Lyle"
+  ],
+  "year": 2024,
+  "venue": "ICML 2024",
+  "status": "正式发表",
+  "url": "https://proceedings.mlr.press/v235/lee24d.html",
+  "doi": null,
+  "abstract": "This study investigates the loss of generalization ability in neural networks, revisiting warm-starting experiments from Ash & Adams. Our empirical analysis reveals that common methods designed to enhance plasticity by maintaining trainability provide limited benefits to generalization. While reinitializing the network can be effective, it also risks losing valuable prior knowledge. To this end, we introduce the Hare & Tortoise, inspired by the brain’s complementary learning system. Hare & Tortoise consists of two components: the Hare network, which rapidly adapts to new information analogously to the hippocampus, and the Tortoise network, which gradually integrates knowledge akin to the neocortex. By periodically reinitializing the Hare network to the Tortoise’s weights, our method preserves plasticity while retaining general knowledge. Hare & Tortoise can effectively maintain the network’s ability to generalize, which improves advanced reinforcement learning algorithms on the Atari-100k benchmark. The code is available at https://github.com/dojeon-ai/hare-tortoise.",
+  "key_findings": "把可塑性拆为trainability和generalizability：训练损失还能下降，不代表新数据泛化没问题。Hare快速更新；Tortoise是其参数的EMA慢网络；周期把Hare置回Tortoise权重，以保留知识并恢复学习状态。",
+  "tasks": "MNIST/CIFAR-10/CIFAR-100/Tiny-ImageNet warm-start；MLP/ResNet-18/ViT-Tiny/VGG-16；Atari-100k。",
+  "limitations": "从实验范围推断：还需验证大规模语言模型、长期开放任务流及严重分布突变；双网络有额外参数存储，EMA/重置频率构成适应速度与保留程度的权衡。",
+  "category": "双时间尺度 / 可训练性与泛化",
+  "evidence_quote": "Plasticity can be decoupled into trainability (ability to train) and generalizability (ability to generalize). [PDF takeaways]",
+  "publication_date": "2024/07/08",
+  "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/lee24d/lee24d.pdf",
+  "review_id": "A04",
+  "priority": "重点",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

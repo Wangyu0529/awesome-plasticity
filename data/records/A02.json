@@ -1,0 +1,31 @@
+{
+  "id": "nikishin2023injection",
+  "title": "Deep Reinforcement Learning with Plasticity Injection",
+  "authors": [
+    "Evgenii Nikishin",
+    "Junhyuk Oh",
+    "Georg Ostrovski",
+    "Clare Lyle",
+    "Razvan Pascanu",
+    "Will Dabney",
+    "Andre Barreto"
+  ],
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "status": "正式发表",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/75101364dc3aa7772d27528ea504472b-Abstract-Conference.html",
+  "doi": "10.52202/075280-1614",
+  "abstract": "A growing body of evidence suggests that neural networks employed in deep reinforcement learning (RL) gradually lose their plasticity, the ability to learn from new data; however, the analysis and mitigation of this phenomenon is hampered by the complex relationship between plasticity, exploration, and performance in RL. This paper introduces plasticity injection, a minimalistic intervention that increases the network plasticity without changing the number of trainable parameters or biasing the predictions. The applications of this intervention are two-fold: first, as a diagnostic tool — if injection increases the performance, we may conclude that an agent's network was losing its plasticity. This tool allows us to identify a subset of Atari environments where the lack of plasticity causes performance plateaus, motivating future studies on understanding and combating plasticity loss. Second, plasticity injection can be used to improve the computational efficiency of RL training if the agent has to re-learn from scratch due to exhausted plasticity or by growing the agent's network dynamically without compromising performance. The results on Atari show that plasticity injection attains stronger performance compared to alternative methods while being computationally efficient.",
+  "key_findings": "提出 plasticity injection：冻结旧head，并加入一个可训练随机head及其冻结初始副本的差值，注入时保持预测不变，以降低探索行为变化对诊断的混淆；只对部分网络注入并共享编码器。注入后分数改善是学习能力受限的干预证据；可训练参数数目不变不代表总参数或计算量不变。",
+  "tasks": "57个Atari游戏；评估训练平台期干预、不同网络规模及动态扩大网络。",
+  "limitations": "作者§6：增加内存和训练时间，收益在游戏间差异很大；无法解决所有参数发散；该工具本身未识别导致可塑性下降的因果机制。",
+  "category": "可塑性诊断与恢复 / 强化学习",
+  "evidence_quote": "The first and foremost limitation of plasticity injection is an increase in memory and training time compared to the baseline agent with a standard-sized network. [PDF §6]",
+  "publication_date": "2023-12-15",
+  "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/75101364dc3aa7772d27528ea504472b-Paper-Conference.pdf",
+  "review_id": "A02",
+  "priority": "重点",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

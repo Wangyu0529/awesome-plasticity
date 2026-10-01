@@ -1,0 +1,30 @@
+{
+  "id": "nauman2024bitter",
+  "title": "Overestimation, Overfitting, and Plasticity in Actor-Critic: the Bitter Lesson of Reinforcement Learning",
+  "authors": [
+    "Michal Nauman",
+    "Michał Bortkiewicz",
+    "Piotr Miłoś",
+    "Tomasz Trzcinski",
+    "Mateusz Ostaszewski",
+    "Marek Cygan"
+  ],
+  "year": 2024,
+  "venue": "ICML 2024",
+  "status": "正式发表",
+  "url": "https://proceedings.mlr.press/v235/nauman24a.html",
+  "doi": null,
+  "abstract": "Recent advancements in off-policy Reinforcement Learning (RL) have significantly improved sample efficiency, primarily due to the incorporation of various forms of regularization that enable more gradient update steps than traditional agents. However, many of these techniques have been tested in limited settings, often on tasks from single simulation benchmarks and against well-known algorithms rather than a range of regularization approaches. This limits our understanding of the specific mechanisms driving RL improvements. To address this, we implemented over 60 different off-policy agents, each integrating established regularization techniques from recent state-of-the-art algorithms. We tested these agents across 14 diverse tasks from 2 simulation benchmarks, measuring training metrics related to overestimation, overfitting, and plasticity loss — issues that motivate the examined regularization techniques. Our findings reveal that while the effectiveness of a specific regularization setup varies with the task, certain combinations consistently demonstrate robust and superior performance. Notably, a simple Soft Actor-Critic agent, appropriately regularized, reliably finds a better-performing policy within the training regime, which previously was achieved mainly through model-based approaches.",
+  "key_findings": "系统比较64种SAC设计、12项设计选择、14个任务、两个重放比率。网络正则化与可塑性干预的联合效果强；重置、LayerNorm等同时影响过估计、过拟合和可塑性，不能仅凭某个代理指标或回报改善断言唯一机制。",
+  "tasks": "状态/本体感知输入的SAC；DeepMind Control Suite和MetaWorld，14个任务。",
+  "limitations": "作者§6明确限于DMC/MetaWorld本体感知任务及SAC；不包含像素输入、语言、全部RL算法。",
+  "category": "系统评估 / 强化学习指标混淆",
+  "evidence_quote": "Our empirical evaluations were limited to proprioceptive tasks on DMC and MetaWorld benchmarks and only for SAC method. [PDF §6]",
+  "publication_date": "2024/07/08",
+  "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/nauman24a/nauman24a.pdf",
+  "review_id": "E02",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

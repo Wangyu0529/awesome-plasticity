@@ -1,0 +1,31 @@
+{
+  "id": "chen2023language",
+  "title": "Improving Language Plasticity via Pretraining with Active Forgetting",
+  "authors": [
+    "Yihong Chen",
+    "Kelly Marchisio",
+    "Roberta Raileanu",
+    "David Adelani",
+    "Pontus Lars Erik Saito Stenetorp",
+    "Sebastian Riedel",
+    "Mikel Artetxe"
+  ],
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "status": "正式发表",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6450ea28ebbc8437bc38775157818172-Abstract-Conference.html",
+  "doi": "10.52202/075280-1369",
+  "abstract": "Pretrained language models (PLMs) are today the primary model for natural language processing. Despite their impressive downstream performance, it can be difficult to apply PLMs to new languages, a barrier to making their capabilities universally accessible. While prior work has shown it possible to address this issue by learning a new embedding layer for the new language, doing so is both data and compute inefficient. We propose to use an active forgetting mechanism during pretraining, as a simple way of creating PLMs that can quickly adapt to new languages. Concretely, by resetting the embedding layer every K updates during pretraining, we encourage the PLM to improve its ability of learning new embeddings within limited number of updates, similar to a meta-learning effect. Experiments with RoBERTa show that models pretrained with our forgetting mechanism not only demonstrate faster convergence during language adaptation, but also outperform standard ones in a low-data regime, particularly for languages that are distant from English. Code will be available at https://github.com/facebookresearch/language-model-plasticity.",
+  "key_findings": "预训练时每K步随机重置词嵌入，鼓励Transformer主体学会快速接入新语言词嵌入。低资源跨语言适配的收敛更快、最终性能更好，远离英语的语言受益更明显。可作为LLM相关引入，但实验模型是RoBERTa masked LM。",
+  "tasks": "RoBERTa预训练；每目标语言5M-token低数据适配；XNLI自然语言推理、MLQA和XQuAD跨语言问答。例：5K适配步下XNLI平均准确率57.8 vs 37.2；同一训练阶段XQuAD已达最终性能92% vs 53%。",
+  "limitations": "作者§6.2：仅masked language modeling和语言特定tokenizer；自回归LM、其他预训练目标与tokenization是未来工作。因此不能写成已在现代大规模decoder-only LLM/RLHF上验证。",
+  "category": "语言模型可塑性 / 主动遗忘",
+  "evidence_quote": "We focus on masked language modeling pretraining with language-specific tokenizers. Applying active forgetting to auto-regressive LMs ... is promising future work. [PDF §6.2]",
+  "publication_date": "2023-12-15",
+  "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/6450ea28ebbc8437bc38775157818172-Paper-Conference.pdf",
+  "review_id": "C01",
+  "priority": "重点",
+  "review_group": "C",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

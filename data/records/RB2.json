@@ -1,0 +1,23 @@
+{
+  "id": "B2",
+  "title": "AI can’t learn new things forever — an algorithm can fix that",
+  "authors": [
+    "Benjamin Thompson",
+    "Nick Petrić Howe"
+  ],
+  "year": 2024,
+  "date": "2024-08-21",
+  "venue": "Nature Podcast",
+  "status": "已发布播客与公开文字说明",
+  "url": "https://www.nature.com/articles/d41586-024-02756-0",
+  "key_findings": "00:46–08:55主题为Old AIs can’t learn new tricks，通俗介绍重置部分低利用神经元、保持持续学习的思路。",
+  "tasks": "Dohare等Nature论文的音频导读",
+  "limitations": "本次核验网页节目说明，未播放或逐字核对音频；不能作为独立实验证据。",
+  "category": "podcast",
+  "related_paper": "https://www.nature.com/articles/s41586-024-07711-7",
+  "review_id": "RB2",
+  "priority": "解读/代码",
+  "review_group": "阅读资源",
+  "accessed": "2026-09-22",
+  "entry_type": "解读/播客"
+}

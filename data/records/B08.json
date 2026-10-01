@@ -1,0 +1,27 @@
+{
+  "id": "s41467-026-70920-3",
+  "title": "Intrinsic stabilization of synaptic plasticity improves learning and robustness in artificial neural networks",
+  "authors": [
+    "Artem Pilzak",
+    "Bobby Pennington",
+    "Jean-Philippe Thivierge"
+  ],
+  "year": 2026,
+  "date": "2026-03-19",
+  "venue": "Nature Communications",
+  "volume": "17",
+  "pages": "4164",
+  "doi": "10.1038/s41467-026-70920-3",
+  "url": "https://www.nature.com/articles/s41467-026-70920-3",
+  "status": "正式期刊论文",
+  "category": "生物启发可塑性",
+  "key_findings": "iTDS 以较慢时间尺度追踪网络自身输出，并用内源自上而下信号调节突触更新，改善学习、泛化与抗噪。",
+  "tasks": "前馈、循环和储备池网络，共 16 个合成及真实任务。",
+  "limitations": "训练稳定和鲁棒性改善不等价于长期非平稳任务上的可塑性丧失已被解决。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "B08",
+  "priority": "重点",
+  "review_group": "B",
+  "entry_type": "期刊论文"
+}

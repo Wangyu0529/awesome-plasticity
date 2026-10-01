@@ -1,0 +1,23 @@
+{
+  "id": "X3",
+  "title": "Can Scale Save Us From Plasticity Loss in Large Language Models?",
+  "authors": [
+    "J. Fernando Hernandez-Garcia",
+    "Tomás Figliolia",
+    "Beren Millidge"
+  ],
+  "year": 2026,
+  "date": "2026-06-23",
+  "venue": "arXiv:2606.24752",
+  "status": "已公开预印本；未核验到顶会正式录用，应与主表分开",
+  "url": "https://arxiv.org/abs/2606.24752",
+  "key_findings": "GPT式Transformer在多语言持续学习中出现可塑性下降；5M–314M非embedding参数下，发生时点随规模次线性推迟；平稳多语言训练也能观察到该现象。",
+  "tasks": "5M–314M non-embedding参数；多语言训练；保留的越南语probe task",
+  "limitations": "规模远低于前沿数十/百B大模型；外推只能作假说，不能说已经证实所有大模型终将失去学习能力。",
+  "category": "preprint_direct_lop",
+  "review_id": "E16",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "预印本"
+}

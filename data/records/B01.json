@@ -1,0 +1,26 @@
+{
+  "id": "s41593-023-01460-y",
+  "title": "The combination of Hebbian and predictive plasticity learns invariant object representations in deep sensory networks",
+  "authors": [
+    "Manu Srinath Halvagal",
+    "Friedemann Zenke"
+  ],
+  "year": 2023,
+  "date": "2023-10-12",
+  "venue": "Nature Neuroscience",
+  "volume": "26",
+  "pages": "1906–1915",
+  "doi": "10.1038/s41593-023-01460-y",
+  "url": "https://www.nature.com/articles/s41593-023-01460-y",
+  "status": "正式期刊论文",
+  "category": "生物启发可塑性",
+  "key_findings": "Latent Predictive Learning（LPL）将 Hebbian 与预测型可塑性结合，以局部规则学习不变表征；可推广到脉冲网络，并联系 STDP 与元可塑性。",
+  "tasks": "深层感觉网络、时序视觉输入及灵长类下颞叶经验依赖的选择性变化。",
+  "limitations": "聚焦表征形成与生物合理性，非长任务序列可塑性丧失的直接验证。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "B01",
+  "priority": "重点",
+  "review_group": "B",
+  "entry_type": "期刊论文"
+}

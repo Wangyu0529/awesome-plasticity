@@ -1,0 +1,30 @@
+{
+  "id": "Farias2025SNR",
+  "title": "Self-Normalized Resets for Plasticity in Continual Learning",
+  "authors": [
+    "Vivek Farias",
+    "Adam Daniel Jozefiak"
+  ],
+  "year": 2025,
+  "venue": "ICLR 2025 Poster",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=G82uQztzxl",
+  "openreview_url": "https://openreview.net/forum?id=G82uQztzxl",
+  "key_findings": "用自归一化统计检验判断神经元发放率是否近零，按证据重置而非仅凭固定周期/启发式utility；对单一拒绝阈值较稳健。给出单ReLU情形的理论分析。Transformer须把前馈神经元重置与attention的L2正则结合。",
+  "tasks": "Permuted MNIST（2400任务）、Random Label MNIST/CIFAR、Continual ImageNet-32、Permuted Shakespeare；MLP/CNN/小Transformer，SGD与Adam。",
+  "limitations": "作者正文明确：最大模型约5M参数；单ReLU的理论不足以完整刻画深网；不要将测试误差上升与优化可塑性下降混同。",
+  "category": "重置与神经元再生",
+  "abstract": "Plasticity Loss is an increasingly important phenomenon that refers to the empirical observation that as a neural network is continually trained on a sequence of changing tasks, its ability to adapt to a new task diminishes over time. We introduce Self-Normalized Resets (SNR), a simple adaptive algorithm that mitigates plasticity loss by resetting a neuron’s weights when evidence suggests its firing rate has effectively dropped to zero. Across a battery of continual learning problems and network architectures, we demonstrate that SNR consistently attains superior performance compared to its competitor algorithms. We also demonstrate that SNR is robust to its sole hyperparameter, its rejection percentile threshold, while competitor algorithms show significant sensitivity. SNR’s threshold-based reset mechanism is motivated by a simple hypothesis test we derive. Seen through the lens of this hypothesis test, competing reset proposals yield suboptimal error rates in correctly detecting inactive neurons, potentially explaining our experimental observations. We also conduct a theoretical investigation of the optimization landscape for the problem of learning a single ReLU. We show that even when initialized adversarially, an idealized version of SNR learns the target ReLU, while regularization based approaches can fail to learn.",
+  "priority": "重点",
+  "source_urls": [
+    "https://iclr.cc/virtual/2025/poster/30297",
+    "https://arxiv.org/html/2410.20098v2"
+  ],
+  "date": "2025（ICLR主会；OpenReview录用发布日期2025-01-23）",
+  "evidence_quote": "resetting a neuron’s weights when evidence suggests its firing rate has effectively dropped to zero",
+  "review_id": "A07",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文",
+  "preprint_doi": "10.48550/arXiv.2410.20098"
+}

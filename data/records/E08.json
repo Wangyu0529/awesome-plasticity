@@ -1,0 +1,27 @@
+{
+  "id": "kumar2025l2init",
+  "title": "Maintaining Plasticity in Continual Learning via Regenerative Regularization",
+  "authors": [
+    "Saurabh Kumar",
+    "Henrik Marklund",
+    "Benjamin Van Roy"
+  ],
+  "year": 2025,
+  "venue": "CoLLAs 2024（论文集发表于2025）",
+  "status": "正式发表",
+  "url": "https://proceedings.mlr.press/v274/kumar25a.html",
+  "doi": null,
+  "abstract": "In continual learning, plasticity refers to the ability of an agent to quickly adapt to new information. Neural networks are known to lose plasticity when processing non-stationary data streams. In this paper, we propose L2 Init, a simple approach for maintaining plasticity by incorporating in the loss function L2 regularization toward initial parameters. This is very similar to standard L2 regularization (L2), the only difference being that L2 regularizes toward the origin. L2 Init is simple to implement and requires selecting only a single hyper-parameter. The motivation for this method is the same as that of methods that reset neurons or parameter values. Intuitively, when recent losses are insensitive to particular parameters, these parameters should drift toward their initial values. This prepares parameters to adapt quickly to new tasks. On problems representative of different types of nonstationarity in continual supervised learning, we demonstrate that L2 Init most consistently mitigates plasticity loss compared to previously proposed approaches.",
+  "key_findings": "L2 Init将权重正则回初始值，而普通L2回零；当前损失不敏感的参数会渐渐回到易于新学习的初始化附近，作为简单、单超参数的再生机制。",
+  "tasks": "多种非平稳持续监督学习设定（此子任务核实摘要，未逐项复核PDF数据集）。",
+  "limitations": "领域会议非本子任务限定的ICML/ICLR/NeurIPS；不能标ICLR2024（对应OpenReview条目为desk rejected）。摘要直接验证范围是持续监督学习，跨域效果需另证。",
+  "category": "领域会议补充 / 再生正则化",
+  "evidence_quote": "We propose L2 Init ... L2 regularization toward initial parameters. [official abstract]",
+  "publication_date": "2025/02/17",
+  "pdf_url": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/kumar25a/kumar25a.pdf",
+  "review_id": "E08",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "领域会议论文"
+}

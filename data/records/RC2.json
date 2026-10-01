@@ -1,0 +1,33 @@
+{
+  "id": "C2",
+  "title": "TTT official PyTorch implementation",
+  "authors": [
+    "Yu Sun",
+    "Xinhao Li",
+    "Karan Dalal",
+    "Jiarui Xu",
+    "Arjun Vikram",
+    "Genghan Zhang",
+    "Yann Dubois",
+    "Xinlei Chen",
+    "Xiaolong Wang",
+    "Sanmi Koyejo",
+    "Tatsunori Hashimoto",
+    "Carlos Guestrin"
+  ],
+  "year": 2024,
+  "date": "2024-06-28",
+  "venue": "GitHub / ICML 2025伴随代码",
+  "status": "README明确official；日期为GitHub API仓库创建日期",
+  "url": "https://github.com/test-time-training/ttt-lm-pytorch",
+  "key_findings": "教学/阅读用的官方TTT-Linear和TTT-MLP PyTorch实现。",
+  "tasks": "理解测试时模型状态更新",
+  "limitations": "README明确不建议用此纯PyTorch版本复现训练速度；训练应使用JAX codebase，推理速度使用专门kernels。",
+  "category": "code",
+  "training_code": "https://github.com/test-time-training/ttt-lm-jax",
+  "review_id": "RC2",
+  "priority": "解读/代码",
+  "review_group": "阅读资源",
+  "accessed": "2026-09-22",
+  "entry_type": "代码"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "qin2024reborn",
+  "title": "The Dormant Neuron Phenomenon in Multi-Agent Reinforcement Learning Value Factorization",
+  "authors": [
+    "Haoyuan Qin",
+    "Chennan Ma",
+    "Mian Deng",
+    "Zhengzhu Liu",
+    "Songzhu Mei",
+    "Xinwang Liu",
+    "Cheng Wang",
+    "Siqi Shen"
+  ],
+  "year": 2024,
+  "venue": "NeurIPS 2024",
+  "status": "正式发表",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/3eec5006051d9544e717067de3220198-Abstract-Conference.html",
+  "doi": "10.52202/079017-1127",
+  "abstract": "In this work, we study the dormant neuron phenomenon in multi-agent reinforcement learning value factorization, where the mixing network suffers from reduced network expressivity caused by an increasing number of inactive neurons. We demonstrate the presence of the dormant neuron phenomenon across multiple environments and algorithms, and show that this phenomenon negatively affects the learning process. We show that dormant neurons correlates with the existence of over-active neurons, which have large activation scores. To address the dormant neuron issue, we propose ReBorn, a simple but effective method that transfers the weights from over-active neurons to dormant neurons. We theoretically show that this method can ensure the learned action preferences are not forgotten after the weight-transferring procedure, which increases learning effectiveness. Our extensive experiments reveal that ReBorn achieves promising results across various environments and improves the performance of multiple popular value factorization approaches. The source code of ReBorn is available in \\url{https://github.com/xmu-rl-3dv/ReBorn}.",
+  "key_findings": "值分解MARL的mixing network出现休眠与过度活跃神经元。ReBorn把过度活跃神经元权重转给休眠神经元，并对适用值分解结构证明保留已学动作偏好，避免简单重置损伤协同知识。",
+  "tasks": "QMIX、QPLEX、DMIX、RMIX；SMAC、SMACv2和predator-prey。",
+  "limitations": "作者附录E.2：主要在离散多智能体环境测试；休眠判据只用归一化激活仍较粗糙；阈值及再生周期过大/过小都可能有害，连续控制与自适应调度待研究。",
+  "category": "休眠神经元 / 多智能体强化学习",
+  "evidence_quote": "We studied the phenomenon of dormant neurons in discrete multi-agent environments. Future work should explore whether our method can be extended to continuous environments. [PDF Appendix E.2]",
+  "publication_date": "2024-12-16",
+  "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/3eec5006051d9544e717067de3220198-Paper-Conference.pdf",
+  "review_id": "E04",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

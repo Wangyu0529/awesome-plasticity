@@ -1,0 +1,30 @@
+{
+  "id": "s42256-024-00902-x",
+  "title": "Engineering flexible machine learning systems by traversing functionally invariant paths",
+  "authors": [
+    "Guruprasad Raghavan",
+    "Bahey Tharwat",
+    "Surya Narayanan Hari",
+    "Dhruvil Satani",
+    "Rex Liu",
+    "Matt Thomson"
+  ],
+  "year": 2024,
+  "date": "2024-10-03",
+  "venue": "Nature Machine Intelligence",
+  "doi": "10.1038/s42256-024-00902-x",
+  "url": "https://www.nature.com/articles/s42256-024-00902-x",
+  "status": "正式期刊论文",
+  "volume": "6",
+  "pages": "1179-1196",
+  "category": "大模型与几何适应",
+  "key_findings": "沿近似功能不变路径（FIP）移动参数，在保持原功能的同时满足持续学习、稀疏化等新目标。",
+  "tasks": "BERT、ViT/DeiT、CNN；持续学习、稀疏化、对抗鲁棒性。",
+  "limitations": "BERT属于编码器语言模型；不能据此认定已解决当代生成式大模型的长期可塑性衰减。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "C08",
+  "priority": "重点",
+  "review_group": "C",
+  "entry_type": "期刊论文"
+}

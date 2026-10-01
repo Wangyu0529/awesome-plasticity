@@ -1,0 +1,27 @@
+{
+  "id": "YTbLri0siT",
+  "title": "Spike-timing-dependent Hebbian learning as noisy gradient descent",
+  "authors": [
+    "Niklas Dexheimer",
+    "Sascha Gaudlitz",
+    "Johannes Schmidt-Hieber"
+  ],
+  "year": 2025,
+  "venue": "NeurIPS 2025 poster",
+  "status": "正式主会论文",
+  "url": "https://openreview.net/forum?id=YTbLri0siT",
+  "abstract": "Hebbian learning is a key principle underlying learning in biological neural networks. We relate a Hebbian spike-timing-dependent plasticity rule to noisy gradient descent with respect to a non-convex loss function on the probability simplex. Despite the constant injection of noise and the non-convexity of the underlying optimization problem, one can rigorously prove that the considered Hebbian learning dynamic identifies the presynaptic neuron with the highest activity and that the convergence is exponentially fast in the number of iterations. This is non-standard and surprising as typically noisy gradient descent with fixed noise level only converges to a stationary regime where the noise causes the dynamic to fluctuate around a minimiser.",
+  "bibtex": "@inproceedings{\ndexheimer2025spiketimingdependent,\ntitle={Spike-timing-dependent Hebbian learning as noisy gradient descent},\nauthor={Niklas Dexheimer and Sascha Gaudlitz and Johannes Schmidt-Hieber},\nbooktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},\nyear={2025},\nurl={https://openreview.net/forum?id=YTbLri0siT}\n}",
+  "doi": "",
+  "source_url": "https://api2.openreview.net/notes/search?term=hebbian&limit=100",
+  "category": "生物启发可塑性",
+  "key_findings": "将特定 STDP/Hebbian 规则联系到概率单纯形上的带噪非凸梯度下降，并证明选择最高活动输入的快速收敛。",
+  "tasks": "特定突触动力学的数学分析。",
+  "limitations": "定理针对所分析规则和假设，不表示所有 STDP 等价于任意深网上的反向传播。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "E11",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "entry_type": "主会论文"
+}

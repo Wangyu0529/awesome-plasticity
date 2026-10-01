@@ -1,0 +1,26 @@
+{
+  "id": "X2",
+  "title": "Memory Mosaics",
+  "authors": [
+    "Jianyu Zhang",
+    "Niklas Nolte",
+    "Ranajoy Sadhukhan",
+    "Beidi Chen",
+    "Leon Bottou"
+  ],
+  "year": 2025,
+  "venue": "ICLR 2025 Poster",
+  "status": "正式录用；OpenReview核验；日期为arXiv首发",
+  "url": "https://openreview.net/forum?id=IiagjrJNwF",
+  "key_findings": "关联记忆组成预测网络，以predictive disentanglement解释组合性和上下文学习。",
+  "tasks": "toy example、中等规模语言模型",
+  "limitations": "规模化讨论优先阅读NeurIPS2025后续；非直接可塑性流失研究。",
+  "category": "extension_llm_bridge",
+  "arxiv": "https://arxiv.org/abs/2405.06394",
+  "review_id": "E09",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文",
+  "first_preprint_date": "2024-05-10"
+}

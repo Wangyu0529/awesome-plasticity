@@ -1,0 +1,30 @@
+{
+  "id": "Rosseau2026AdamO",
+  "title": "Preserving Plasticity in Continual Learning via Dynamical Isometry",
+  "authors": [
+    "Andries Rosseau",
+    "Robert Müller",
+    "Ann Nowe"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "status": "正式主会论文；经主办方会议页面/论文集核验",
+  "url": "https://openreview.net/forum?id=vJCOWSkMuq",
+  "openreview_url": "https://openreview.net/forum?id=vJCOWSkMuq",
+  "doi": null,
+  "key_findings": "把plasticity与经验NTK联系，以层Jacobian奇异值接近1（dynamical isometry）为保持可塑性的目标；提出isometry正则及解耦正则的AdamO，并给出重新激活休眠ReLU的机制。",
+  "tasks": "专门诱发LoP的持续监督学习与强化学习基准。",
+  "limitations": "调研判断：isometry是维护NTK谱的代理目标；模型表达能力/算力开销与复杂架构推广需逐模型评估，非已经证明任意大型Transformer可长期学习。",
+  "category": "NTK/谱结构与优化",
+  "abstract": "Continual training of deep neural networks under non-stationarity often leads to a progressive loss of plasticity, eventually limiting further learning. We relate plasticity to the empirical Neural Tangent Kernel, and identify dynamical isometry (the condition that layer-wise Jacobian singular values remain close to one) as a key mechanism for preserving plasticity in continual learning. We revisit a class of networks that are almost-everywhere isometric while remaining universal Lipschitz function approximators, demonstrating that near-dynamical isometry is compatible with expressive nonlinear representations. For general architectures, we propose an efficient isometry-promoting regularization scheme and identify a novel mechanism by which it can reactivate dormant ReLU units. Building on this, we introduce AdamO, an Adam-style adaptive optimizer that decouples isometry regularization from gradient updates, analogous to AdamW. We further reinterpret prior plasticity-preserving approaches through the lens of dynamical isometry, showing that they target only a partial measure of isometry. Across supervised and reinforcement-learning continual-learning benchmarks designed to induce plasticity loss, our methods consistently match or outperform existing approaches.",
+  "priority": "重点",
+  "source_urls": [
+    "https://icml.cc/virtual/2026/poster/60923"
+  ],
+  "date": "2026-07-07（主会海报）",
+  "evidence_quote": "AdamO, an Adam-style adaptive optimizer that decouples isometry regularization from gradient updates",
+  "review_id": "A11",
+  "review_group": "A",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文"
+}

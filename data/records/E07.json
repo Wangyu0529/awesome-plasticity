@@ -1,0 +1,27 @@
+{
+  "id": "wYJII5BRYU",
+  "title": "Learning Successor Features with Distributed Hebbian Temporal Memory",
+  "authors": [
+    "Evgenii Aleksandrovich Dzhivelikian",
+    "Petr Kuderov",
+    "Aleksandr Panov"
+  ],
+  "year": 2025,
+  "venue": "ICLR 2025 Poster",
+  "status": "正式主会论文",
+  "url": "https://openreview.net/forum?id=wYJII5BRYU",
+  "abstract": "This paper presents a novel approach to address the challenge of online sequence learning for decision making under uncertainty in non-stationary, partially observable environments. The proposed algorithm, Distributed Hebbian Temporal Memory (DHTM), is based on the factor graph formalism and a multi-component neuron model. DHTM aims to capture sequential data relationships and make cumulative predictions about future observations, forming Successor Features (SFs). Inspired by neurophysiological models of the neocortex, the algorithm uses distributed representations, sparse transition matrices, and local Hebbian-like learning rules to overcome the instability and slow learning of traditional temporal memory algorithms such as RNN and HMM. Experimental results show that DHTM outperforms LSTM, RWKV and a biologically inspired HMM-like algorithm, CSCG, on non-stationary data sets. Our results suggest that DHTM is a promising approach to address the challenges of online sequence learning and planning in dynamic environments.",
+  "bibtex": "@inproceedings{\ndzhivelikian2025learning,\ntitle={Learning Successor Features with Distributed Hebbian Temporal Memory},\nauthor={Evgenii Aleksandrovich Dzhivelikian and Petr Kuderov and Aleksandr Panov},\nbooktitle={The Thirteenth International Conference on Learning Representations},\nyear={2025},\nurl={https://openreview.net/forum?id=wYJII5BRYU}\n}",
+  "doi": "",
+  "source_url": "https://api2.openreview.net/notes/search?term=hebbian&limit=100",
+  "category": "生物启发可塑性",
+  "key_findings": "Distributed Hebbian Temporal Memory 用局部 Hebbian 类规则、稀疏转移和分布式表示学习后继特征。",
+  "tasks": "非平稳、部分可观测环境中的在线序列学习；与 LSTM、RWKV、CSCG 比较。",
+  "limitations": "局部序列/规划结果不能直接推广到互联网规模语言建模。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "E07",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "entry_type": "主会论文"
+}

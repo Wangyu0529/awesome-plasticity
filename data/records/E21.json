@@ -1,0 +1,27 @@
+{
+  "id": "fSRmJOzMA1",
+  "title": "Ubiquity of Emergent Hebbian Dynamics in Regularized Learning",
+  "authors": [
+    "David Aaron Koplow",
+    "Tomaso Poggio",
+    "Liu Ziyin"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026 regular",
+  "status": "正式主会论文",
+  "url": "https://openreview.net/forum?id=fSRmJOzMA1",
+  "abstract": "Hebbian and anti-Hebbian plasticity are widely observed in the brain and are classically modeled as mechanistic, local homosynaptic rules stabilized by homeostatic constraints. This raises an identifiability question: does observing Hebbian/anti-Hebbian structure in synaptic updates uniquely imply an underlying Hebbian computation? We identify an alternative, emergent route. We show that near stationarity, L2 weight decay generically drives the \\emph{learning-signal} component of many update rules to align with a Hebbian direction, with alignment increasing monotonically with decay strength. This Hebbian-like signature is not specific to SGD and can arise even for non-learning or random update rules long before learning has ceased. We further show that stochastic noise in the learning signal can induce anti-Hebbian alignment, yielding a simple tradeoff with weight decay and a phase boundary in regression settings. These mechanisms do not replace standard Hebbian theory; they can coexist with genuine Hebbian plasticity and complicate the interpretation of synaptic measurements, motivating experiments that distinguish mechanistic Hebbian computation from emergent Hebbian signatures.",
+  "bibtex": "@inproceedings{\nkoplow2026ubiquity,\ntitle={Ubiquity of Emergent Hebbian Dynamics in Regularized Learning},\nauthor={David Aaron Koplow and Tomaso Poggio and Liu Ziyin},\nbooktitle={Forty-third International Conference on Machine Learning},\nyear={2026},\nurl={https://openreview.net/forum?id=fSRmJOzMA1}\n}",
+  "doi": "",
+  "source_url": "https://api2.openreview.net/notes/search?term=hebbian&limit=100",
+  "category": "生物启发可塑性",
+  "key_findings": "近稳态时，L2 衰减可使多类更新中的学习信号呈 Hebbian 方向；噪声可产生 anti-Hebbian 对齐。",
+  "tasks": "理论分析与回归等设置。",
+  "limitations": "观察到 Hebbian 形状不等于内部机制一定是局部 Hebbian 计算；结论依赖近稳态等条件。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "E21",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "entry_type": "主会论文"
+}

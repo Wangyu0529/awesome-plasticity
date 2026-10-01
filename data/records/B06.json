@@ -1,0 +1,30 @@
+{
+  "id": "fllsm01JWS",
+  "title": "Learning the Plasticity: Plasticity-Driven Learning Framework in Spiking Neural Networks",
+  "authors": [
+    "Guobin Shen",
+    "Dongcheng Zhao",
+    "Yiting Dong",
+    "Yang Li",
+    "Feifei Zhao",
+    "Yi Zeng"
+  ],
+  "year": 2025,
+  "venue": "NeurIPS 2025 poster",
+  "status": "正式主会论文",
+  "url": "https://openreview.net/forum?id=fllsm01JWS",
+  "abstract": "The evolution of the human brain has led to the development of complex synaptic plasticity, enabling dynamic adaptation to a constantly evolving world. This progress inspires our exploration into a new paradigm for Spiking Neural Networks (SNNs): a Plasticity-Driven Learning Framework (PDLF). This paradigm diverges from traditional neural network models that primarily focus on direct training of synaptic weights, leading to static connections that limit adaptability in dynamic environments. Instead, our approach delves into the heart of synaptic behavior, prioritizing the learning of plasticity rules themselves. This shift in focus from weight adjustment to mastering the intricacies of synaptic change offers a more flexible and dynamic pathway for neural networks to evolve and adapt. Our PDLF does not merely adapt existing concepts of functional and Presynaptic-Dependent Plasticity but redefines them, aligning closely with the dynamic and adaptive nature of biological learning. This reorientation enhances key cognitive abilities in artificial intelligence systems, such as working memory and multitasking capabilities, and demonstrates superior adaptability in complex, real-world scenarios. Moreover, our framework sheds light on the intricate relationships between various forms of plasticity and cognitive functions, thereby contributing to a deeper understanding of the brain's learning mechanisms. Integrating this groundbreaking plasticity-centric approach in SNNs marks a significant advancement in the fusion of neuroscience and artificial intelligence. It paves the way for developing AI systems that not only learn but also adapt in an ever-changing world, much like the human brain.",
+  "bibtex": "@inproceedings{\nshen2025learning,\ntitle={Learning the Plasticity: Plasticity-Driven Learning Framework in Spiking Neural Networks},\nauthor={Guobin Shen and Dongcheng Zhao and Yiting Dong and Yang Li and Feifei Zhao and Yi Zeng},\nbooktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},\nyear={2025},\nurl={https://openreview.net/forum?id=fllsm01JWS}\n}",
+  "doi": "",
+  "source_url": "https://api2.openreview.net/notes/search?term=synaptic+plasticity&limit=100",
+  "category": "生物启发可塑性",
+  "key_findings": "PDLF 学习突触可塑性规则本身，使连接能随经验动态变化，重点讨论工作记忆、多任务与适应。",
+  "tasks": "SNN 中工作记忆、多任务等认知及适应任务。",
+  "limitations": "外层规则学习仍需训练；尚不能据此推出大规模生成语言模型的收益。具体数值未纳入本报告。",
+  "code_url": "",
+  "accessed": "2026-09-22",
+  "review_id": "B06",
+  "priority": "重点",
+  "review_group": "B",
+  "entry_type": "主会论文"
+}

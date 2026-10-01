@@ -1,0 +1,24 @@
+{
+  "id": "X1",
+  "title": "Titans: Learning to Memorize at Test Time",
+  "authors": [
+    "Ali Behrouz",
+    "Peilin Zhong",
+    "Vahab Mirrokni"
+  ],
+  "year": 2025,
+  "venue": "NeurIPS 2025 Poster",
+  "status": "正式录用；OpenReview核验；日期为arXiv首发，编号虽为2501但首发是2024-12-31",
+  "url": "https://openreview.net/forum?id=8GjSf9Rh7Z",
+  "key_findings": "通过可在线更新的神经长期记忆配合注意力，提供测试时记忆的系列架构。",
+  "tasks": "语言建模、常识推理、时间序列、长上下文检索",
+  "limitations": "对应2025官方博客；论文终稿摘要对效果的措辞比初始arXiv/博客更保守，综述应按终稿谨慎概括。",
+  "category": "extension_llm_bridge",
+  "arxiv": "https://arxiv.org/abs/2501.00663",
+  "review_id": "E14",
+  "priority": "扩展",
+  "review_group": "扩展",
+  "accessed": "2026-09-22",
+  "entry_type": "主会论文",
+  "first_preprint_date": "2024-12-31"
+}
