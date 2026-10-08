@@ -8,10 +8,9 @@ A curated, structured bibliography on **plasticity** across artificial neural ne
 
 ### News
 
-- **2026-10-08** — Added six papers on plasticity definitions, capacity loss, continual-learning forgetting, and learning dynamics, with primary and cross-reference taxonomy tags.
+- **2026-10-08** — Added six papers on plasticity definitions, capacity loss, continual-learning forgetting, and learning dynamics, with primary and cross-reference taxonomy tags. _Clare Lyle_ is an important scientist in the Plasticity of Deep Reinforcement Learning.
 - **2026-10-01** — Public release of `awesome-plasticity`.
 - **2026-10-01** — Initial collection organized into plasticity loss and recovery, neuroscience-inspired learning, language-model plasticity, and related resources.
-- **2026-10-01** — Paper Lists reorganized into a two-level, multi-angle taxonomy; opaque internal record keys are hidden from the reader-facing index.
 
 ### Contents
 
