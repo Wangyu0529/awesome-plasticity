@@ -1,0 +1,39 @@
+{
+  "id": "arxiv-2106.00042",
+  "title": "A study on the plasticity of neural networks",
+  "authors": [
+    "Tudor Berariu",
+    "Wojciech Czarnecki",
+    "Soham De",
+    "Jorg Bornschein",
+    "Samuel Smith",
+    "Razvan Pascanu",
+    "Claudia Clopath"
+  ],
+  "year": 2021,
+  "date": "2021-05-31",
+  "venue": "arXiv:2106.00042",
+  "url": "https://arxiv.org/abs/2106.00042",
+  "pdf_url": "https://arxiv.org/pdf/2106.00042",
+  "status": "arXiv 预印本；作者于2023年更新说明术语范围",
+  "category": "泛化能力与可塑性定义",
+  "key_findings": "讨论 warm-start 后模型在新任务上的泛化表现，并将可塑性描述为先前任务不损害模型在任意给定任务上可达到的表现。作者2023年补充说明：本文关注的是训练误差仍可降低、但泛化表现变差的现象；应与聚焦优化困难的可塑性损失区分。",
+  "tasks": "比较预训练后微调与从头训练在新任务上的训练和泛化表现；按论文摘要记录，不扩写未核验的数据集细节。",
+  "limitations": "早期预印本中的 plasticity 主要指 warm-start 后的泛化能力；不能直接等同于深度强化学习中模型难以继续优化的操作性定义。",
+  "review_id": "P057",
+  "priority": "重点",
+  "entry_type": "预印本",
+  "major_category": "Problem Definition",
+  "minor_category": "Definitions and Distinctions",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Definitions and Distinctions"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Vision and Supervised Learning"
+    }
+  ],
+  "accessed": "2026-10-08"
+}

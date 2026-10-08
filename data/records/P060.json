@@ -1,0 +1,41 @@
+{
+  "id": "doi-10.1007-978-3-030-01252-6-33",
+  "title": "Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence",
+  "authors": [
+    "Arslan Chaudhry",
+    "Puneet K. Dokania",
+    "Thalaiyasingam Ajanthan",
+    "Philip H. S. Torr"
+  ],
+  "year": 2018,
+  "venue": "ECCV 2018",
+  "doi": "10.1007/978-3-030-01252-6_33",
+  "url": "https://doi.org/10.1007/978-3-030-01252-6_33",
+  "pdf_url": "https://link.springer.com/content/pdf/10.1007/978-3-030-01252-6_33.pdf",
+  "arxiv": "1801.10112",
+  "status": "正式发表",
+  "category": "持续学习中的遗忘与学习受阻",
+  "key_findings": "区分持续学习中的 forgetting（旧知识受损）与 intransigence（模型难以吸收新知识），提出相应评估指标，并提出 RWalk：以 KL 散度为理论视角，结合 EWC++ 与 Path Integral 思路估计参数重要性。",
+  "tasks": "MNIST 与 CIFAR-100 增量学习实验；比较多种增量学习方法的准确率、遗忘和 intransigence。",
+  "limitations": "指标依赖论文中的增量学习评估协议；遗忘和学习受阻与持续学习中狭义的 loss of plasticity 有联系，但不应简单视为同一指标。",
+  "review_id": "P060",
+  "priority": "重点",
+  "entry_type": "主会论文",
+  "major_category": "Problem Definition",
+  "minor_category": "Stability, Forgetting, and Memory",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Stability, Forgetting, and Memory"
+    },
+    {
+      "major": "Research Methods",
+      "minor": "Functional Geometry and Stabilization"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Vision and Supervised Learning"
+    }
+  ],
+  "accessed": "2026-10-08"
+}

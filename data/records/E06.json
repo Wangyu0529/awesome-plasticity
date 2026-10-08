@@ -26,14 +26,22 @@
   "review_id": "E06",
   "priority": "扩展",
   "review_group": "扩展",
-  "accessed": "2026-09-22",
+  "accessed": "2026-10-08",
   "entry_type": "领域会议论文",
   "major_category": "Problem Definition",
-  "minor_category": "Definitions and Distinctions",
+  "minor_category": "Mechanistic and Mathematical Accounts",
   "classifications": [
     {
       "major": "Problem Definition",
-      "minor": "Definitions and Distinctions"
+      "minor": "Mechanistic and Mathematical Accounts"
+    },
+    {
+      "major": "Research Methods",
+      "minor": "Regularization and Optimization"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Reinforcement Learning"
     },
     {
       "major": "Application Scenarios",

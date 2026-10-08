@@ -1,0 +1,40 @@
+{
+  "id": "arxiv-2204.09560",
+  "title": "Understanding and Preventing Capacity Loss in Reinforcement Learning",
+  "authors": [
+    "Clare Lyle",
+    "Mark Rowland",
+    "Will Dabney"
+  ],
+  "year": 2022,
+  "date": "2022-04-20",
+  "venue": "ICLR 2022",
+  "url": "https://arxiv.org/abs/2204.09560",
+  "pdf_url": "https://arxiv.org/pdf/2204.09560",
+  "arxiv": "2204.09560",
+  "status": "正式发表；arXiv 页面标注 Presented at ICLR 2022",
+  "category": "容量损失与持续强化学习",
+  "key_findings": "指出非平稳预测目标会导致 capacity loss：网络随连续目标训练而逐渐失去快速更新预测的能力。提出 Initial Feature Regularization（InFeR），将部分特征拉回初始化时的表示；在多种强化学习环境中缓解容量损失，并改善稀疏奖励任务表现。",
+  "tasks": "多个强化学习智能体与环境；重点展示稀疏奖励任务，包括 Montezuma's Revenge。",
+  "limitations": "研究聚焦强化学习中的非平稳预测目标和所测试的智能体、环境；InFeR 的结果不能直接视为适用于任意网络与数据流的通用保证。",
+  "review_id": "P058",
+  "priority": "重点",
+  "entry_type": "主会论文",
+  "major_category": "Problem Definition",
+  "minor_category": "Mechanistic and Mathematical Accounts",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Mechanistic and Mathematical Accounts"
+    },
+    {
+      "major": "Research Methods",
+      "minor": "Regularization and Optimization"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Reinforcement Learning"
+    }
+  ],
+  "accessed": "2026-10-08"
+}

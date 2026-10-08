@@ -1491,14 +1491,22 @@
     "review_id": "E06",
     "priority": "扩展",
     "review_group": "扩展",
-    "accessed": "2026-09-22",
+    "accessed": "2026-10-08",
     "entry_type": "领域会议论文",
     "major_category": "Problem Definition",
-    "minor_category": "Definitions and Distinctions",
+    "minor_category": "Mechanistic and Mathematical Accounts",
     "classifications": [
       {
         "major": "Problem Definition",
-        "minor": "Definitions and Distinctions"
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
       },
       {
         "major": "Application Scenarios",
@@ -2133,6 +2141,211 @@
         "minor": "Spiking and Biological Systems"
       }
     ]
+  },
+  {
+    "id": "arxiv-2106.00042",
+    "title": "A study on the plasticity of neural networks",
+    "authors": [
+      "Tudor Berariu",
+      "Wojciech Czarnecki",
+      "Soham De",
+      "Jorg Bornschein",
+      "Samuel Smith",
+      "Razvan Pascanu",
+      "Claudia Clopath"
+    ],
+    "year": 2021,
+    "date": "2021-05-31",
+    "venue": "arXiv:2106.00042",
+    "url": "https://arxiv.org/abs/2106.00042",
+    "pdf_url": "https://arxiv.org/pdf/2106.00042",
+    "status": "arXiv 预印本；作者于2023年更新说明术语范围",
+    "category": "泛化能力与可塑性定义",
+    "key_findings": "讨论 warm-start 后模型在新任务上的泛化表现，并将可塑性描述为先前任务不损害模型在任意给定任务上可达到的表现。作者2023年补充说明：本文关注的是训练误差仍可降低、但泛化表现变差的现象；应与聚焦优化困难的可塑性损失区分。",
+    "tasks": "比较预训练后微调与从头训练在新任务上的训练和泛化表现；按论文摘要记录，不扩写未核验的数据集细节。",
+    "limitations": "早期预印本中的 plasticity 主要指 warm-start 后的泛化能力；不能直接等同于深度强化学习中模型难以继续优化的操作性定义。",
+    "review_id": "P057",
+    "priority": "重点",
+    "entry_type": "预印本",
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ],
+    "accessed": "2026-10-08"
+  },
+  {
+    "id": "arxiv-2204.09560",
+    "title": "Understanding and Preventing Capacity Loss in Reinforcement Learning",
+    "authors": [
+      "Clare Lyle",
+      "Mark Rowland",
+      "Will Dabney"
+    ],
+    "year": 2022,
+    "date": "2022-04-20",
+    "venue": "ICLR 2022",
+    "url": "https://arxiv.org/abs/2204.09560",
+    "pdf_url": "https://arxiv.org/pdf/2204.09560",
+    "arxiv": "2204.09560",
+    "status": "正式发表；arXiv 页面标注 Presented at ICLR 2022",
+    "category": "容量损失与持续强化学习",
+    "key_findings": "指出非平稳预测目标会导致 capacity loss：网络随连续目标训练而逐渐失去快速更新预测的能力。提出 Initial Feature Regularization（InFeR），将部分特征拉回初始化时的表示；在多种强化学习环境中缓解容量损失，并改善稀疏奖励任务表现。",
+    "tasks": "多个强化学习智能体与环境；重点展示稀疏奖励任务，包括 Montezuma's Revenge。",
+    "limitations": "研究聚焦强化学习中的非平稳预测目标和所测试的智能体、环境；InFeR 的结果不能直接视为适用于任意网络与数据流的通用保证。",
+    "review_id": "P058",
+    "priority": "重点",
+    "entry_type": "主会论文",
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Regularization and Optimization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ],
+    "accessed": "2026-10-08"
+  },
+  {
+    "id": "pmlr-v202-lyle23b",
+    "title": "Understanding Plasticity in Neural Networks",
+    "authors": [
+      "Clare Lyle",
+      "Zeyu Zheng",
+      "Evgenii Nikishin",
+      "Bernardo Avila Pires",
+      "Razvan Pascanu",
+      "Will Dabney"
+    ],
+    "year": 2023,
+    "venue": "ICML 2023",
+    "volume": "202",
+    "pages": "23190-23211",
+    "url": "https://proceedings.mlr.press/v202/lyle23b.html",
+    "pdf_url": "https://proceedings.mlr.press/v202/lyle23b/lyle23b.pdf",
+    "status": "正式发表",
+    "category": "可塑性定义与损失机制",
+    "key_findings": "将可塑性定义为网络快速响应新信息改变预测的能力。系统实验发现可塑性损失与损失曲率变化紧密相关，但常在没有饱和单元时发生；据此分析若干参数化和优化选择，并在 Arcade Learning Environment 上验证。",
+    "tasks": "受控学习问题上的可塑性损失分析，以及 Arcade Learning Environment 强化学习基准验证。",
+    "limitations": "曲率相关性和干预效果来自论文测试的设置；不应将曲率视为所有可塑性损失的唯一原因，也不能据此推断任意架构上的普遍效果。",
+    "review_id": "P059",
+    "priority": "重点",
+    "entry_type": "主会论文",
+    "major_category": "Problem Definition",
+    "minor_category": "Definitions and Distinctions",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Definitions and Distinctions"
+      },
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Reinforcement Learning"
+      }
+    ],
+    "accessed": "2026-10-08"
+  },
+  {
+    "id": "doi-10.1007-978-3-030-01252-6-33",
+    "title": "Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence",
+    "authors": [
+      "Arslan Chaudhry",
+      "Puneet K. Dokania",
+      "Thalaiyasingam Ajanthan",
+      "Philip H. S. Torr"
+    ],
+    "year": 2018,
+    "venue": "ECCV 2018",
+    "doi": "10.1007/978-3-030-01252-6_33",
+    "url": "https://doi.org/10.1007/978-3-030-01252-6_33",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/978-3-030-01252-6_33.pdf",
+    "arxiv": "1801.10112",
+    "status": "正式发表",
+    "category": "持续学习中的遗忘与学习受阻",
+    "key_findings": "区分持续学习中的 forgetting（旧知识受损）与 intransigence（模型难以吸收新知识），提出相应评估指标，并提出 RWalk：以 KL 散度为理论视角，结合 EWC++ 与 Path Integral 思路估计参数重要性。",
+    "tasks": "MNIST 与 CIFAR-100 增量学习实验；比较多种增量学习方法的准确率、遗忘和 intransigence。",
+    "limitations": "指标依赖论文中的增量学习评估协议；遗忘和学习受阻与持续学习中狭义的 loss of plasticity 有联系，但不应简单视为同一指标。",
+    "review_id": "P060",
+    "priority": "重点",
+    "entry_type": "主会论文",
+    "major_category": "Problem Definition",
+    "minor_category": "Stability, Forgetting, and Memory",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Stability, Forgetting, and Memory"
+      },
+      {
+        "major": "Research Methods",
+        "minor": "Functional Geometry and Stabilization"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Continual Vision and Supervised Learning"
+      }
+    ],
+    "accessed": "2026-10-08"
+  },
+  {
+    "id": "arxiv-2609.33620",
+    "title": "Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss",
+    "authors": [
+      "Yi Ren",
+      "Wenlong Deng",
+      "Guanzhe Hong",
+      "Clare Lyle",
+      "Yarin Gal"
+    ],
+    "year": 2026,
+    "date": "2026-09-27",
+    "venue": "arXiv:2609.33620",
+    "url": "https://arxiv.org/abs/2609.33620",
+    "pdf_url": "https://arxiv.org/pdf/2609.33620",
+    "arxiv": "2609.33620",
+    "status": "arXiv 预印本",
+    "category": "持续学习动力学与未来可学习性",
+    "key_findings": "提出 token 与 layer 级的 update-behavior 分解，将数据归因、遗忘和未来可学习性放在同一更新—行为交互框架中分析；据此提出数据选择、针对性干预及基于 readout 的未来可学习性诊断。",
+    "tasks": "在多种模型与训练制度下分析 token/layer 级更新交互；论文摘要报告数据选择、干预控制和 readout 诊断实验。",
+    "limitations": "当前为预印本，结论仍待同行评审；框架针对论文研究的模型和训练制度，不能据此断言所有持续学习问题都可由同一局部量完整解释。",
+    "review_id": "P061",
+    "priority": "扩展",
+    "entry_type": "预印本",
+    "major_category": "Problem Definition",
+    "minor_category": "Mechanistic and Mathematical Accounts",
+    "classifications": [
+      {
+        "major": "Problem Definition",
+        "minor": "Mechanistic and Mathematical Accounts"
+      },
+      {
+        "major": "Problem Definition",
+        "minor": "Metrics and Evaluation"
+      },
+      {
+        "major": "Application Scenarios",
+        "minor": "Language Models and Post-Training"
+      }
+    ],
+    "accessed": "2026-10-08"
   },
   {
     "id": "B1",

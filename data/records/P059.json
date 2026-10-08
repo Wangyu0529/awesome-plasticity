@@ -1,0 +1,43 @@
+{
+  "id": "pmlr-v202-lyle23b",
+  "title": "Understanding Plasticity in Neural Networks",
+  "authors": [
+    "Clare Lyle",
+    "Zeyu Zheng",
+    "Evgenii Nikishin",
+    "Bernardo Avila Pires",
+    "Razvan Pascanu",
+    "Will Dabney"
+  ],
+  "year": 2023,
+  "venue": "ICML 2023",
+  "volume": "202",
+  "pages": "23190-23211",
+  "url": "https://proceedings.mlr.press/v202/lyle23b.html",
+  "pdf_url": "https://proceedings.mlr.press/v202/lyle23b/lyle23b.pdf",
+  "status": "正式发表",
+  "category": "可塑性定义与损失机制",
+  "key_findings": "将可塑性定义为网络快速响应新信息改变预测的能力。系统实验发现可塑性损失与损失曲率变化紧密相关，但常在没有饱和单元时发生；据此分析若干参数化和优化选择，并在 Arcade Learning Environment 上验证。",
+  "tasks": "受控学习问题上的可塑性损失分析，以及 Arcade Learning Environment 强化学习基准验证。",
+  "limitations": "曲率相关性和干预效果来自论文测试的设置；不应将曲率视为所有可塑性损失的唯一原因，也不能据此推断任意架构上的普遍效果。",
+  "review_id": "P059",
+  "priority": "重点",
+  "entry_type": "主会论文",
+  "major_category": "Problem Definition",
+  "minor_category": "Definitions and Distinctions",
+  "classifications": [
+    {
+      "major": "Problem Definition",
+      "minor": "Definitions and Distinctions"
+    },
+    {
+      "major": "Problem Definition",
+      "minor": "Mechanistic and Mathematical Accounts"
+    },
+    {
+      "major": "Application Scenarios",
+      "minor": "Continual Reinforcement Learning"
+    }
+  ],
+  "accessed": "2026-10-08"
+}

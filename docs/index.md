@@ -6,7 +6,7 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 
 #### Problem Definition
 
-23 unique records
+28 unique records
 
 ##### Definitions and Distinctions
 
@@ -14,9 +14,10 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 |---|---|---:|---|
 | [Loss of plasticity in deep continual learning](https://www.nature.com/articles/s41586-024-07711-7) | Journal paper | 2024 | Nature |
 | [A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce7984e36d58659211a8dc7d5457cd6f-Abstract-Conference.html) | Conference paper | 2024 | NeurIPS 2024 |
-| [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | Workshop / field-conference paper | 2025 | CoLLAs 2024 (proceedings published in 2025) |
 | [Plasticity as the Mirror of Empowerment](https://openreview.net/forum?id=eOZFqyE9Ok) | Conference paper | 2025 | NeurIPS 2025 Spotlight |
 | [The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation](https://openreview.net/forum?id=vvD0Bre3Dk) | Conference paper | 2025 | NeurIPS 2025 |
+| [A study on the plasticity of neural networks](https://arxiv.org/abs/2106.00042) | Preprint | 2021 | arXiv:2106.00042 |
+| [Understanding Plasticity in Neural Networks](https://proceedings.mlr.press/v202/lyle23b.html) | Conference paper | 2023 | ICML 2023 |
 
 ##### Metrics and Evaluation
 
@@ -27,6 +28,7 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [Overestimation, Overfitting, and Plasticity in Actor-Critic: the Bitter Lesson of Reinforcement Learning](https://proceedings.mlr.press/v235/nauman24a.html) | Conference paper | 2024 | ICML 2024 |
 | [Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages](https://openreview.net/forum?id=0aR1s9YxoL) | Conference paper | 2024 | ICLR 2024 poster |
 | [The Dormant Neuron Phenomenon in Multi-Agent Reinforcement Learning Value Factorization](https://proceedings.neurips.cc/paper_files/paper/2024/hash/3eec5006051d9544e717067de3220198-Abstract-Conference.html) | Conference paper | 2024 | NeurIPS 2024 |
+| [Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss](https://arxiv.org/abs/2609.33620) | Preprint | 2026 | arXiv:2609.33620 |
 
 ##### Mechanistic and Mathematical Accounts
 
@@ -36,8 +38,12 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning](https://openreview.net/forum?id=5DpzzTPnJZ) | Conference paper | 2026 | ICLR 2026 Poster |
 | [Preserving Plasticity in Continual Learning via Dynamical Isometry](https://openreview.net/forum?id=vJCOWSkMuq) | Conference paper | 2026 | ICML 2026 |
 | [Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning](https://openreview.net/forum?id=O6rHSkpYJU) | Conference paper | 2026 | ICML 2026 |
+| [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | Workshop / field-conference paper | 2025 | CoLLAs 2024 (proceedings published in 2025) |
 | [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY) | Conference paper | 2026 | ICML 2026 |
 | [SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning](https://openreview.net/forum?id=hXyv6xeHkO) | Conference paper | 2026 | ICML 2026 |
+| [Understanding and Preventing Capacity Loss in Reinforcement Learning](https://arxiv.org/abs/2204.09560) | Conference paper | 2022 | ICLR 2022 |
+| [Understanding Plasticity in Neural Networks](https://proceedings.mlr.press/v202/lyle23b.html) | Conference paper | 2023 | ICML 2023 |
+| [Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss](https://arxiv.org/abs/2609.33620) | Preprint | 2026 | arXiv:2609.33620 |
 
 ##### Biological Concepts of Plasticity
 
@@ -55,10 +61,11 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [Weight Decay Improves Language Model Plasticity](https://openreview.net/forum?id=zMO9H4hLyR) | Conference paper | 2026 | ICML 2026 |
 | [On the Plasticity and Stability for Post-Training Large Language Models](https://openreview.net/forum?id=lOR6zI5peb) | Conference paper | 2026 | ICML 2026 |
 | [Can Scale Save Us From Plasticity Loss in Large Language Models?](https://arxiv.org/abs/2606.24752) | Preprint | 2026 | arXiv:2606.24752 |
+| [Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence](https://doi.org/10.1007/978-3-030-01252-6_33) | Conference paper | 2018 | ECCV 2018 |
 
 #### Research Methods
 
-36 unique records
+39 unique records
 
 ##### Resets, Regeneration, and Active Forgetting
 
@@ -82,8 +89,10 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [Mitigating Plasticity Loss in Continual Reinforcement Learning by Reducing Churn](https://proceedings.mlr.press/v267/tang25g.html) | Conference paper | 2025 | ICML 2025 |
 | [The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning](https://openreview.net/forum?id=5DpzzTPnJZ) | Conference paper | 2026 | ICLR 2026 Poster |
 | [On the Plasticity and Stability for Post-Training Large Language Models](https://openreview.net/forum?id=lOR6zI5peb) | Conference paper | 2026 | ICML 2026 |
+| [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | Workshop / field-conference paper | 2025 | CoLLAs 2024 (proceedings published in 2025) |
 | [Activation Function Design Sustains Plasticity in Continual Learning](https://openreview.net/forum?id=XZf6wObHX4) | Conference paper | 2026 | ICLR 2026 Poster |
 | [Mitigating Plasticity Loss through Architectural Design in Continual Learning](https://openreview.net/forum?id=pAhGjPOlwy) | Conference paper | 2026 | ICML 2026 |
+| [Understanding and Preventing Capacity Loss in Reinforcement Learning](https://arxiv.org/abs/2204.09560) | Conference paper | 2022 | ICLR 2022 |
 
 ##### Local Learning and Credit Assignment
 
@@ -125,10 +134,11 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [Engineering flexible machine learning systems by traversing functionally invariant paths](https://www.nature.com/articles/s42256-024-00902-x) | Journal paper | 2024 | Nature Machine Intelligence |
 | [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY) | Conference paper | 2026 | ICML 2026 |
 | [SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning](https://openreview.net/forum?id=hXyv6xeHkO) | Conference paper | 2026 | ICML 2026 |
+| [Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence](https://doi.org/10.1007/978-3-030-01252-6_33) | Conference paper | 2018 | ECCV 2018 |
 
 #### Application Scenarios
 
-50 unique records
+55 unique records
 
 ##### Continual Reinforcement Learning
 
@@ -144,10 +154,13 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages](https://openreview.net/forum?id=0aR1s9YxoL) | Conference paper | 2024 | ICLR 2024 poster |
 | [The Dormant Neuron Phenomenon in Multi-Agent Reinforcement Learning Value Factorization](https://proceedings.neurips.cc/paper_files/paper/2024/hash/3eec5006051d9544e717067de3220198-Abstract-Conference.html) | Conference paper | 2024 | NeurIPS 2024 |
 | [Activation by Interval-wise Dropout: A Simple Way to Prevent Neural Networks from Plasticity Loss](https://proceedings.mlr.press/v267/park25b.html) | Conference paper | 2025 | ICML 2025 |
+| [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | Workshop / field-conference paper | 2025 | CoLLAs 2024 (proceedings published in 2025) |
 | [Stay Hungry, Keep Learning: Sustainable Plasticity for Deep Reinforcement Learning](https://proceedings.mlr.press/v267/zhou25am.html) | Conference paper | 2025 | ICML 2025 |
 | [Mitigating Plasticity Loss through Architectural Design in Continual Learning](https://openreview.net/forum?id=pAhGjPOlwy) | Conference paper | 2026 | ICML 2026 |
 | [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY) | Conference paper | 2026 | ICML 2026 |
 | [SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning](https://openreview.net/forum?id=hXyv6xeHkO) | Conference paper | 2026 | ICML 2026 |
+| [Understanding and Preventing Capacity Loss in Reinforcement Learning](https://arxiv.org/abs/2204.09560) | Conference paper | 2022 | ICLR 2022 |
+| [Understanding Plasticity in Neural Networks](https://proceedings.mlr.press/v202/lyle23b.html) | Conference paper | 2023 | ICML 2023 |
 
 ##### Continual Vision and Supervised Learning
 
@@ -165,6 +178,8 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [Maintaining Plasticity in Continual Learning via Regenerative Regularization](https://proceedings.mlr.press/v274/kumar25a.html) | Workshop / field-conference paper | 2025 | CoLLAs 2024 (proceedings published in 2025) |
 | [The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation](https://openreview.net/forum?id=vvD0Bre3Dk) | Conference paper | 2025 | NeurIPS 2025 |
 | [Activation Function Design Sustains Plasticity in Continual Learning](https://openreview.net/forum?id=XZf6wObHX4) | Conference paper | 2026 | ICLR 2026 Poster |
+| [A study on the plasticity of neural networks](https://arxiv.org/abs/2106.00042) | Preprint | 2021 | arXiv:2106.00042 |
+| [Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence](https://doi.org/10.1007/978-3-030-01252-6_33) | Conference paper | 2018 | ECCV 2018 |
 
 ##### Spiking and Biological Systems
 
@@ -193,6 +208,7 @@ The lists below are generated from `data/records/*.json`. Cross-indexed papers m
 | [On the Plasticity and Stability for Post-Training Large Language Models](https://openreview.net/forum?id=lOR6zI5peb) | Conference paper | 2026 | ICML 2026 |
 | [Engineering flexible machine learning systems by traversing functionally invariant paths](https://www.nature.com/articles/s42256-024-00902-x) | Journal paper | 2024 | Nature Machine Intelligence |
 | [Can Scale Save Us From Plasticity Loss in Large Language Models?](https://arxiv.org/abs/2606.24752) | Preprint | 2026 | arXiv:2606.24752 |
+| [Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss](https://arxiv.org/abs/2609.33620) | Preprint | 2026 | arXiv:2609.33620 |
 
 ##### Long-Context and Sequence Memory
 
